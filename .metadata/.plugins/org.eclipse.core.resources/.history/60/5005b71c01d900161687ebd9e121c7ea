@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Calender -->
+      <package
+            uri="https://tu-bs.de/isf/vacation_test"
+            class="de.tu_bs.vacation_manager.Calender.CalenderPackage"
+            genModel="model/Calender.genmodel"/>
+   </extension>
+
+</plugin>

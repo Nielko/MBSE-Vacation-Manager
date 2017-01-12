@@ -1,0 +1,11 @@
+package de.tu_bs.vacation_manager.Calender.impl.custom;
+
+import de.tu_bs.vacation_manager.Calender.impl.CalenderImpl;
+
+public class CalenderImplCustom extends CalenderImpl{
+
+	@Override
+	public void showGui() {
+		
+	}
+}

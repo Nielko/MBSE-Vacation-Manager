@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.tu_bs.vacation_manager.test/src-gen" editDirectory="/de.tu_bs.vacation_manager.test.edit/src-gen"
+    editorDirectory="/de.tu_bs.vacation_manager.test.editor/src-gen" modelPluginID="de.tu_bs.vacation_manager.test"
+    modelName="Calender" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    testsDirectory="/de.tu_bs.vacation_manager.test.tests/src-gen" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" language="" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>Calender.ecore</foreignModel>
+  <genPackages prefix="Calender" basePackage="de.tu_bs.vacation_manager" disposableProviderFactory="true"
+      ecorePackage="Calender.ecore#/">
+    <genClasses ecoreClass="Calender.ecore#//Calender">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Calender/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/date"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/person"/>
+    </genClasses>
+    <genClasses ecoreClass="Calender.ecore#//Date">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Date/person"/>
+    </genClasses>
+    <genClasses ecoreClass="Calender.ecore#//Person">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Person/date"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
