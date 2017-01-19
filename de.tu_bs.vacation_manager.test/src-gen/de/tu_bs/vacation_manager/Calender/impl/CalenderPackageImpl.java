@@ -6,10 +6,15 @@ import de.tu_bs.vacation_manager.Calender.Calender;
 import de.tu_bs.vacation_manager.Calender.CalenderFactory;
 import de.tu_bs.vacation_manager.Calender.CalenderPackage;
 import de.tu_bs.vacation_manager.Calender.Date;
+import de.tu_bs.vacation_manager.Calender.Employee;
+import de.tu_bs.vacation_manager.Calender.HolydayApplication;
 import de.tu_bs.vacation_manager.Calender.Person;
 
+import de.tu_bs.vacation_manager.Calender.ResponsiblePerson;
+import de.tu_bs.vacation_manager.Calender.WorkingDayType;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -43,6 +48,34 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * @generated
 	 */
 	private EClass personEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass holydayApplicationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass responsiblePersonEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass employeeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum workingDayTypeEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -164,7 +197,7 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDate_Date() {
+	public EAttribute getDate_Day() {
 		return (EAttribute)dateEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -191,6 +224,15 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getDate_DayType() {
+		return (EAttribute)dateEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPerson() {
 		return personEClass;
 	}
@@ -202,6 +244,114 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 */
 	public EReference getPerson_Date() {
 		return (EReference)personEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getPerson_Name() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getHolydayApplication() {
+		return holydayApplicationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getHolydayApplication_Id() {
+		return (EAttribute)holydayApplicationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getResponsiblePerson() {
+		return responsiblePersonEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getResponsiblePerson__AcceptApplication() {
+		return responsiblePersonEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getResponsiblePerson__DeclineApplication() {
+		return responsiblePersonEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getEmployee() {
+		return employeeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEmployee_Employee() {
+		return (EReference)employeeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEmployee_Holydayapplication() {
+		return (EReference)employeeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getEmployee__CreateApplication() {
+		return employeeEClass.getEOperations().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EOperation getEmployee__SendApplication() {
+		return employeeEClass.getEOperations().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getWorkingDayType() {
+		return workingDayTypeEEnum;
 	}
 
 	/**
@@ -239,12 +389,30 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		createEOperation(calenderEClass, CALENDER___SHOW_GUI);
 
 		dateEClass = createEClass(DATE);
-		createEAttribute(dateEClass, DATE__DATE);
+		createEAttribute(dateEClass, DATE__DAY);
 		createEAttribute(dateEClass, DATE__NAME);
 		createEReference(dateEClass, DATE__PERSON);
+		createEAttribute(dateEClass, DATE__DAY_TYPE);
 
 		personEClass = createEClass(PERSON);
 		createEReference(personEClass, PERSON__DATE);
+		createEAttribute(personEClass, PERSON__NAME);
+
+		holydayApplicationEClass = createEClass(HOLYDAY_APPLICATION);
+		createEAttribute(holydayApplicationEClass, HOLYDAY_APPLICATION__ID);
+
+		responsiblePersonEClass = createEClass(RESPONSIBLE_PERSON);
+		createEOperation(responsiblePersonEClass, RESPONSIBLE_PERSON___ACCEPT_APPLICATION);
+		createEOperation(responsiblePersonEClass, RESPONSIBLE_PERSON___DECLINE_APPLICATION);
+
+		employeeEClass = createEClass(EMPLOYEE);
+		createEReference(employeeEClass, EMPLOYEE__EMPLOYEE);
+		createEReference(employeeEClass, EMPLOYEE__HOLYDAYAPPLICATION);
+		createEOperation(employeeEClass, EMPLOYEE___CREATE_APPLICATION);
+		createEOperation(employeeEClass, EMPLOYEE___SEND_APPLICATION);
+
+		// Create enums
+		workingDayTypeEEnum = createEEnum(WORKING_DAY_TYPE);
 	}
 
 	/**
@@ -275,6 +443,9 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		holydayApplicationEClass.getESuperTypes().add(this.getDate());
+		responsiblePersonEClass.getESuperTypes().add(this.getPerson());
+		employeeEClass.getESuperTypes().add(this.getPerson());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(calenderEClass, Calender.class, "Calender", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -285,12 +456,38 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		initEOperation(getCalender__ShowGui(), null, "showGui", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(dateEClass, Date.class, "Date", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getDate_Date(), ecorePackage.getEDate(), "date", null, 0, 1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDate_Day(), ecorePackage.getEDate(), "day", null, 0, 1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDate_Name(), ecorePackage.getEString(), "name", null, 0, 1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDate_Person(), this.getPerson(), this.getPerson_Date(), "person", null, 0, -1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getDate_DayType(), this.getWorkingDayType(), "dayType", "WorkingDay", 1, 1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(personEClass, Person.class, "Person", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPerson_Date(), this.getDate(), this.getDate_Person(), "date", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_Name(), ecorePackage.getEString(), "name", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(holydayApplicationEClass, HolydayApplication.class, "HolydayApplication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getHolydayApplication_Id(), ecorePackage.getEInt(), "id", null, 0, 1, HolydayApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(responsiblePersonEClass, ResponsiblePerson.class, "ResponsiblePerson", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEOperation(getResponsiblePerson__AcceptApplication(), null, "acceptApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEOperation(getResponsiblePerson__DeclineApplication(), null, "declineApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(employeeEClass, Employee.class, "Employee", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getEmployee_Employee(), this.getEmployee(), null, "employee", null, 0, 1, Employee.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEmployee_Holydayapplication(), this.getHolydayApplication(), null, "holydayapplication", null, 0, 1, Employee.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEOperation(getEmployee__CreateApplication(), null, "createApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEOperation(getEmployee__SendApplication(), null, "sendApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(workingDayTypeEEnum, WorkingDayType.class, "WorkingDayType");
+		addEEnumLiteral(workingDayTypeEEnum, WorkingDayType.WORKING_DAY);
+		addEEnumLiteral(workingDayTypeEEnum, WorkingDayType.HOLYDAY);
+		addEEnumLiteral(workingDayTypeEEnum, WorkingDayType.VACATION);
+		addEEnumLiteral(workingDayTypeEEnum, WorkingDayType.PUBLIC_HOLYDAY);
 
 		// Create resource
 		createResource(eNS_URI);

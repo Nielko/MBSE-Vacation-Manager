@@ -5,6 +5,7 @@ package de.tu_bs.vacation_manager.Calender.impl;
 import de.tu_bs.vacation_manager.Calender.*;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -59,8 +60,41 @@ public class CalenderFactoryImpl extends EFactoryImpl implements CalenderFactory
 			case CalenderPackage.CALENDER: return createCalender();
 			case CalenderPackage.DATE: return createDate();
 			case CalenderPackage.PERSON: return createPerson();
+			case CalenderPackage.HOLYDAY_APPLICATION: return createHolydayApplication();
+			case CalenderPackage.RESPONSIBLE_PERSON: return createResponsiblePerson();
+			case CalenderPackage.EMPLOYEE: return createEmployee();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+			case CalenderPackage.WORKING_DAY_TYPE:
+				return createWorkingDayTypeFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+			case CalenderPackage.WORKING_DAY_TYPE:
+				return convertWorkingDayTypeToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -92,6 +126,56 @@ public class CalenderFactoryImpl extends EFactoryImpl implements CalenderFactory
 	public Person createPerson() {
 		PersonImpl person = new PersonImpl();
 		return person;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HolydayApplication createHolydayApplication() {
+		HolydayApplicationImpl holydayApplication = new HolydayApplicationImpl();
+		return holydayApplication;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResponsiblePerson createResponsiblePerson() {
+		ResponsiblePersonImpl responsiblePerson = new ResponsiblePersonImpl();
+		return responsiblePerson;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Employee createEmployee() {
+		EmployeeImpl employee = new EmployeeImpl();
+		return employee;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public WorkingDayType createWorkingDayTypeFromString(EDataType eDataType, String initialValue) {
+		WorkingDayType result = WorkingDayType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertWorkingDayTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
 	}
 
 	/**

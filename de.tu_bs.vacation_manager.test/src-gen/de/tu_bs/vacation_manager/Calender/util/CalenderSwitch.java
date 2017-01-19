@@ -84,6 +84,27 @@ public class CalenderSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case CalenderPackage.HOLYDAY_APPLICATION: {
+				HolydayApplication holydayApplication = (HolydayApplication)theEObject;
+				T result = caseHolydayApplication(holydayApplication);
+				if (result == null) result = caseDate(holydayApplication);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CalenderPackage.RESPONSIBLE_PERSON: {
+				ResponsiblePerson responsiblePerson = (ResponsiblePerson)theEObject;
+				T result = caseResponsiblePerson(responsiblePerson);
+				if (result == null) result = casePerson(responsiblePerson);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case CalenderPackage.EMPLOYEE: {
+				Employee employee = (Employee)theEObject;
+				T result = caseEmployee(employee);
+				if (result == null) result = casePerson(employee);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -130,6 +151,51 @@ public class CalenderSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T casePerson(Person object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Holyday Application</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Holyday Application</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseHolydayApplication(HolydayApplication object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Responsible Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Responsible Person</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResponsiblePerson(ResponsiblePerson object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Employee</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Employee</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseEmployee(Employee object) {
 		return null;
 	}
 

@@ -32,6 +32,8 @@ public class CalenderTests extends TestSuite {
 	public static Test suite() {
 		TestSuite suite = new CalenderTests("Calender Tests");
 		suite.addTestSuite(CalenderTest.class);
+		suite.addTestSuite(ResponsiblePersonTest.class);
+		suite.addTestSuite(EmployeeTest.class);
 		return suite;
 	}
 

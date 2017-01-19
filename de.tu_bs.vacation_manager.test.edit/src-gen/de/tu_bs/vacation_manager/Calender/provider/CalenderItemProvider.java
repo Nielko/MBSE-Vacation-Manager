@@ -188,8 +188,23 @@ public class CalenderItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
+				(CalenderPackage.Literals.CALENDER__DATE,
+				 CalenderFactory.eINSTANCE.createHolydayApplication()));
+
+		newChildDescriptors.add
+			(createChildParameter
 				(CalenderPackage.Literals.CALENDER__PERSON,
 				 CalenderFactory.eINSTANCE.createPerson()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CalenderPackage.Literals.CALENDER__PERSON,
+				 CalenderFactory.eINSTANCE.createResponsiblePerson()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(CalenderPackage.Literals.CALENDER__PERSON,
+				 CalenderFactory.eINSTANCE.createEmployee()));
 	}
 
 	/**

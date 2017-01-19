@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Calender" nsURI="https://tu-bs.de/isf/vacation_test" nsPrefix="calender">
+  <eClassifiers xsi:type="ecore:EClass" name="Calender">
+    <eOperations name="showGui"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="date" upperBound="-1" eType="#//Date"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" upperBound="-1"
+        eType="#//Person" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Date">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="day" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" upperBound="-1"
+        eType="#//Person" eOpposite="#//Person/date"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayType" lowerBound="1"
+        eType="#//WorkingDayType" defaultValueLiteral="WorkingDay"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Person">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="date" upperBound="-1" eType="#//Date"
+        eOpposite="#//Date/person"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="WorkingDayType">
+    <eLiterals name="WorkingDay"/>
+    <eLiterals name="Holyday" value="1"/>
+    <eLiterals name="Vacation" value="2"/>
+    <eLiterals name="PublicHolyday" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HolydayApplication" eSuperTypes="#//Date">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ResponsiblePerson" eSuperTypes="#//Person">
+    <eOperations name="acceptApplication"/>
+    <eOperations name="declineApplication"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Employee" eSuperTypes="#//Person">
+    <eOperations name="createApplication"/>
+    <eOperations name="sendApplication"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="date" upperBound="-1" eType="#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="employee" eType="#//Employee"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="holydayapplication" eType="#//HolydayApplication"/>
+  </eClassifiers>
+</ecore:EPackage>

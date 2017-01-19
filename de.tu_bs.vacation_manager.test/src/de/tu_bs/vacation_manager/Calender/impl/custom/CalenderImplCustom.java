@@ -10,6 +10,7 @@ public class CalenderImplCustom extends CalenderImpl{
 
 	@Override
 	public void showGui() {
+		System.out.println("Starte Gui...");
 		makeGui();
 	}
 	

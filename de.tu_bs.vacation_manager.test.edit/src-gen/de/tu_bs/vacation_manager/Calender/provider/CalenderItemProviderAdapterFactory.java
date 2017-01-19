@@ -141,6 +141,75 @@ public class CalenderItemProviderAdapterFactory extends CalenderAdapterFactory i
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link de.tu_bs.vacation_manager.Calender.HolydayApplication} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected HolydayApplicationItemProvider holydayApplicationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.tu_bs.vacation_manager.Calender.HolydayApplication}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createHolydayApplicationAdapter() {
+		if (holydayApplicationItemProvider == null) {
+			holydayApplicationItemProvider = new HolydayApplicationItemProvider(this);
+		}
+
+		return holydayApplicationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.tu_bs.vacation_manager.Calender.ResponsiblePerson} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ResponsiblePersonItemProvider responsiblePersonItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.tu_bs.vacation_manager.Calender.ResponsiblePerson}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createResponsiblePersonAdapter() {
+		if (responsiblePersonItemProvider == null) {
+			responsiblePersonItemProvider = new ResponsiblePersonItemProvider(this);
+		}
+
+		return responsiblePersonItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.tu_bs.vacation_manager.Calender.Employee} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected EmployeeItemProvider employeeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.tu_bs.vacation_manager.Calender.Employee}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createEmployeeAdapter() {
+		if (employeeItemProvider == null) {
+			employeeItemProvider = new EmployeeItemProvider(this);
+		}
+
+		return employeeItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -242,6 +311,9 @@ public class CalenderItemProviderAdapterFactory extends CalenderAdapterFactory i
 		if (calenderItemProvider != null) calenderItemProvider.dispose();
 		if (dateItemProvider != null) dateItemProvider.dispose();
 		if (personItemProvider != null) personItemProvider.dispose();
+		if (holydayApplicationItemProvider != null) holydayApplicationItemProvider.dispose();
+		if (responsiblePersonItemProvider != null) responsiblePersonItemProvider.dispose();
+		if (employeeItemProvider != null) employeeItemProvider.dispose();
 	}
 
 }

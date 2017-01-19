@@ -51,6 +51,33 @@ public interface CalenderFactory extends EFactory {
 	Person createPerson();
 
 	/**
+	 * Returns a new object of class '<em>Holyday Application</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Holyday Application</em>'.
+	 * @generated
+	 */
+	HolydayApplication createHolydayApplication();
+
+	/**
+	 * Returns a new object of class '<em>Responsible Person</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Responsible Person</em>'.
+	 * @generated
+	 */
+	ResponsiblePerson createResponsiblePerson();
+
+	/**
+	 * Returns a new object of class '<em>Employee</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Employee</em>'.
+	 * @generated
+	 */
+	Employee createEmployee();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

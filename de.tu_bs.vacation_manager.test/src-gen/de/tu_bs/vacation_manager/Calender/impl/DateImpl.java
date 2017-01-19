@@ -6,6 +6,7 @@ import de.tu_bs.vacation_manager.Calender.CalenderPackage;
 import de.tu_bs.vacation_manager.Calender.Date;
 import de.tu_bs.vacation_manager.Calender.Person;
 
+import de.tu_bs.vacation_manager.Calender.WorkingDayType;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -30,33 +31,34 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getDate <em>Date</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getDay <em>Day</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getName <em>Name</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getPerson <em>Person</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getDayType <em>Day Type</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	/**
-	 * The default value of the '{@link #getDate() <em>Date</em>}' attribute.
+	 * The default value of the '{@link #getDay() <em>Day</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDate()
+	 * @see #getDay()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final java.util.Date DATE_EDEFAULT = null;
+	protected static final java.util.Date DAY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getDate() <em>Date</em>}' attribute.
+	 * The cached value of the '{@link #getDay() <em>Day</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDate()
+	 * @see #getDay()
 	 * @generated
 	 * @ordered
 	 */
-	protected java.util.Date date = DATE_EDEFAULT;
+	protected java.util.Date day = DAY_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -89,6 +91,26 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	protected EList<Person> person;
 
 	/**
+	 * The default value of the '{@link #getDayType() <em>Day Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDayType()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final WorkingDayType DAY_TYPE_EDEFAULT = WorkingDayType.WORKING_DAY;
+
+	/**
+	 * The cached value of the '{@link #getDayType() <em>Day Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDayType()
+	 * @generated
+	 * @ordered
+	 */
+	protected WorkingDayType dayType = DAY_TYPE_EDEFAULT;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -112,8 +134,8 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public java.util.Date getDate() {
-		return date;
+	public java.util.Date getDay() {
+		return day;
 	}
 
 	/**
@@ -121,11 +143,11 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setDate(java.util.Date newDate) {
-		java.util.Date oldDate = date;
-		date = newDate;
+	public void setDay(java.util.Date newDay) {
+		java.util.Date oldDay = day;
+		day = newDay;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.DATE__DATE, oldDate, date));
+			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.DATE__DAY, oldDay, day));
 	}
 
 	/**
@@ -166,6 +188,27 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public WorkingDayType getDayType() {
+		return dayType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDayType(WorkingDayType newDayType) {
+		WorkingDayType oldDayType = dayType;
+		dayType = newDayType == null ? DAY_TYPE_EDEFAULT : newDayType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.DATE__DAY_TYPE, oldDayType, dayType));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -198,12 +241,14 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CalenderPackage.DATE__DATE:
-				return getDate();
+			case CalenderPackage.DATE__DAY:
+				return getDay();
 			case CalenderPackage.DATE__NAME:
 				return getName();
 			case CalenderPackage.DATE__PERSON:
 				return getPerson();
+			case CalenderPackage.DATE__DAY_TYPE:
+				return getDayType();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -217,8 +262,8 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CalenderPackage.DATE__DATE:
-				setDate((java.util.Date)newValue);
+			case CalenderPackage.DATE__DAY:
+				setDay((java.util.Date)newValue);
 				return;
 			case CalenderPackage.DATE__NAME:
 				setName((String)newValue);
@@ -226,6 +271,9 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 			case CalenderPackage.DATE__PERSON:
 				getPerson().clear();
 				getPerson().addAll((Collection<? extends Person>)newValue);
+				return;
+			case CalenderPackage.DATE__DAY_TYPE:
+				setDayType((WorkingDayType)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -239,14 +287,17 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CalenderPackage.DATE__DATE:
-				setDate(DATE_EDEFAULT);
+			case CalenderPackage.DATE__DAY:
+				setDay(DAY_EDEFAULT);
 				return;
 			case CalenderPackage.DATE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
 			case CalenderPackage.DATE__PERSON:
 				getPerson().clear();
+				return;
+			case CalenderPackage.DATE__DAY_TYPE:
+				setDayType(DAY_TYPE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -260,12 +311,14 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CalenderPackage.DATE__DATE:
-				return DATE_EDEFAULT == null ? date != null : !DATE_EDEFAULT.equals(date);
+			case CalenderPackage.DATE__DAY:
+				return DAY_EDEFAULT == null ? day != null : !DAY_EDEFAULT.equals(day);
 			case CalenderPackage.DATE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case CalenderPackage.DATE__PERSON:
 				return person != null && !person.isEmpty();
+			case CalenderPackage.DATE__DAY_TYPE:
+				return dayType != DAY_TYPE_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -280,10 +333,12 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (date: ");
-		result.append(date);
+		result.append(" (day: ");
+		result.append(day);
 		result.append(", name: ");
 		result.append(name);
+		result.append(", dayType: ");
+		result.append(dayType);
 		result.append(')');
 		return result.toString();
 	}

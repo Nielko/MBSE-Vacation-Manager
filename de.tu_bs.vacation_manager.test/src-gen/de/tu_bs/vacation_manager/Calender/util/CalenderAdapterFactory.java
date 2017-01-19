@@ -80,6 +80,18 @@ public class CalenderAdapterFactory extends AdapterFactoryImpl {
 				return createPersonAdapter();
 			}
 			@Override
+			public Adapter caseHolydayApplication(HolydayApplication object) {
+				return createHolydayApplicationAdapter();
+			}
+			@Override
+			public Adapter caseResponsiblePerson(ResponsiblePerson object) {
+				return createResponsiblePersonAdapter();
+			}
+			@Override
+			public Adapter caseEmployee(Employee object) {
+				return createEmployeeAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -138,6 +150,48 @@ public class CalenderAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createPersonAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.tu_bs.vacation_manager.Calender.HolydayApplication <em>Holyday Application</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.tu_bs.vacation_manager.Calender.HolydayApplication
+	 * @generated
+	 */
+	public Adapter createHolydayApplicationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.tu_bs.vacation_manager.Calender.ResponsiblePerson <em>Responsible Person</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.tu_bs.vacation_manager.Calender.ResponsiblePerson
+	 * @generated
+	 */
+	public Adapter createResponsiblePersonAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.tu_bs.vacation_manager.Calender.Employee <em>Employee</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.tu_bs.vacation_manager.Calender.Employee
+	 * @generated
+	 */
+	public Adapter createEmployeeAdapter() {
 		return null;
 	}
 

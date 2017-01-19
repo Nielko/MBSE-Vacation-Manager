@@ -15,9 +15,10 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.Date#getDate <em>Date</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Date#getDay <em>Day</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Date#getName <em>Name</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Date#getPerson <em>Person</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Date#getDayType <em>Day Type</em>}</li>
  * </ul>
  *
  * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getDate()
@@ -26,30 +27,30 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Date extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Date</b></em>' attribute.
+	 * Returns the value of the '<em><b>Day</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Date</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Day</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Date</em>' attribute.
-	 * @see #setDate(java.util.Date)
-	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getDate_Date()
+	 * @return the value of the '<em>Day</em>' attribute.
+	 * @see #setDay(java.util.Date)
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getDate_Day()
 	 * @model
 	 * @generated
 	 */
-	java.util.Date getDate();
+	java.util.Date getDay();
 
 	/**
-	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Date#getDate <em>Date</em>}' attribute.
+	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Date#getDay <em>Day</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Date</em>' attribute.
-	 * @see #getDate()
+	 * @param value the new value of the '<em>Day</em>' attribute.
+	 * @see #getDay()
 	 * @generated
 	 */
-	void setDate(java.util.Date value);
+	void setDay(java.util.Date value);
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -94,5 +95,35 @@ public interface Date extends EObject {
 	 * @generated
 	 */
 	EList<Person> getPerson();
+
+	/**
+	 * Returns the value of the '<em><b>Day Type</b></em>' attribute.
+	 * The default value is <code>"WorkingDay"</code>.
+	 * The literals are from the enumeration {@link de.tu_bs.vacation_manager.Calender.WorkingDayType}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Day Type</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Day Type</em>' attribute.
+	 * @see de.tu_bs.vacation_manager.Calender.WorkingDayType
+	 * @see #setDayType(WorkingDayType)
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getDate_DayType()
+	 * @model default="WorkingDay" required="true"
+	 * @generated
+	 */
+	WorkingDayType getDayType();
+
+	/**
+	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Date#getDayType <em>Day Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Day Type</em>' attribute.
+	 * @see de.tu_bs.vacation_manager.Calender.WorkingDayType
+	 * @see #getDayType()
+	 * @generated
+	 */
+	void setDayType(WorkingDayType value);
 
 } // Date

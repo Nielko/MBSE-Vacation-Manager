@@ -60,27 +60,28 @@ public class DateItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDatePropertyDescriptor(object);
+			addDayPropertyDescriptor(object);
 			addNamePropertyDescriptor(object);
 			addPersonPropertyDescriptor(object);
+			addDayTypePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Date feature.
+	 * This adds a property descriptor for the Day feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDatePropertyDescriptor(Object object) {
+	protected void addDayPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Date_date_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Date_date_feature", "_UI_Date_type"),
-				 CalenderPackage.Literals.DATE__DATE,
+				 getString("_UI_Date_day_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Date_day_feature", "_UI_Date_type"),
+				 CalenderPackage.Literals.DATE__DAY,
 				 true,
 				 false,
 				 false,
@@ -134,6 +135,28 @@ public class DateItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Day Type feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addDayTypePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Date_dayType_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Date_dayType_feature", "_UI_Date_type"),
+				 CalenderPackage.Literals.DATE__DAY_TYPE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Date.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -171,8 +194,9 @@ public class DateItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Date.class)) {
-			case CalenderPackage.DATE__DATE:
+			case CalenderPackage.DATE__DAY:
 			case CalenderPackage.DATE__NAME:
+			case CalenderPackage.DATE__DAY_TYPE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}
