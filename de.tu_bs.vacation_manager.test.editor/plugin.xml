@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated Calender -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="de.tu_bs.vacation_manager.Calender.presentation.CalenderModelWizardID"
+            name="%_UI_CalenderModelWizard_label"
+            class="de.tu_bs.vacation_manager.Calender.presentation.CalenderModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/CalenderModelFile.gif">
+         <description>%_UI_CalenderModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated Calender -->
+      <editor
+            id="de.tu_bs.vacation_manager.Calender.presentation.CalenderEditorID"
+            name="%_UI_CalenderEditor_label"
+            icon="icons/full/obj16/CalenderModelFile.gif"
+            extensions="calender"
+            class="de.tu_bs.vacation_manager.Calender.presentation.CalenderEditor"
+            contributorClass="de.tu_bs.vacation_manager.Calender.presentation.CalenderActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
