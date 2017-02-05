@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calender="https://tu-bs.de/isf/vacation_test" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_VDj80OfVEeaKWOGBi676PA" selectedViews="_a2wtsOfZEeaKWOGBi676PA" version="11.1.0.201608251200">
+    <semanticResources>My.calender</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_a2wtsOfZEeaKWOGBi676PA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_Oj__oOvLEeaqNqAH5LS-4g" name="CalenderView" representation="_OkSTgOvLEeaqNqAH5LS-4g">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']"/>
+        <target xmi:type="calender:Calender" href="My.calender#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_OkSTgOvLEeaqNqAH5LS-4g" name="CalenderView">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_OkZBMOvLEeaqNqAH5LS-4g" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_OkZBMevLEeaqNqAH5LS-4g"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_OzFkgOvLEeaqNqAH5LS-4g" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_OzFkgevLEeaqNqAH5LS-4g" type="Sirius" element="_OkSTgOvLEeaqNqAH5LS-4g" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_aTwrAOvOEeaqNqAH5LS-4g" type="2001" element="_aTCSQOvOEeaqNqAH5LS-4g">
+          <children xmi:type="notation:Node" xmi:id="_aUJFgOvOEeaqNqAH5LS-4g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_aUJFgevOEeaqNqAH5LS-4g" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_aUUrsOvOEeaqNqAH5LS-4g" type="3003" element="_aTEugOvOEeaqNqAH5LS-4g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_aUUrsevOEeaqNqAH5LS-4g" fontName=".SF NS Text"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aUUrsuvOEeaqNqAH5LS-4g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_aTwrAevOEeaqNqAH5LS-4g" fontName=".SF NS Text" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aTwrAuvOEeaqNqAH5LS-4g" x="180" y="160" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_aUOlEOvOEeaqNqAH5LS-4g" type="2001" element="_aTGjsOvOEeaqNqAH5LS-4g">
+          <children xmi:type="notation:Node" xmi:id="_aUPzMOvOEeaqNqAH5LS-4g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_aUPzMevOEeaqNqAH5LS-4g" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_aUV50OvOEeaqNqAH5LS-4g" type="3003" element="_aTHKwOvOEeaqNqAH5LS-4g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_aUV50evOEeaqNqAH5LS-4g" fontName=".SF NS Text"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aUV50uvOEeaqNqAH5LS-4g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_aUOlEevOEeaqNqAH5LS-4g" fontName=".SF NS Text" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_aUOlEuvOEeaqNqAH5LS-4g" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gemAIOvPEeaqNqAH5LS-4g" type="2001" element="_gbx8sOvPEeaqNqAH5LS-4g">
+          <children xmi:type="notation:Node" xmi:id="_gfq-MOvPEeaqNqAH5LS-4g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_gfq-MevPEeaqNqAH5LS-4g" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_gf0IIOvPEeaqNqAH5LS-4g" type="3016" element="_gb21MOvPEeaqNqAH5LS-4g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_gf0IIevPEeaqNqAH5LS-4g" fontName=".SF NS Text"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gf0IIuvPEeaqNqAH5LS-4g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_gemAIevPEeaqNqAH5LS-4g" fontName=".SF NS Text" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gemAIuvPEeaqNqAH5LS-4g" x="160" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_h7v6oOvPEeaqNqAH5LS-4g" type="2001" element="_h7JdsOvPEeaqNqAH5LS-4g">
+          <children xmi:type="notation:Node" xmi:id="_h72BQOvPEeaqNqAH5LS-4g" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_h72BQevPEeaqNqAH5LS-4g" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_h9-vQOvPEeaqNqAH5LS-4g" type="3003" element="_h7KEwOvPEeaqNqAH5LS-4g">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_h9-vQevPEeaqNqAH5LS-4g" fontName=".SF NS Text"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h9-vQuvPEeaqNqAH5LS-4g"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_h7v6oevPEeaqNqAH5LS-4g" fontName=".SF NS Text" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h7v6ouvPEeaqNqAH5LS-4g" x="320" y="104" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_OzFkguvLEeaqNqAH5LS-4g"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_aTCSQOvOEeaqNqAH5LS-4g" name="Normaler Tag" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Date" href="My.calender#//@date.0"/>
+      <semanticElements xmi:type="calender:Date" href="My.calender#//@date.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_aTEugOvOEeaqNqAH5LS-4g" labelSize="15" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" width="10" height="5" color="194,239,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:SquareDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderDate']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderDate']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_aTGjsOvOEeaqNqAH5LS-4g" name="Osterurlaub" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:HolydayApplication" href="My.calender#//@date.1"/>
+      <semanticElements xmi:type="calender:HolydayApplication" href="My.calender#//@date.1"/>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_aTHKwOvOEeaqNqAH5LS-4g" labelSize="15" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" width="10" height="5" color="194,239,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:SquareDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderDate']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderDate']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_h7JdsOvPEeaqNqAH5LS-4g" name="Test" tooltipText="" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Date" href="My.calender#//@date.2"/>
+      <semanticElements xmi:type="calender:Date" href="My.calender#//@date.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" xmi:id="_h7KEwOvPEeaqNqAH5LS-4g" labelSize="15" borderSize="1" borderSizeComputationExpression="1" labelPosition="node" width="10" height="5" color="194,239,255">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:SquareDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderDate']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderDate']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_gbx8sOvPEeaqNqAH5LS-4g" name="Peter" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Person" href="My.calender#//@person.0"/>
+      <semanticElements xmi:type="calender:Person" href="My.calender#//@person.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_gb21MOvPEeaqNqAH5LS-4g" labelSize="12" labelPosition="node">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_OkZBMuvLEeaqNqAH5LS-4g"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer"/>
+    <target xmi:type="calender:Calender" href="My.calender#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
