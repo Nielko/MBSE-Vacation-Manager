@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="calenderproject.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="calenderproject.Perspective"
+            id="CalenderProject.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="My FX View"
+            icon="icons/sample.gif"
+            class="calenderproject.MyViewPart"
+            id="calenderproject.MyViewPart">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="CalenderProject.application"
+            name="product">
+         <property
+               name="appName"
+               value="product">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

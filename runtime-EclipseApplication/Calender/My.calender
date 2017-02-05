@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calender:Calender xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calender="https://tu-bs.de/isf/vacation_test">
+  <date name="Normaler Tag"/>
+  <date xsi:type="calender:HolydayApplication" name="Osterurlaub" person="//@person.0"/>
+  <date name="Test"/>
+  <person date="//@date.1" name="Peter"/>
+</calender:Calender>

@@ -1,0 +1,10 @@
+Calender cal
+{
+	date{
+		Date dat{
+			dayType Holyday
+		}
+	}
+}
+
+
