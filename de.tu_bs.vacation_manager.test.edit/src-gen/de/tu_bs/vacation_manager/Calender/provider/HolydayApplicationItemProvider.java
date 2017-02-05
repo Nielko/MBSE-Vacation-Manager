@@ -46,6 +46,7 @@ public class HolydayApplicationItemProvider extends DateItemProvider {
 			super.getPropertyDescriptors(object);
 
 			addIdPropertyDescriptor(object);
+			addNewAttributePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -68,6 +69,28 @@ public class HolydayApplicationItemProvider extends DateItemProvider {
 				 false,
 				 false,
 				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the New Attribute feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addNewAttributePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_HolydayApplication_newAttribute_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_HolydayApplication_newAttribute_feature", "_UI_HolydayApplication_type"),
+				 CalenderPackage.Literals.HOLYDAY_APPLICATION__NEW_ATTRIBUTE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.BOOLEAN_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -111,6 +134,7 @@ public class HolydayApplicationItemProvider extends DateItemProvider {
 
 		switch (notification.getFeatureID(HolydayApplication.class)) {
 			case CalenderPackage.HOLYDAY_APPLICATION__ID:
+			case CalenderPackage.HOLYDAY_APPLICATION__NEW_ATTRIBUTE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

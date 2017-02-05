@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.PersonImpl#getDate <em>Date</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.PersonImpl#getName <em>Name</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.PersonImpl#getLeaveDays <em>Leave Days</em>}</li>
  * </ul>
  *
  * @generated
@@ -65,6 +66,26 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	 * @ordered
 	 */
 	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getLeaveDays() <em>Leave Days</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLeaveDays()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int LEAVE_DAYS_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getLeaveDays() <em>Leave Days</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLeaveDays()
+	 * @generated
+	 * @ordered
+	 */
+	protected int leaveDays = LEAVE_DAYS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,6 +144,27 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public int getLeaveDays() {
+		return leaveDays;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setLeaveDays(int newLeaveDays) {
+		int oldLeaveDays = leaveDays;
+		leaveDays = newLeaveDays;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.PERSON__LEAVE_DAYS, oldLeaveDays, leaveDays));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
@@ -159,6 +201,8 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 				return getDate();
 			case CalenderPackage.PERSON__NAME:
 				return getName();
+			case CalenderPackage.PERSON__LEAVE_DAYS:
+				return getLeaveDays();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -179,6 +223,9 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 			case CalenderPackage.PERSON__NAME:
 				setName((String)newValue);
 				return;
+			case CalenderPackage.PERSON__LEAVE_DAYS:
+				setLeaveDays((Integer)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -197,6 +244,9 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 			case CalenderPackage.PERSON__NAME:
 				setName(NAME_EDEFAULT);
 				return;
+			case CalenderPackage.PERSON__LEAVE_DAYS:
+				setLeaveDays(LEAVE_DAYS_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -213,6 +263,8 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 				return date != null && !date.isEmpty();
 			case CalenderPackage.PERSON__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case CalenderPackage.PERSON__LEAVE_DAYS:
+				return leaveDays != LEAVE_DAYS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -229,6 +281,8 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 		StringBuffer result = new StringBuffer(super.toString());
 		result.append(" (name: ");
 		result.append(name);
+		result.append(", leaveDays: ");
+		result.append(leaveDays);
 		result.append(')');
 		return result.toString();
 	}

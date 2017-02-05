@@ -62,6 +62,7 @@ public class PersonItemProvider
 
 			addDatePropertyDescriptor(object);
 			addNamePropertyDescriptor(object);
+			addLeaveDaysPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -111,6 +112,28 @@ public class PersonItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Leave Days feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addLeaveDaysPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Person_leaveDays_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_leaveDays_feature", "_UI_Person_type"),
+				 CalenderPackage.Literals.PERSON__LEAVE_DAYS,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns Person.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -149,6 +172,7 @@ public class PersonItemProvider
 
 		switch (notification.getFeatureID(Person.class)) {
 			case CalenderPackage.PERSON__NAME:
+			case CalenderPackage.PERSON__LEAVE_DAYS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

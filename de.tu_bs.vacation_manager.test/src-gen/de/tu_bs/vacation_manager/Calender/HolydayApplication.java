@@ -13,6 +13,7 @@ package de.tu_bs.vacation_manager.Calender;
  * </p>
  * <ul>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.HolydayApplication#getId <em>Id</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.HolydayApplication#isNewAttribute <em>New Attribute</em>}</li>
  * </ul>
  *
  * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getHolydayApplication()
@@ -45,5 +46,31 @@ public interface HolydayApplication extends Date {
 	 * @generated
 	 */
 	void setId(int value);
+
+	/**
+	 * Returns the value of the '<em><b>New Attribute</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>New Attribute</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>New Attribute</em>' attribute.
+	 * @see #setNewAttribute(boolean)
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getHolydayApplication_NewAttribute()
+	 * @model
+	 * @generated
+	 */
+	boolean isNewAttribute();
+
+	/**
+	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.HolydayApplication#isNewAttribute <em>New Attribute</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>New Attribute</em>' attribute.
+	 * @see #isNewAttribute()
+	 * @generated
+	 */
+	void setNewAttribute(boolean value);
 
 } // HolydayApplication

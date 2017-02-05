@@ -260,6 +260,15 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getPerson_LeaveDays() {
+		return (EAttribute)personEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getHolydayApplication() {
 		return holydayApplicationEClass;
 	}
@@ -271,6 +280,15 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 */
 	public EAttribute getHolydayApplication_Id() {
 		return (EAttribute)holydayApplicationEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getHolydayApplication_NewAttribute() {
+		return (EAttribute)holydayApplicationEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -397,9 +415,11 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		personEClass = createEClass(PERSON);
 		createEReference(personEClass, PERSON__DATE);
 		createEAttribute(personEClass, PERSON__NAME);
+		createEAttribute(personEClass, PERSON__LEAVE_DAYS);
 
 		holydayApplicationEClass = createEClass(HOLYDAY_APPLICATION);
 		createEAttribute(holydayApplicationEClass, HOLYDAY_APPLICATION__ID);
+		createEAttribute(holydayApplicationEClass, HOLYDAY_APPLICATION__NEW_ATTRIBUTE);
 
 		responsiblePersonEClass = createEClass(RESPONSIBLE_PERSON);
 		createEOperation(responsiblePersonEClass, RESPONSIBLE_PERSON___ACCEPT_APPLICATION);
@@ -464,9 +484,11 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		initEClass(personEClass, Person.class, "Person", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getPerson_Date(), this.getDate(), this.getDate_Person(), "date", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_Name(), ecorePackage.getEString(), "name", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPerson_LeaveDays(), ecorePackage.getEInt(), "leaveDays", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(holydayApplicationEClass, HolydayApplication.class, "HolydayApplication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getHolydayApplication_Id(), ecorePackage.getEInt(), "id", null, 0, 1, HolydayApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getHolydayApplication_NewAttribute(), ecorePackage.getEBoolean(), "newAttribute", null, 0, 1, HolydayApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(responsiblePersonEClass, ResponsiblePerson.class, "ResponsiblePerson", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

@@ -215,13 +215,22 @@ public interface CalenderPackage extends EPackage {
 	int PERSON__NAME = 1;
 
 	/**
+	 * The feature id for the '<em><b>Leave Days</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__LEAVE_DAYS = 2;
+
+	/**
 	 * The number of structural features of the '<em>Person</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_FEATURE_COUNT = 2;
+	int PERSON_FEATURE_COUNT = 3;
 
 	/**
 	 * The number of operations of the '<em>Person</em>' class.
@@ -289,13 +298,22 @@ public interface CalenderPackage extends EPackage {
 	int HOLYDAY_APPLICATION__ID = DATE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>New Attribute</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOLYDAY_APPLICATION__NEW_ATTRIBUTE = DATE_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Holyday Application</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOLYDAY_APPLICATION_FEATURE_COUNT = DATE_FEATURE_COUNT + 1;
+	int HOLYDAY_APPLICATION_FEATURE_COUNT = DATE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Holyday Application</em>' class.
@@ -333,6 +351,15 @@ public interface CalenderPackage extends EPackage {
 	 * @ordered
 	 */
 	int RESPONSIBLE_PERSON__NAME = PERSON__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Leave Days</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESPONSIBLE_PERSON__LEAVE_DAYS = PERSON__LEAVE_DAYS;
 
 	/**
 	 * The number of structural features of the '<em>Responsible Person</em>' class.
@@ -397,6 +424,15 @@ public interface CalenderPackage extends EPackage {
 	 * @ordered
 	 */
 	int EMPLOYEE__NAME = PERSON__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Leave Days</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMPLOYEE__LEAVE_DAYS = PERSON__LEAVE_DAYS;
 
 	/**
 	 * The feature id for the '<em><b>Employee</b></em>' reference.
@@ -603,6 +639,17 @@ public interface CalenderPackage extends EPackage {
 	EAttribute getPerson_Name();
 
 	/**
+	 * Returns the meta object for the attribute '{@link de.tu_bs.vacation_manager.Calender.Person#getLeaveDays <em>Leave Days</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Leave Days</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Person#getLeaveDays()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EAttribute getPerson_LeaveDays();
+
+	/**
 	 * Returns the meta object for class '{@link de.tu_bs.vacation_manager.Calender.HolydayApplication <em>Holyday Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -622,6 +669,17 @@ public interface CalenderPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getHolydayApplication_Id();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.tu_bs.vacation_manager.Calender.HolydayApplication#isNewAttribute <em>New Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>New Attribute</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.HolydayApplication#isNewAttribute()
+	 * @see #getHolydayApplication()
+	 * @generated
+	 */
+	EAttribute getHolydayApplication_NewAttribute();
 
 	/**
 	 * Returns the meta object for class '{@link de.tu_bs.vacation_manager.Calender.ResponsiblePerson <em>Responsible Person</em>}'.
@@ -849,6 +907,14 @@ public interface CalenderPackage extends EPackage {
 		EAttribute PERSON__NAME = eINSTANCE.getPerson_Name();
 
 		/**
+		 * The meta object literal for the '<em><b>Leave Days</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PERSON__LEAVE_DAYS = eINSTANCE.getPerson_LeaveDays();
+
+		/**
 		 * The meta object literal for the '{@link de.tu_bs.vacation_manager.Calender.impl.HolydayApplicationImpl <em>Holyday Application</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -865,6 +931,14 @@ public interface CalenderPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute HOLYDAY_APPLICATION__ID = eINSTANCE.getHolydayApplication_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>New Attribute</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute HOLYDAY_APPLICATION__NEW_ATTRIBUTE = eINSTANCE.getHolydayApplication_NewAttribute();
 
 		/**
 		 * The meta object literal for the '{@link de.tu_bs.vacation_manager.Calender.impl.ResponsiblePersonImpl <em>Responsible Person</em>}' class.

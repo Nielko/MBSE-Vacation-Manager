@@ -17,6 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Person#getDate <em>Date</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Person#getName <em>Name</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Person#getLeaveDays <em>Leave Days</em>}</li>
  * </ul>
  *
  * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getPerson()
@@ -67,5 +68,31 @@ public interface Person extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Leave Days</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Leave Days</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Leave Days</em>' attribute.
+	 * @see #setLeaveDays(int)
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getPerson_LeaveDays()
+	 * @model
+	 * @generated
+	 */
+	int getLeaveDays();
+
+	/**
+	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Person#getLeaveDays <em>Leave Days</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Leave Days</em>' attribute.
+	 * @see #getLeaveDays()
+	 * @generated
+	 */
+	void setLeaveDays(int value);
 
 } // Person
