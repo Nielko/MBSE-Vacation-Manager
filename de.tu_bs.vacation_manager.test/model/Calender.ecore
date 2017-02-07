@@ -4,22 +4,22 @@
   <eClassifiers xsi:type="ecore:EClass" name="Calender">
     <eOperations name="showGui"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="date" upperBound="-1" eType="#//Date"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="person" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dates" upperBound="-1"
+        eType="#//Date" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="persons" upperBound="-1"
         eType="#//Person" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Date">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="day" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="person" upperBound="-1"
-        eType="#//Person" eOpposite="#//Person/date"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="persons" upperBound="-1"
+        eType="#//Person" eOpposite="#//Person/dates"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayType" lowerBound="1"
         eType="#//WorkingDayType" defaultValueLiteral="WorkingDay"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Person">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="date" upperBound="-1" eType="#//Date"
-        eOpposite="#//Date/person"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dates" upperBound="-1"
+        eType="#//Date" eOpposite="#//Date/persons"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="leaveDays" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
@@ -41,6 +41,6 @@
     <eOperations name="createApplication"/>
     <eOperations name="sendApplication"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="employee" eType="#//Employee"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="holydayapplication" eType="#//HolydayApplication"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="holydayapplications" eType="#//HolydayApplication"/>
   </eClassifiers>
 </ecore:EPackage>
