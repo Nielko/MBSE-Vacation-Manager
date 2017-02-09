@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calender:Calender xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calender="https://tu-bs.de/isf/vacation_test" name="Vacation Manager">
+  <date day="2017-01-01T00:00:00.000+0100"/>
+  <date day="2017-01-02T00:00:00.000+0100"/>
+  <date day="2017-01-03T00:00:00.000+0100"/>
+  <date day="2017-01-04T00:00:00.000+0100"/>
+  <date day="2017-01-05T00:00:00.000+0100" name="" person="//@person.1" dayType="Vacation"/>
+  <date day="2017-01-05T00:00:00.000+0100"/>
+  <date day="2017-01-06T00:00:00.000+0100"/>
+  <date day="2017-01-07T00:00:00.000+0100"/>
+  <date day="2017-01-07T00:00:00.000+0100" name=""/>
+  <date day="2017-01-08T00:00:00.000+0100" name="" dayType="PublicHolyday"/>
+  <date day="2017-01-09T00:00:00.000+0100"/>
+  <date day="2017-01-10T00:00:00.000+0100" name="" person="//@person.0"/>
+  <date day="2017-01-11T00:00:00.000+0100" dayType="Vacation"/>
+  <date day="2017-01-12T00:00:00.000+0100"/>
+  <person xsi:type="calender:Employee" date="//@date.11" name="Peter Meyer" leaveDays="1" employee="//@person.0"/>
+  <person xsi:type="calender:Employee" date="//@date.4" name="Max Mustermann" leaveDays="4"/>
+  <person xsi:type="calender:ResponsiblePerson" name="Peter Chef" leaveDays="10"/>
+</calender:Calender>

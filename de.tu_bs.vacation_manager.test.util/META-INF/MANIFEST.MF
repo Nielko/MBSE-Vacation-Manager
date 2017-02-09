@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Util
+Bundle-SymbolicName: de.tu_bs.vacation_manager.test.util;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: de.tu_bs.vacation_manager.Calender,
+ de.tu_bs.vacation_manager.Calender.presentation,
+ de.tu_bs.vacation_manager.Calender.provider,
+ de.tu_bs.vacation_manager.Calender.tests
+Require-Bundle: org.eclipse.epsilon.common.dt;bundle-version="1.4.0",
+ de.tu_bs.vacation_manager.test;bundle-version="0.1.0"

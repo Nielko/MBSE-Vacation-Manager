@@ -1,0 +1,453 @@
+[% var calender : Calender = Calender.allInstances().at(0); %]
+[%= calender.name%]
+[%var util := new Native ('de.tu_bs.vacation_manager.test.util.Calender2TextUtil');
+%]
+<html>
+<head>
+<br>
+<br>
+
+[% for (date in calender.date) { %]
+Der [%=util.dateFormat(date)%] ist ein 
+[%=util.getDayType(date)%]
+
+[%if(date.person.size() >=1){%] 
+		und hier hat folgender Mitarbeiter frei: [%=date.person.name%] 		
+[%}else {%] 
+	und hier hat niemand frei
+[% } %]
+<br>
+[%} %]
+
+<br>
+
+
+<button type="button" id="showLeaveDays">Resturlaub anzeigen</button>
+
+        <script>
+            function togglemore(obj, idmore) {
+                moreele = document.getElementById(idmore);
+                if (moreele.style.display == 'block') {
+                    moreele.style.display = 'none';
+                    obj.innerHTML = "Resturlaub anzeigen";
+                } else {
+                    moreele.style.display = 'block';
+                    obj.innerHTML = "Resturlaub ausblenden";
+                }
+                return false;
+            }
+        </script>
+        <a href="#" onclick="togglemore(this, 'additionalcontent1')">Resturlaub anzeigen</a>
+        <div id="additionalcontent1" style="display:none">[% for (employee in calender.person) { %]
+[%= employee.name %] hat noch 
+[% if (employee.leaveDays == 1){ %]
+[%= employee.leaveDays %] Tag Resturlaub<br>
+[%}else {%] 
+[%= employee.leaveDays %] Tage Resturlaub
+<br>[%} %]
+[%} %]</div>
+
+
+
+<h1>Kalender</h1>
+
+<!--template invocation-->
+
+[% for (date in calender.date) { %]
+[%=util.dateFormatSingleDay(date)%] 
+- [%=date.person.name%] 
+<br>
+[%} %]
+
+
+
+<!-- Css-Elemente fÃ¼r das Design-->
+    
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<!-- Nach tutorial: http://www.w3schools.com/howto/howto_css_calendar.asp -->
+<h1>&Uuml;bersicht Urlaubstage</h1>
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      August<br>
+      <span style="font-size:18px">2016</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  [% for (date in calender.date) { %]
+<li>[%if (util.getDayType(date)=="Werktag"){%]
+<span class="active">
+[%}%]
+
+[%=util.dateFormatSingleDay(date)%] 
+
+[%if (util.getDayType(date)=="Werktag"){%]
+</span>
+[%}%]
+<br>
+
+[%=date.person.name%] <br>
+[%=util.getDayType(date)%] 	</li>
+[%} %]
+
+</ul>
+
+</body>
+</html>
+
+
+
+<!--<li><span class="active">2</span></li>
+
+  [*%if (i=="werktag")%] <li><span class="active">2</span></li>[%*]
+
+
+<!-------------------------------------------------------------------------------------------------->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Css-Elemente fÃ¼r das Design-->
+    
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+    
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 10px;
+    background: #1abc9c;
+    color: white !important
+}
+
+.persons{
+    margin: 2px;
+    padding: 5px;
+    background: #ff0000;
+    color: white !important;
+        border-radius: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.person1{
+    background: #dd1111;
+}
+
+.person2{
+    background: #11dd11;
+}
+
+.person3{
+    background: #1111dd;
+}
+
+.person4{
+    background: #dddd11;
+}
+
+.day_number{
+    height: 20px;
+}
+
+.day_persons{
+    height: 80px;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<!-- Nach tutorial: http://www.w3schools.com/howto/howto_css_calendar.asp -->
+<h1>Ãœbersicht Urlaubstage</h1>
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      August<br>
+      <span style="font-size:18px">2016</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li><div class="day_number">1</div><div class="day_persons"><br><br><span class="persons person1">NK</span><span class="persons person2">AT</span><span class="persons person3">SG</span><br><br><span class="persons person4">IX</span></div></li>
+  <li><div class="day_number">2</div><div class="day_persons">&nbsp;</div></li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+
+<!-- Auch mÃ¶glich mit einer Tabelle:
+<table style="width:100%">
+  <tr class="days">
+    <th>1<br><span class="persons person1">NK</span><span class="persons person2">AT</span><span class="persons person3">SG</span><br><br><span class="persons person4">IX</span></th>
+    <th>2<br></th> 
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+  </tr>
+  <tr class="days">
+    <th>8</th>
+    <th>9</th> 
+    <th>10</th>
+    <th>11</th>
+    <th>12</th>
+    <th>13</th>
+    <th>14</th>
+  </tr>
+  <tr class="days">
+    <th>15</th>
+    <th>16</th> 
+    <th>17</th>
+    <th>18</th>
+    <th>19</th>
+    <th>20</th>
+    <th>21</th>
+  </tr>
+  <tr class="days">
+    <th>22</th>
+    <th>23</th> 
+    <th>24</th>
+    <th>25</th>
+    <th>26</th>
+    <th>27</th>
+    <th>28</th>
+  </tr>
+  <tr class="days">
+    <th>29</th>
+    <th>30</th> 
+    <th>31</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+</table>-->
+
+
+<div style="height:50px;"></div>
+<h1>Verbleibende Urlaubstage</h1>
+<span class="persons person1">NK</span> - 25 Tage<br><br>
+<span class="persons person2">AT</span> - 24 Tage<br><br>
+<span class="persons person3">SG</span> - 23 Tage<br><br>
+<span class="persons person4">IX</span> - 22 Tage
+
+
+
+</body>
+</html>

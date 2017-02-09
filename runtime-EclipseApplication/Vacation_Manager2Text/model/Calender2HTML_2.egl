@@ -1,0 +1,613 @@
+[% var calender : Calender = Calender.allInstances().at(0); %]
+[%= calender.name%]
+[%var util := new Native ('de.tu_bs.vacation_manager.test.util.Calender2TextUtil');
+%]
+<!------------------------------------------------------------------------------------------------------>
+
+<html>
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
+<meta name="publisher" content="Wilhelm Jansen">
+<meta name="copyright" content="Wilhelm Jansen">
+<meta name="page-topic" content="Web-Design">
+<meta name="author" content="Wilhelm Jansen">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="language" content="de">
+<meta name="generator" content="U.Meybohm HTML EDITOR phase5">
+
+
+<!-- CSS-Angaben für die Beispielseite -->
+<style type="text/css">
+<!--
+body {
+margin:0px;
+padding:0px;
+background-color:#FFFFFF;
+font-family:Arial,Helvetica,sans-serif;
+font-size:11px;
+}
+
+
+
+a, a:visited{
+font-family:Arial,Helvetica,sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:none;
+color: #0090E0;
+}
+
+a:hover{color:#FF007F;}
+
+td{
+font-family:Arial,Helvetica,sans-serif;
+font-size:11px;
+font-weight:normal;
+text-decoration:none;
+color: #000000;
+Line-height:130%;
+}
+
+h1{
+font-family:Verdana,Arial,Helvetica,sans-serif;
+font-size:14px;
+font-weight:normal;
+text-decoration:none;
+color: #7695FF;
+}
+
+pre{
+font-family:monospace;
+font-size:13px;
+font-weight:normal;
+text-decoration:none;
+color: #0050A0;
+}
+
+-->
+</style>
+
+
+
+
+
+<!--  CSS kalender-Navigation -->
+
+<style type="text/css">
+<!--
+
+
+input {
+background-color: #6F6F6F;
+color:#FFDF00;
+text-decoration:none;
+border: #DFDFDF 1px solid; margin:2px;
+padding:3px;
+}
+
+.mnavi, .mnavi:visited  {
+font-size:9px;
+color:#5F5F5F;
+background-color: #EFEFEF;
+text-decoration:none;
+border: #7F7F7F 1px solid;
+margin:1px;
+padding:1px;
+}
+
+
+.mnavi:hover {
+font-size:9px;
+color:#000000;
+background-color: #CCCCFF;
+text-decoration:none;
+border: #7F7F7F 1px solid;
+margin:1px;
+padding:1px;
+}
+
+-->
+</style>
+
+
+
+
+
+
+<script type="text/javascript" language="JavaScript">
+<!--
+
+
+function Kalender()
+{
+alert("Hier wird eine aktuelle JavaScript-Version ben\xF6tigt!")
+}
+
+
+
+// Monatsnamen und Tage
+var Monate=
+[
+{name:"Januar",tage:31},
+{name:"Februar",tage:28},
+{name:"M&auml;rz",tage:31},
+{name:"April",tage:30},
+{name:"Mai",tage:31},
+{name:"Juni",tage:30},
+{name:"Juli",tage:31},
+{name:"August",tage:31},
+{name:"September",tage:30},
+{name:"Oktober",tage:31},
+{name:"November",tage:30},
+{name:"Dezember",tage:31}
+]
+
+
+
+// 4stellige Jahreszahl
+
+function get4DigitYear(theDate)
+{
+if(theDate.getFullYear)
+return theDate.getFullYear()
+var y= theDate.getYear()
+return y + ((y < 1900) ? 1900 : 0)
+}
+
+
+
+// --- Feiertagsberechnung ---
+
+// Ostersonntag nach Gauss'scher Formel
+
+function Ostersonntag(Jahr)
+{
+// Bem.: intern darf nicht einmal vor dem 1.1.1970 datiert werden
+if((Jahr < 1583) || (Jahr > 2299))
+return null
+
+
+var m, n
+
+if(Jahr <= 1699)
+{
+m = 22
+n = 2
+}
+
+else if(Jahr <= 1799)
+
+{
+m = 23
+n = 3
+}
+
+else if(Jahr <= 1899)
+
+{
+m = 23
+n = 4
+}
+
+else if(Jahr <= 2099)
+
+{
+m = 24
+n = 5
+}
+
+else if(Jahr <= 2199)
+
+{
+m = 24
+n = 6
+}
+
+else
+
+{
+m = 25
+n = 0
+}
+
+var a= Jahr % 19
+var b= Jahr % 4
+var c= Jahr % 7
+var d= (19 * a + m) % 30
+var e= (2 * b + 4 * c + 6 * d + n) % 7
+var t= 22 + d + e
+
+if(t > 31)
+{
+t= t - 31
+if(t == 26)
+t = 19
+else if(t == 25)
+{
+if((d == 28) && (e == 6) && (a > 10))
+t = 18
+}
+
+return new Date(Jahr, 3, t, 12, 0, 0)
+}
+
+
+
+return new Date(Jahr, 2, t, 12, 0, 0)
+}
+
+
+
+// 4. Advent in Abhaengigkeit des 1. Weihnachtstags berechnen
+
+function VierterAdvent(Jahr)
+
+{
+var StartDatum= new Date(Jahr, 11, 25, 12, 0, 0)
+var WTag= StartDatum.getDay()
+var Temp= StartDatum.getTime()
+
+StartDatum.setTime(Temp - ((WTag == 0) ? 7 : WTag) * 86400000)
+return StartDatum
+}
+
+
+
+// Feiertag anlegen mit Datum und Name
+
+function feiertag(datum, name)
+{
+this.datum= datum
+this.datum.setHours(12)
+this.datum.setMinutes(0)
+this.datum.setSeconds(0)
+this.name= name
+return this
+}
+
+
+
+// Feiertag anlegen mit Datum (aus Zeit in Millisekunden) und Name
+
+function feiertag_time(time, name, flag)
+{
+var TempDate= new Date()
+TempDate.setTime(time)
+this.datum= TempDate
+this.datum.setHours(12)
+this.datum.setMinutes(0)
+this.datum.setSeconds(0)
+this.name= name
+return this
+}
+
+
+
+// Vergleichsfunktion zur Sortierung nach Datum
+
+function compare_date(d1, d2)
+{
+if(d1.datum.getTime() < d2.datum.getTime())
+return -1
+if(d1.datum.getTime() > d2.datum.getTime())
+return 1
+return 0
+}
+
+
+
+// Anlage eines Felds mit allen Feiertagen zum angegebenen Jahr
+
+function feiertage(Jahr)
+{
+var TagMS= 86400000// Anzahl Millisekunden pro Tag
+var Feiertag= new Array()// Feld fuer Feiertage
+var cnt= 0// Zaehler fuer Feiertage
+
+
+
+// Von Ostern abhaengige Feiertage
+
+var Ostern= Ostersonntag(Jahr)
+var OTime= Ostern.getTime()
+
+Feiertag[cnt]= new feiertag(Ostern, "Ostersonntag")
+Feiertag[++cnt]= new feiertag_time(OTime + TagMS, "Ostermontag")
+Feiertag[++cnt]= new feiertag_time(OTime + 39 * TagMS, "Christi Himmelfahrt")
+Feiertag[++cnt]= new feiertag_time(OTime + 49 * TagMS, "Pfingstsonntag")
+Feiertag[++cnt]= new feiertag_time(OTime + 50 * TagMS, "Pfingstmontag")
+Feiertag[++cnt]= new feiertag_time(OTime + 60 * TagMS, "Fronleichnam")
+Feiertag[++cnt]= new feiertag_time(OTime - 48 * TagMS, "Rosenmontag", true)
+Feiertag[++cnt]= new feiertag_time(OTime - 47 * TagMS, "Fastnacht")
+Feiertag[++cnt]= new feiertag_time(OTime - 46 * TagMS, "Aschermittwoch")
+Feiertag[++cnt]= new feiertag_time(OTime - 2 * TagMS, "Karfreitag")
+
+
+
+// Vom 4. Advent abhaengige Feiertage
+
+var Advent4= VierterAdvent(Jahr)
+var A4Time= Advent4.getTime()
+
+Feiertag[++cnt]= new feiertag(Advent4, "4. Advent")
+Feiertag[++cnt]= new feiertag_time(A4Time - 7 * TagMS, "3. Advent")
+Feiertag[++cnt]= new feiertag_time(A4Time - 14 * TagMS, "2. Advent")
+Feiertag[++cnt]= new feiertag_time(A4Time - 21 * TagMS, "1. Advent")
+Feiertag[++cnt]= new feiertag_time(A4Time - 28 * TagMS, "Totensonntag")
+Feiertag[++cnt]= new feiertag_time(A4Time - 35 * TagMS, "Volkstrauertag")
+Feiertag[++cnt]= new feiertag_time(A4Time - 32 * TagMS, "Bu&szlig;- und Bettag")
+
+
+
+// Feste Feiertage
+
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 0, 1), "Neujahr")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 0, 6), "Heilige 3 K&ouml;nige")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 1, 14), "Valentinstag")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 4, 1), "Maifeiertag")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 7, 15), "Maria Himmelfahrt")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 9, 3), "Deutsche Einheit")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 9, 31), "Reformationstag")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 10, 1), "Allerheiligen")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 11, 24), "Heiligabend")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 11, 25), "1. Weihnachtstag")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 11, 26), "2. Weihnachtstag")
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 11, 31), "Silvester")
+
+Feiertag[++cnt]= new feiertag(new Date(Jahr, 10, 15), "Geburtstag Jupp Zupp")
+
+// Feiertage nach Datum sortieren
+Feiertag.sort(compare_date)
+// und zurueck!
+return Feiertag
+}
+
+
+// --- Kalenderaufbereitung und -ausgabe ---
+// Kalender
+
+function Kalender(monat, jahr)
+
+{
+var pct= 0
+var Monat= new Date(jahr, monat - 1, 1)
+var Heute= new Date()
+var DieserTag= null
+
+function pcta(p)
+{
+status= "Aufbereitung Kalender " + String(p) + "% fertig."
+}
+
+
+
+pcta(pct)
+
+
+
+// Vorbereitung/Schaltjahr
+
+if((Heute.getMonth() == Monat.getMonth()) &&
+(get4DigitYear(Heute) == get4DigitYear(Monat)))
+DieserTag= Heute.getDate()
+
+var Jahr= get4DigitYear(Monat)
+
+if((!(Jahr % 4) && (Jahr % 100)) || !(Jahr % 400))
+Monate[1].tage = 29
+AnzahlTage= Monate[Monat.getMonth()].tage
+var StartTag = Monat.getDay() - 1
+
+if(StartTag < 0)
+StartTag= 6
+
+
+
+// Feiertage
+
+var Feiertage= feiertage(Jahr)
+var RelevanteFeiertage= new Array()
+pct+= 5
+pcta(pct)
+
+// Feiertage dieses Monats
+
+var j
+var cnt= 0
+for(j = 0; j < Feiertage.length; j++)
+if(Feiertage[j].datum.getMonth() == Monat.getMonth())
+RelevanteFeiertage[cnt++]= Feiertage[j]
+
+
+// Ausgabe Kalenderblatt
+document.open("text/html")
+
+document.writeln("<table bgcolor=\"#808080\" border=0 cellpadding=2 cellspacing=1 bordercolor=\"#000000\">");
+document.write("<tr align=center valign=middle bgcolor=\"#d5d0f4\"><td colspan=\"7\">");
+document.write(Monate[Monat.getMonth()].name + " " + jahr + "</strong><br></td></tr>");
+
+// farbe zeile wochentage
+document.write("<tr valign=middle align=center bgcolor=\"#FAFAFA\"><td width=\"14%\">Mo</td>")
+document.write("<td width=\"14%\">Di</td>")
+document.write("<td width=\"14%\">Mi</td>")
+document.write("<td width=\"14%\">Do</td>")
+document.write("<td width=\"14%\">Fr</td>")
+document.write("<td width=\"15%\">Sa</td>")
+document.writeln("<td width=\"15%\">So</td></tr>")
+
+var column= StartTag
+
+document.write("<tr>")
+var i
+for(i = 0; i < StartTag; i++)
+// farbe kalendertag leer
+document.write("<td bgcolor=\"#EFEFEF\">&nbsp;</td>")
+
+for(i = 1; i <= AnzahlTage; i++)
+{
+pct+= Math.floor(90 / AnzahlTage)
+pcta(pct)
+
+var clr= ""
+
+for(j = 0; j < RelevanteFeiertage.length; j++)
+{
+if(i == RelevanteFeiertage[j].datum.getDate())
+{
+clr= " bgcolor=\"#fafafa\""
+break
+}
+}
+
+// farbe aktueller tag
+
+
+
+if(i == DieserTag)
+{
+document.write("<td valign=middle align=center style='color:#000000;background-color:#ffff00;'" + clr + ">")
+}
+else
+{
+document.write("<td valign=middle align=center style='background-color:#ffffff'" + clr + ">")
+}
+
+
+if(column >= 5)
+{
+document.write("<span style='color:#FF0000;'>")
+document.write(i)
+document.write("</span>")
+}
+else
+{
+document.write(i)
+}
+
+document.write("</TD>")
+column++
+
+if((column == 7) && (i != AnzahlTage))
+{
+document.write("</tr>\n<tr align=center>")
+column = 0
+}
+}
+
+
+
+if(column != 0)
+for(i = column; i < 7; i++)
+document.write("<td bgcolor=\"#EFEFEF\">&nbsp;</td>")
+document.writeln("</tr></table>")
+
+// Ausgabe Feiertage
+var ausg= false
+for(j = 0; j < RelevanteFeiertage.length; j++)
+{
+if(!ausg)
+{
+document.write("<br><table width='150' border=0 cellpadding=2 cellspacing=1>")
+ausg= true
+}
+
+document.write("<tr bgcolor=\"#f0f0f0\" align=left valign=middle><td align='right'><small>" +
+String(RelevanteFeiertage[j].datum.getDate()) +
+".</small>&nbsp;</td><td><small>" +
+RelevanteFeiertage[j].name +
+"</small></td></tr>")
+}
+
+if(ausg)
+document.write("</table>")
+document.close()
+
+pct= 100
+pcta(pct)
+}
+
+
+// -->
+</script>
+
+
+
+
+</head>
+<body>
+
+
+
+<div align="center">
+
+
+<script type="text/javascript" language="JavaScript">
+<!--
+// Tagesdatum
+var aktuell= new Date()
+
+// Anzeigemonat
+var my_monat= aktuell.getMonth() + 1
+var my_jahr= get4DigitYear(aktuell)
+
+if(location.search != "")
+{
+var werte= unescape(location.search.substring(1))
+werte= werte.split("&")
+
+if(werte.length == 2)
+{
+werte[0]= werte[0].split("=")
+if(werte[0][0] == "monat")
+my_monat= parseInt(werte[0][1])
+if(werte[0][0] == "jahr")
+my_jahr= parseInt(werte[0][1])
+werte[1]= werte[1].split("=")
+if(werte[1][0] == "monat")
+my_monat= parseInt(werte[1][1])
+if(werte[1][0] == "jahr")
+my_jahr= parseInt(werte[1][1])
+}
+}
+
+// Kalenderausgabe
+Kalender(my_monat, my_jahr)
+
+// Steuerung
+var l= location.href
+
+if(l.indexOf("?") != -1)
+{
+l= location.href.split("?")
+l= l[0]
+}
+
+var vor= new Date(my_jahr, my_monat - 2, 1)
+var nach= new Date(my_jahr, my_monat, 1)
+
+document.open("text/html")
+
+document.write("<br><a class='mnavi' href= \"" + l + "?monat=" + (vor.getMonth() + 1) + "&jahr=" + get4DigitYear(vor) + "\">&nbsp;&nbsp;&lt;&lt;&nbsp;&nbsp;</a>&nbsp;" +
+"&nbsp;<a class='mnavi' href= \"" + l + "?monat=" + (aktuell.getMonth() + 1) + "&jahr=" + get4DigitYear(aktuell) + "\"> &nbsp;HEUTE&nbsp; </A>&nbsp;" +
+"&nbsp;<a class='mnavi' href= \"" + l + "?monat=" + (nach.getMonth() + 1) + "&jahr=" + get4DigitYear(nach) + "\">&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;</a>" +
+"<br>")
+
+document.close()
+// -->
+</script>
+
+
+
+
+
+</td>
+</tr></table>
+<br>
+</body></html>
+
+
