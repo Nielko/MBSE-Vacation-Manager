@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.Person#getDate <em>Date</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Person#getDates <em>Dates</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Person#getName <em>Name</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Person#getLeaveDays <em>Leave Days</em>}</li>
  * </ul>
@@ -26,22 +26,22 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Person extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Date</b></em>' reference list.
+	 * Returns the value of the '<em><b>Dates</b></em>' reference list.
 	 * The list contents are of type {@link de.tu_bs.vacation_manager.Calender.Date}.
-	 * It is bidirectional and its opposite is '{@link de.tu_bs.vacation_manager.Calender.Date#getPerson <em>Person</em>}'.
+	 * It is bidirectional and its opposite is '{@link de.tu_bs.vacation_manager.Calender.Date#getPersons <em>Persons</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Date</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Dates</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Date</em>' reference list.
-	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getPerson_Date()
-	 * @see de.tu_bs.vacation_manager.Calender.Date#getPerson
-	 * @model opposite="person"
+	 * @return the value of the '<em>Dates</em>' reference list.
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getPerson_Dates()
+	 * @see de.tu_bs.vacation_manager.Calender.Date#getPersons
+	 * @model opposite="persons"
 	 * @generated
 	 */
-	EList<Date> getDate();
+	EList<Date> getDates();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

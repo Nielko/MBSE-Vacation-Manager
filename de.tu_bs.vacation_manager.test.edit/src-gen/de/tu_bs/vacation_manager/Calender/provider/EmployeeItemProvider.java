@@ -43,26 +43,27 @@ public class EmployeeItemProvider extends PersonItemProvider {
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addEmployeePropertyDescriptor(object);
-			addHolydayapplicationPropertyDescriptor(object);
+			addStandInPropertyDescriptor(object);
+			addHolydayapplicationsPropertyDescriptor(object);
+			addResponsiblePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Employee feature.
+	 * This adds a property descriptor for the Stand In feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addEmployeePropertyDescriptor(Object object) {
+	protected void addStandInPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Employee_employee_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Employee_employee_feature", "_UI_Employee_type"),
-				 CalenderPackage.Literals.EMPLOYEE__EMPLOYEE,
+				 getString("_UI_Employee_standIn_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Employee_standIn_feature", "_UI_Employee_type"),
+				 CalenderPackage.Literals.EMPLOYEE__STAND_IN,
 				 true,
 				 false,
 				 true,
@@ -72,19 +73,41 @@ public class EmployeeItemProvider extends PersonItemProvider {
 	}
 
 	/**
-	 * This adds a property descriptor for the Holydayapplication feature.
+	 * This adds a property descriptor for the Holydayapplications feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addHolydayapplicationPropertyDescriptor(Object object) {
+	protected void addHolydayapplicationsPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Employee_holydayapplication_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Employee_holydayapplication_feature", "_UI_Employee_type"),
-				 CalenderPackage.Literals.EMPLOYEE__HOLYDAYAPPLICATION,
+				 getString("_UI_Employee_holydayapplications_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Employee_holydayapplications_feature", "_UI_Employee_type"),
+				 CalenderPackage.Literals.EMPLOYEE__HOLYDAYAPPLICATIONS,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Responsible feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addResponsiblePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Employee_responsible_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Employee_responsible_feature", "_UI_Employee_type"),
+				 CalenderPackage.Literals.EMPLOYEE__RESPONSIBLE,
 				 true,
 				 false,
 				 true,

@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getDay <em>Day</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getName <em>Name</em>}</li>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getPerson <em>Person</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getPersons <em>Persons</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DateImpl#getDayType <em>Day Type</em>}</li>
  * </ul>
  *
@@ -81,14 +81,14 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getPerson() <em>Person</em>}' reference list.
+	 * The cached value of the '{@link #getPersons() <em>Persons</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPerson()
+	 * @see #getPersons()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Person> person;
+	protected EList<Person> persons;
 
 	/**
 	 * The default value of the '{@link #getDayType() <em>Day Type</em>}' attribute.
@@ -176,11 +176,11 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Person> getPerson() {
-		if (person == null) {
-			person = new EObjectWithInverseResolvingEList.ManyInverse<Person>(Person.class, this, CalenderPackage.DATE__PERSON, CalenderPackage.PERSON__DATE);
+	public EList<Person> getPersons() {
+		if (persons == null) {
+			persons = new EObjectWithInverseResolvingEList.ManyInverse<Person>(Person.class, this, CalenderPackage.DATE__PERSONS, CalenderPackage.PERSON__DATES);
 		}
-		return person;
+		return persons;
 	}
 
 	/**
@@ -213,8 +213,8 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CalenderPackage.DATE__PERSON:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getPerson()).basicAdd(otherEnd, msgs);
+			case CalenderPackage.DATE__PERSONS:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getPersons()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -227,8 +227,8 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CalenderPackage.DATE__PERSON:
-				return ((InternalEList<?>)getPerson()).basicRemove(otherEnd, msgs);
+			case CalenderPackage.DATE__PERSONS:
+				return ((InternalEList<?>)getPersons()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -245,8 +245,8 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 				return getDay();
 			case CalenderPackage.DATE__NAME:
 				return getName();
-			case CalenderPackage.DATE__PERSON:
-				return getPerson();
+			case CalenderPackage.DATE__PERSONS:
+				return getPersons();
 			case CalenderPackage.DATE__DAY_TYPE:
 				return getDayType();
 		}
@@ -268,9 +268,9 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 			case CalenderPackage.DATE__NAME:
 				setName((String)newValue);
 				return;
-			case CalenderPackage.DATE__PERSON:
-				getPerson().clear();
-				getPerson().addAll((Collection<? extends Person>)newValue);
+			case CalenderPackage.DATE__PERSONS:
+				getPersons().clear();
+				getPersons().addAll((Collection<? extends Person>)newValue);
 				return;
 			case CalenderPackage.DATE__DAY_TYPE:
 				setDayType((WorkingDayType)newValue);
@@ -293,8 +293,8 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 			case CalenderPackage.DATE__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case CalenderPackage.DATE__PERSON:
-				getPerson().clear();
+			case CalenderPackage.DATE__PERSONS:
+				getPersons().clear();
 				return;
 			case CalenderPackage.DATE__DAY_TYPE:
 				setDayType(DAY_TYPE_EDEFAULT);
@@ -315,8 +315,8 @@ public class DateImpl extends MinimalEObjectImpl.Container implements Date {
 				return DAY_EDEFAULT == null ? day != null : !DAY_EDEFAULT.equals(day);
 			case CalenderPackage.DATE__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case CalenderPackage.DATE__PERSON:
-				return person != null && !person.isEmpty();
+			case CalenderPackage.DATE__PERSONS:
+				return persons != null && !persons.isEmpty();
 			case CalenderPackage.DATE__DAY_TYPE:
 				return dayType != DAY_TYPE_EDEFAULT;
 		}

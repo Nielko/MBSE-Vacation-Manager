@@ -102,8 +102,8 @@ public class CalenderItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(CalenderPackage.Literals.CALENDER__DATE);
-			childrenFeatures.add(CalenderPackage.Literals.CALENDER__PERSON);
+			childrenFeatures.add(CalenderPackage.Literals.CALENDER__DATES);
+			childrenFeatures.add(CalenderPackage.Literals.CALENDER__PERSONS);
 		}
 		return childrenFeatures;
 	}
@@ -162,8 +162,8 @@ public class CalenderItemProvider
 			case CalenderPackage.CALENDER__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case CalenderPackage.CALENDER__DATE:
-			case CalenderPackage.CALENDER__PERSON:
+			case CalenderPackage.CALENDER__DATES:
+			case CalenderPackage.CALENDER__PERSONS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -183,27 +183,27 @@ public class CalenderItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__DATE,
+				(CalenderPackage.Literals.CALENDER__DATES,
 				 CalenderFactory.eINSTANCE.createDate()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__DATE,
+				(CalenderPackage.Literals.CALENDER__DATES,
 				 CalenderFactory.eINSTANCE.createHolydayApplication()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__PERSON,
+				(CalenderPackage.Literals.CALENDER__PERSONS,
 				 CalenderFactory.eINSTANCE.createPerson()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__PERSON,
+				(CalenderPackage.Literals.CALENDER__PERSONS,
 				 CalenderFactory.eINSTANCE.createResponsiblePerson()));
 
 		newChildDescriptors.add
 			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__PERSON,
+				(CalenderPackage.Literals.CALENDER__PERSONS,
 				 CalenderFactory.eINSTANCE.createEmployee()));
 	}
 

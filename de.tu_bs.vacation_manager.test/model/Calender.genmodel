@@ -37,12 +37,14 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//HolydayApplication/newAttribute"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//ResponsiblePerson">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//ResponsiblePerson/employees"/>
       <genOperations ecoreOperation="Calender.ecore#//ResponsiblePerson/acceptApplication"/>
       <genOperations ecoreOperation="Calender.ecore#//ResponsiblePerson/declineApplication"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Employee">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Employee/employee"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Employee/standIn"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Employee/holydayapplications"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Employee/responsible"/>
       <genOperations ecoreOperation="Calender.ecore#//Employee/createApplication"/>
       <genOperations ecoreOperation="Calender.ecore#//Employee/sendApplication"/>
     </genClasses>

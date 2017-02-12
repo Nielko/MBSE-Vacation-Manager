@@ -60,7 +60,7 @@ public class PersonItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addDatePropertyDescriptor(object);
+			addDatesPropertyDescriptor(object);
 			addNamePropertyDescriptor(object);
 			addLeaveDaysPropertyDescriptor(object);
 		}
@@ -68,19 +68,19 @@ public class PersonItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Date feature.
+	 * This adds a property descriptor for the Dates feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addDatePropertyDescriptor(Object object) {
+	protected void addDatesPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Person_date_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Person_date_feature", "_UI_Person_type"),
-				 CalenderPackage.Literals.PERSON__DATE,
+				 getString("_UI_Person_dates_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Person_dates_feature", "_UI_Person_type"),
+				 CalenderPackage.Literals.PERSON__DATES,
 				 true,
 				 false,
 				 true,

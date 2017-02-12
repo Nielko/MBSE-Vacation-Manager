@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.PersonImpl#getDate <em>Date</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.PersonImpl#getDates <em>Dates</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.PersonImpl#getName <em>Name</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.PersonImpl#getLeaveDays <em>Leave Days</em>}</li>
  * </ul>
@@ -39,14 +39,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  */
 public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	/**
-	 * The cached value of the '{@link #getDate() <em>Date</em>}' reference list.
+	 * The cached value of the '{@link #getDates() <em>Dates</em>}' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDate()
+	 * @see #getDates()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Date> date;
+	protected EList<Date> dates;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -111,11 +111,11 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Date> getDate() {
-		if (date == null) {
-			date = new EObjectWithInverseResolvingEList.ManyInverse<Date>(Date.class, this, CalenderPackage.PERSON__DATE, CalenderPackage.DATE__PERSON);
+	public EList<Date> getDates() {
+		if (dates == null) {
+			dates = new EObjectWithInverseResolvingEList.ManyInverse<Date>(Date.class, this, CalenderPackage.PERSON__DATES, CalenderPackage.DATE__PERSONS);
 		}
-		return date;
+		return dates;
 	}
 
 	/**
@@ -169,8 +169,8 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CalenderPackage.PERSON__DATE:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getDate()).basicAdd(otherEnd, msgs);
+			case CalenderPackage.PERSON__DATES:
+				return ((InternalEList<InternalEObject>)(InternalEList<?>)getDates()).basicAdd(otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -183,8 +183,8 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CalenderPackage.PERSON__DATE:
-				return ((InternalEList<?>)getDate()).basicRemove(otherEnd, msgs);
+			case CalenderPackage.PERSON__DATES:
+				return ((InternalEList<?>)getDates()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -197,8 +197,8 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CalenderPackage.PERSON__DATE:
-				return getDate();
+			case CalenderPackage.PERSON__DATES:
+				return getDates();
 			case CalenderPackage.PERSON__NAME:
 				return getName();
 			case CalenderPackage.PERSON__LEAVE_DAYS:
@@ -216,9 +216,9 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CalenderPackage.PERSON__DATE:
-				getDate().clear();
-				getDate().addAll((Collection<? extends Date>)newValue);
+			case CalenderPackage.PERSON__DATES:
+				getDates().clear();
+				getDates().addAll((Collection<? extends Date>)newValue);
 				return;
 			case CalenderPackage.PERSON__NAME:
 				setName((String)newValue);
@@ -238,8 +238,8 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CalenderPackage.PERSON__DATE:
-				getDate().clear();
+			case CalenderPackage.PERSON__DATES:
+				getDates().clear();
 				return;
 			case CalenderPackage.PERSON__NAME:
 				setName(NAME_EDEFAULT);
@@ -259,8 +259,8 @@ public class PersonImpl extends MinimalEObjectImpl.Container implements Person {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CalenderPackage.PERSON__DATE:
-				return date != null && !date.isEmpty();
+			case CalenderPackage.PERSON__DATES:
+				return dates != null && !dates.isEmpty();
 			case CalenderPackage.PERSON__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case CalenderPackage.PERSON__LEAVE_DAYS:

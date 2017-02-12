@@ -33,8 +33,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.CalenderImpl#getName <em>Name</em>}</li>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.CalenderImpl#getDate <em>Date</em>}</li>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.CalenderImpl#getPerson <em>Person</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.CalenderImpl#getDates <em>Dates</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.CalenderImpl#getPersons <em>Persons</em>}</li>
  * </ul>
  *
  * @generated
@@ -61,24 +61,24 @@ public class CalenderImpl extends MinimalEObjectImpl.Container implements Calend
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getDate() <em>Date</em>}' containment reference list.
+	 * The cached value of the '{@link #getDates() <em>Dates</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getDate()
+	 * @see #getDates()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Date> date;
+	protected EList<Date> dates;
 
 	/**
-	 * The cached value of the '{@link #getPerson() <em>Person</em>}' containment reference list.
+	 * The cached value of the '{@link #getPersons() <em>Persons</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPerson()
+	 * @see #getPersons()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Person> person;
+	protected EList<Person> persons;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,11 +125,11 @@ public class CalenderImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Date> getDate() {
-		if (date == null) {
-			date = new EObjectContainmentEList<Date>(Date.class, this, CalenderPackage.CALENDER__DATE);
+	public EList<Date> getDates() {
+		if (dates == null) {
+			dates = new EObjectContainmentEList<Date>(Date.class, this, CalenderPackage.CALENDER__DATES);
 		}
-		return date;
+		return dates;
 	}
 
 	/**
@@ -137,11 +137,11 @@ public class CalenderImpl extends MinimalEObjectImpl.Container implements Calend
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Person> getPerson() {
-		if (person == null) {
-			person = new EObjectContainmentEList<Person>(Person.class, this, CalenderPackage.CALENDER__PERSON);
+	public EList<Person> getPersons() {
+		if (persons == null) {
+			persons = new EObjectContainmentEList<Person>(Person.class, this, CalenderPackage.CALENDER__PERSONS);
 		}
-		return person;
+		return persons;
 	}
 
 	/**
@@ -163,10 +163,10 @@ public class CalenderImpl extends MinimalEObjectImpl.Container implements Calend
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case CalenderPackage.CALENDER__DATE:
-				return ((InternalEList<?>)getDate()).basicRemove(otherEnd, msgs);
-			case CalenderPackage.CALENDER__PERSON:
-				return ((InternalEList<?>)getPerson()).basicRemove(otherEnd, msgs);
+			case CalenderPackage.CALENDER__DATES:
+				return ((InternalEList<?>)getDates()).basicRemove(otherEnd, msgs);
+			case CalenderPackage.CALENDER__PERSONS:
+				return ((InternalEList<?>)getPersons()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -181,10 +181,10 @@ public class CalenderImpl extends MinimalEObjectImpl.Container implements Calend
 		switch (featureID) {
 			case CalenderPackage.CALENDER__NAME:
 				return getName();
-			case CalenderPackage.CALENDER__DATE:
-				return getDate();
-			case CalenderPackage.CALENDER__PERSON:
-				return getPerson();
+			case CalenderPackage.CALENDER__DATES:
+				return getDates();
+			case CalenderPackage.CALENDER__PERSONS:
+				return getPersons();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -201,13 +201,13 @@ public class CalenderImpl extends MinimalEObjectImpl.Container implements Calend
 			case CalenderPackage.CALENDER__NAME:
 				setName((String)newValue);
 				return;
-			case CalenderPackage.CALENDER__DATE:
-				getDate().clear();
-				getDate().addAll((Collection<? extends Date>)newValue);
+			case CalenderPackage.CALENDER__DATES:
+				getDates().clear();
+				getDates().addAll((Collection<? extends Date>)newValue);
 				return;
-			case CalenderPackage.CALENDER__PERSON:
-				getPerson().clear();
-				getPerson().addAll((Collection<? extends Person>)newValue);
+			case CalenderPackage.CALENDER__PERSONS:
+				getPersons().clear();
+				getPersons().addAll((Collection<? extends Person>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -224,11 +224,11 @@ public class CalenderImpl extends MinimalEObjectImpl.Container implements Calend
 			case CalenderPackage.CALENDER__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case CalenderPackage.CALENDER__DATE:
-				getDate().clear();
+			case CalenderPackage.CALENDER__DATES:
+				getDates().clear();
 				return;
-			case CalenderPackage.CALENDER__PERSON:
-				getPerson().clear();
+			case CalenderPackage.CALENDER__PERSONS:
+				getPersons().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -244,10 +244,10 @@ public class CalenderImpl extends MinimalEObjectImpl.Container implements Calend
 		switch (featureID) {
 			case CalenderPackage.CALENDER__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case CalenderPackage.CALENDER__DATE:
-				return date != null && !date.isEmpty();
-			case CalenderPackage.CALENDER__PERSON:
-				return person != null && !person.isEmpty();
+			case CalenderPackage.CALENDER__DATES:
+				return dates != null && !dates.isEmpty();
+			case CalenderPackage.CALENDER__PERSONS:
+				return persons != null && !persons.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

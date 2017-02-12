@@ -6,6 +6,7 @@ import de.tu_bs.vacation_manager.Calender.CalenderPackage;
 import de.tu_bs.vacation_manager.Calender.Employee;
 import de.tu_bs.vacation_manager.Calender.HolydayApplication;
 
+import de.tu_bs.vacation_manager.Calender.ResponsiblePerson;
 import java.lang.reflect.InvocationTargetException;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -25,32 +26,43 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.EmployeeImpl#getEmployee <em>Employee</em>}</li>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.EmployeeImpl#getHolydayapplication <em>Holydayapplication</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.EmployeeImpl#getStandIn <em>Stand In</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.EmployeeImpl#getHolydayapplications <em>Holydayapplications</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.EmployeeImpl#getResponsible <em>Responsible</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class EmployeeImpl extends PersonImpl implements Employee {
 	/**
-	 * The cached value of the '{@link #getEmployee() <em>Employee</em>}' reference.
+	 * The cached value of the '{@link #getStandIn() <em>Stand In</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getEmployee()
+	 * @see #getStandIn()
 	 * @generated
 	 * @ordered
 	 */
-	protected Employee employee;
+	protected Employee standIn;
 
 	/**
-	 * The cached value of the '{@link #getHolydayapplication() <em>Holydayapplication</em>}' reference.
+	 * The cached value of the '{@link #getHolydayapplications() <em>Holydayapplications</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHolydayapplication()
+	 * @see #getHolydayapplications()
 	 * @generated
 	 * @ordered
 	 */
-	protected HolydayApplication holydayapplication;
+	protected HolydayApplication holydayapplications;
+
+	/**
+	 * The cached value of the '{@link #getResponsible() <em>Responsible</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getResponsible()
+	 * @generated
+	 * @ordered
+	 */
+	protected ResponsiblePerson responsible;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -76,16 +88,16 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Employee getEmployee() {
-		if (employee != null && employee.eIsProxy()) {
-			InternalEObject oldEmployee = (InternalEObject)employee;
-			employee = (Employee)eResolveProxy(oldEmployee);
-			if (employee != oldEmployee) {
+	public Employee getStandIn() {
+		if (standIn != null && standIn.eIsProxy()) {
+			InternalEObject oldStandIn = (InternalEObject)standIn;
+			standIn = (Employee)eResolveProxy(oldStandIn);
+			if (standIn != oldStandIn) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CalenderPackage.EMPLOYEE__EMPLOYEE, oldEmployee, employee));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CalenderPackage.EMPLOYEE__STAND_IN, oldStandIn, standIn));
 			}
 		}
-		return employee;
+		return standIn;
 	}
 
 	/**
@@ -93,8 +105,8 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Employee basicGetEmployee() {
-		return employee;
+	public Employee basicGetStandIn() {
+		return standIn;
 	}
 
 	/**
@@ -102,11 +114,11 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEmployee(Employee newEmployee) {
-		Employee oldEmployee = employee;
-		employee = newEmployee;
+	public void setStandIn(Employee newStandIn) {
+		Employee oldStandIn = standIn;
+		standIn = newStandIn;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.EMPLOYEE__EMPLOYEE, oldEmployee, employee));
+			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.EMPLOYEE__STAND_IN, oldStandIn, standIn));
 	}
 
 	/**
@@ -114,16 +126,16 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HolydayApplication getHolydayapplication() {
-		if (holydayapplication != null && holydayapplication.eIsProxy()) {
-			InternalEObject oldHolydayapplication = (InternalEObject)holydayapplication;
-			holydayapplication = (HolydayApplication)eResolveProxy(oldHolydayapplication);
-			if (holydayapplication != oldHolydayapplication) {
+	public HolydayApplication getHolydayapplications() {
+		if (holydayapplications != null && holydayapplications.eIsProxy()) {
+			InternalEObject oldHolydayapplications = (InternalEObject)holydayapplications;
+			holydayapplications = (HolydayApplication)eResolveProxy(oldHolydayapplications);
+			if (holydayapplications != oldHolydayapplications) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATION, oldHolydayapplication, holydayapplication));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATIONS, oldHolydayapplications, holydayapplications));
 			}
 		}
-		return holydayapplication;
+		return holydayapplications;
 	}
 
 	/**
@@ -131,8 +143,8 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HolydayApplication basicGetHolydayapplication() {
-		return holydayapplication;
+	public HolydayApplication basicGetHolydayapplications() {
+		return holydayapplications;
 	}
 
 	/**
@@ -140,11 +152,49 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHolydayapplication(HolydayApplication newHolydayapplication) {
-		HolydayApplication oldHolydayapplication = holydayapplication;
-		holydayapplication = newHolydayapplication;
+	public void setHolydayapplications(HolydayApplication newHolydayapplications) {
+		HolydayApplication oldHolydayapplications = holydayapplications;
+		holydayapplications = newHolydayapplications;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATION, oldHolydayapplication, holydayapplication));
+			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATIONS, oldHolydayapplications, holydayapplications));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResponsiblePerson getResponsible() {
+		if (responsible != null && responsible.eIsProxy()) {
+			InternalEObject oldResponsible = (InternalEObject)responsible;
+			responsible = (ResponsiblePerson)eResolveProxy(oldResponsible);
+			if (responsible != oldResponsible) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, CalenderPackage.EMPLOYEE__RESPONSIBLE, oldResponsible, responsible));
+			}
+		}
+		return responsible;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResponsiblePerson basicGetResponsible() {
+		return responsible;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setResponsible(ResponsiblePerson newResponsible) {
+		ResponsiblePerson oldResponsible = responsible;
+		responsible = newResponsible;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.EMPLOYEE__RESPONSIBLE, oldResponsible, responsible));
 	}
 
 	/**
@@ -177,12 +227,15 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CalenderPackage.EMPLOYEE__EMPLOYEE:
-				if (resolve) return getEmployee();
-				return basicGetEmployee();
-			case CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATION:
-				if (resolve) return getHolydayapplication();
-				return basicGetHolydayapplication();
+			case CalenderPackage.EMPLOYEE__STAND_IN:
+				if (resolve) return getStandIn();
+				return basicGetStandIn();
+			case CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATIONS:
+				if (resolve) return getHolydayapplications();
+				return basicGetHolydayapplications();
+			case CalenderPackage.EMPLOYEE__RESPONSIBLE:
+				if (resolve) return getResponsible();
+				return basicGetResponsible();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -195,11 +248,14 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CalenderPackage.EMPLOYEE__EMPLOYEE:
-				setEmployee((Employee)newValue);
+			case CalenderPackage.EMPLOYEE__STAND_IN:
+				setStandIn((Employee)newValue);
 				return;
-			case CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATION:
-				setHolydayapplication((HolydayApplication)newValue);
+			case CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATIONS:
+				setHolydayapplications((HolydayApplication)newValue);
+				return;
+			case CalenderPackage.EMPLOYEE__RESPONSIBLE:
+				setResponsible((ResponsiblePerson)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -213,11 +269,14 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CalenderPackage.EMPLOYEE__EMPLOYEE:
-				setEmployee((Employee)null);
+			case CalenderPackage.EMPLOYEE__STAND_IN:
+				setStandIn((Employee)null);
 				return;
-			case CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATION:
-				setHolydayapplication((HolydayApplication)null);
+			case CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATIONS:
+				setHolydayapplications((HolydayApplication)null);
+				return;
+			case CalenderPackage.EMPLOYEE__RESPONSIBLE:
+				setResponsible((ResponsiblePerson)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -231,10 +290,12 @@ public class EmployeeImpl extends PersonImpl implements Employee {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CalenderPackage.EMPLOYEE__EMPLOYEE:
-				return employee != null;
-			case CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATION:
-				return holydayapplication != null;
+			case CalenderPackage.EMPLOYEE__STAND_IN:
+				return standIn != null;
+			case CalenderPackage.EMPLOYEE__HOLYDAYAPPLICATIONS:
+				return holydayapplications != null;
+			case CalenderPackage.EMPLOYEE__RESPONSIBLE:
+				return responsible != null;
 		}
 		return super.eIsSet(featureID);
 	}

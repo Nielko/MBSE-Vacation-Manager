@@ -36,11 +36,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="ResponsiblePerson" eSuperTypes="#//Person">
     <eOperations name="acceptApplication"/>
     <eOperations name="declineApplication"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="employees" upperBound="-1"
+        eType="#//Employee"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Employee" eSuperTypes="#//Person">
     <eOperations name="createApplication"/>
     <eOperations name="sendApplication"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="employee" eType="#//Employee"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="standIn" eType="#//Employee"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="holydayapplications" eType="#//HolydayApplication"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="responsible" eType="#//ResponsiblePerson"/>
   </eClassifiers>
 </ecore:EPackage>

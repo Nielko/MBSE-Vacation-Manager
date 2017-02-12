@@ -16,8 +16,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getName <em>Name</em>}</li>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getDate <em>Date</em>}</li>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getPerson <em>Person</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getDates <em>Dates</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getPersons <em>Persons</em>}</li>
  * </ul>
  *
  * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getCalender()
@@ -52,36 +52,36 @@ public interface Calender extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Date</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Dates</b></em>' containment reference list.
 	 * The list contents are of type {@link de.tu_bs.vacation_manager.Calender.Date}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Date</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Dates</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Date</em>' containment reference list.
-	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getCalender_Date()
+	 * @return the value of the '<em>Dates</em>' containment reference list.
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getCalender_Dates()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Date> getDate();
+	EList<Date> getDates();
 
 	/**
-	 * Returns the value of the '<em><b>Person</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Persons</b></em>' containment reference list.
 	 * The list contents are of type {@link de.tu_bs.vacation_manager.Calender.Person}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Person</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Persons</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Person</em>' containment reference list.
-	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getCalender_Person()
+	 * @return the value of the '<em>Persons</em>' containment reference list.
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getCalender_Persons()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Person> getPerson();
+	EList<Person> getPersons();
 
 	/**
 	 * <!-- begin-user-doc -->

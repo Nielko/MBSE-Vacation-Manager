@@ -161,7 +161,7 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCalender_Date() {
+	public EReference getCalender_Dates() {
 		return (EReference)calenderEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -170,7 +170,7 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCalender_Person() {
+	public EReference getCalender_Persons() {
 		return (EReference)calenderEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -215,7 +215,7 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getDate_Person() {
+	public EReference getDate_Persons() {
 		return (EReference)dateEClass.getEStructuralFeatures().get(2);
 	}
 
@@ -242,7 +242,7 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getPerson_Date() {
+	public EReference getPerson_Dates() {
 		return (EReference)personEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -305,6 +305,15 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getResponsiblePerson_Employees() {
+		return (EReference)responsiblePersonEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EOperation getResponsiblePerson__AcceptApplication() {
 		return responsiblePersonEClass.getEOperations().get(0);
 	}
@@ -332,7 +341,7 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEmployee_Employee() {
+	public EReference getEmployee_StandIn() {
 		return (EReference)employeeEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -341,8 +350,17 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEmployee_Holydayapplication() {
+	public EReference getEmployee_Holydayapplications() {
 		return (EReference)employeeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getEmployee_Responsible() {
+		return (EReference)employeeEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -402,18 +420,18 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		// Create classes and their features
 		calenderEClass = createEClass(CALENDER);
 		createEAttribute(calenderEClass, CALENDER__NAME);
-		createEReference(calenderEClass, CALENDER__DATE);
-		createEReference(calenderEClass, CALENDER__PERSON);
+		createEReference(calenderEClass, CALENDER__DATES);
+		createEReference(calenderEClass, CALENDER__PERSONS);
 		createEOperation(calenderEClass, CALENDER___SHOW_GUI);
 
 		dateEClass = createEClass(DATE);
 		createEAttribute(dateEClass, DATE__DAY);
 		createEAttribute(dateEClass, DATE__NAME);
-		createEReference(dateEClass, DATE__PERSON);
+		createEReference(dateEClass, DATE__PERSONS);
 		createEAttribute(dateEClass, DATE__DAY_TYPE);
 
 		personEClass = createEClass(PERSON);
-		createEReference(personEClass, PERSON__DATE);
+		createEReference(personEClass, PERSON__DATES);
 		createEAttribute(personEClass, PERSON__NAME);
 		createEAttribute(personEClass, PERSON__LEAVE_DAYS);
 
@@ -422,12 +440,14 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		createEAttribute(holydayApplicationEClass, HOLYDAY_APPLICATION__NEW_ATTRIBUTE);
 
 		responsiblePersonEClass = createEClass(RESPONSIBLE_PERSON);
+		createEReference(responsiblePersonEClass, RESPONSIBLE_PERSON__EMPLOYEES);
 		createEOperation(responsiblePersonEClass, RESPONSIBLE_PERSON___ACCEPT_APPLICATION);
 		createEOperation(responsiblePersonEClass, RESPONSIBLE_PERSON___DECLINE_APPLICATION);
 
 		employeeEClass = createEClass(EMPLOYEE);
-		createEReference(employeeEClass, EMPLOYEE__EMPLOYEE);
-		createEReference(employeeEClass, EMPLOYEE__HOLYDAYAPPLICATION);
+		createEReference(employeeEClass, EMPLOYEE__STAND_IN);
+		createEReference(employeeEClass, EMPLOYEE__HOLYDAYAPPLICATIONS);
+		createEReference(employeeEClass, EMPLOYEE__RESPONSIBLE);
 		createEOperation(employeeEClass, EMPLOYEE___CREATE_APPLICATION);
 		createEOperation(employeeEClass, EMPLOYEE___SEND_APPLICATION);
 
@@ -470,19 +490,19 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		// Initialize classes, features, and operations; add parameters
 		initEClass(calenderEClass, Calender.class, "Calender", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCalender_Name(), ecorePackage.getEString(), "name", null, 0, 1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCalender_Date(), this.getDate(), null, "date", null, 0, -1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCalender_Person(), this.getPerson(), null, "person", null, 0, -1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalender_Dates(), this.getDate(), null, "dates", null, 0, -1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalender_Persons(), this.getPerson(), null, "persons", null, 0, -1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getCalender__ShowGui(), null, "showGui", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(dateEClass, Date.class, "Date", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDate_Day(), ecorePackage.getEDate(), "day", null, 0, 1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDate_Name(), ecorePackage.getEString(), "name", null, 0, 1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getDate_Person(), this.getPerson(), this.getPerson_Date(), "person", null, 0, -1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDate_Persons(), this.getPerson(), this.getPerson_Dates(), "persons", null, 0, -1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getDate_DayType(), this.getWorkingDayType(), "dayType", "WorkingDay", 1, 1, Date.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(personEClass, Person.class, "Person", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getPerson_Date(), this.getDate(), this.getDate_Person(), "date", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPerson_Dates(), this.getDate(), this.getDate_Persons(), "dates", null, 0, -1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_Name(), ecorePackage.getEString(), "name", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPerson_LeaveDays(), ecorePackage.getEInt(), "leaveDays", null, 0, 1, Person.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -491,14 +511,16 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		initEAttribute(getHolydayApplication_NewAttribute(), ecorePackage.getEBoolean(), "newAttribute", null, 0, 1, HolydayApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(responsiblePersonEClass, ResponsiblePerson.class, "ResponsiblePerson", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getResponsiblePerson_Employees(), this.getEmployee(), null, "employees", null, 0, -1, ResponsiblePerson.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getResponsiblePerson__AcceptApplication(), null, "acceptApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEOperation(getResponsiblePerson__DeclineApplication(), null, "declineApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(employeeEClass, Employee.class, "Employee", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEmployee_Employee(), this.getEmployee(), null, "employee", null, 0, 1, Employee.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEmployee_Holydayapplication(), this.getHolydayApplication(), null, "holydayapplication", null, 0, 1, Employee.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEmployee_StandIn(), this.getEmployee(), null, "standIn", null, 0, 1, Employee.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEmployee_Holydayapplications(), this.getHolydayApplication(), null, "holydayapplications", null, 0, 1, Employee.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getEmployee_Responsible(), this.getResponsiblePerson(), null, "responsible", null, 0, 1, Employee.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getEmployee__CreateApplication(), null, "createApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
 

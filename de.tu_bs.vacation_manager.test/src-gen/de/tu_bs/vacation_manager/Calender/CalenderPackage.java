@@ -78,22 +78,22 @@ public interface CalenderPackage extends EPackage {
 	int CALENDER__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Date</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Dates</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALENDER__DATE = 1;
+	int CALENDER__DATES = 1;
 
 	/**
-	 * The feature id for the '<em><b>Person</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Persons</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALENDER__PERSON = 2;
+	int CALENDER__PERSONS = 2;
 
 	/**
 	 * The number of structural features of the '<em>Calender</em>' class.
@@ -151,13 +151,13 @@ public interface CalenderPackage extends EPackage {
 	int DATE__NAME = 1;
 
 	/**
-	 * The feature id for the '<em><b>Person</b></em>' reference list.
+	 * The feature id for the '<em><b>Persons</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DATE__PERSON = 2;
+	int DATE__PERSONS = 2;
 
 	/**
 	 * The feature id for the '<em><b>Day Type</b></em>' attribute.
@@ -197,13 +197,13 @@ public interface CalenderPackage extends EPackage {
 	int PERSON = 2;
 
 	/**
-	 * The feature id for the '<em><b>Date</b></em>' reference list.
+	 * The feature id for the '<em><b>Dates</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON__DATE = 0;
+	int PERSON__DATES = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -271,13 +271,13 @@ public interface CalenderPackage extends EPackage {
 	int HOLYDAY_APPLICATION__NAME = DATE__NAME;
 
 	/**
-	 * The feature id for the '<em><b>Person</b></em>' reference list.
+	 * The feature id for the '<em><b>Persons</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int HOLYDAY_APPLICATION__PERSON = DATE__PERSON;
+	int HOLYDAY_APPLICATION__PERSONS = DATE__PERSONS;
 
 	/**
 	 * The feature id for the '<em><b>Day Type</b></em>' attribute.
@@ -335,13 +335,13 @@ public interface CalenderPackage extends EPackage {
 	int RESPONSIBLE_PERSON = 4;
 
 	/**
-	 * The feature id for the '<em><b>Date</b></em>' reference list.
+	 * The feature id for the '<em><b>Dates</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONSIBLE_PERSON__DATE = PERSON__DATE;
+	int RESPONSIBLE_PERSON__DATES = PERSON__DATES;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -362,13 +362,22 @@ public interface CalenderPackage extends EPackage {
 	int RESPONSIBLE_PERSON__LEAVE_DAYS = PERSON__LEAVE_DAYS;
 
 	/**
+	 * The feature id for the '<em><b>Employees</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESPONSIBLE_PERSON__EMPLOYEES = PERSON_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Responsible Person</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONSIBLE_PERSON_FEATURE_COUNT = PERSON_FEATURE_COUNT + 0;
+	int RESPONSIBLE_PERSON_FEATURE_COUNT = PERSON_FEATURE_COUNT + 1;
 
 	/**
 	 * The operation id for the '<em>Accept Application</em>' operation.
@@ -408,13 +417,13 @@ public interface CalenderPackage extends EPackage {
 	int EMPLOYEE = 5;
 
 	/**
-	 * The feature id for the '<em><b>Date</b></em>' reference list.
+	 * The feature id for the '<em><b>Dates</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPLOYEE__DATE = PERSON__DATE;
+	int EMPLOYEE__DATES = PERSON__DATES;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -435,22 +444,31 @@ public interface CalenderPackage extends EPackage {
 	int EMPLOYEE__LEAVE_DAYS = PERSON__LEAVE_DAYS;
 
 	/**
-	 * The feature id for the '<em><b>Employee</b></em>' reference.
+	 * The feature id for the '<em><b>Stand In</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPLOYEE__EMPLOYEE = PERSON_FEATURE_COUNT + 0;
+	int EMPLOYEE__STAND_IN = PERSON_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Holydayapplication</b></em>' reference.
+	 * The feature id for the '<em><b>Holydayapplications</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EMPLOYEE__HOLYDAYAPPLICATION = PERSON_FEATURE_COUNT + 1;
+	int EMPLOYEE__HOLYDAYAPPLICATIONS = PERSON_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Responsible</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EMPLOYEE__RESPONSIBLE = PERSON_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Employee</em>' class.
@@ -459,7 +477,7 @@ public interface CalenderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPLOYEE_FEATURE_COUNT = PERSON_FEATURE_COUNT + 2;
+	int EMPLOYEE_FEATURE_COUNT = PERSON_FEATURE_COUNT + 3;
 
 	/**
 	 * The operation id for the '<em>Create Application</em>' operation.
@@ -521,26 +539,26 @@ public interface CalenderPackage extends EPackage {
 	EAttribute getCalender_Name();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link de.tu_bs.vacation_manager.Calender.Calender#getDate <em>Date</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.tu_bs.vacation_manager.Calender.Calender#getDates <em>Dates</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Date</em>'.
-	 * @see de.tu_bs.vacation_manager.Calender.Calender#getDate()
+	 * @return the meta object for the containment reference list '<em>Dates</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Calender#getDates()
 	 * @see #getCalender()
 	 * @generated
 	 */
-	EReference getCalender_Date();
+	EReference getCalender_Dates();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link de.tu_bs.vacation_manager.Calender.Calender#getPerson <em>Person</em>}'.
+	 * Returns the meta object for the containment reference list '{@link de.tu_bs.vacation_manager.Calender.Calender#getPersons <em>Persons</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Person</em>'.
-	 * @see de.tu_bs.vacation_manager.Calender.Calender#getPerson()
+	 * @return the meta object for the containment reference list '<em>Persons</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Calender#getPersons()
 	 * @see #getCalender()
 	 * @generated
 	 */
-	EReference getCalender_Person();
+	EReference getCalender_Persons();
 
 	/**
 	 * Returns the meta object for the '{@link de.tu_bs.vacation_manager.Calender.Calender#showGui() <em>Show Gui</em>}' operation.
@@ -585,15 +603,15 @@ public interface CalenderPackage extends EPackage {
 	EAttribute getDate_Name();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.tu_bs.vacation_manager.Calender.Date#getPerson <em>Person</em>}'.
+	 * Returns the meta object for the reference list '{@link de.tu_bs.vacation_manager.Calender.Date#getPersons <em>Persons</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Person</em>'.
-	 * @see de.tu_bs.vacation_manager.Calender.Date#getPerson()
+	 * @return the meta object for the reference list '<em>Persons</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Date#getPersons()
 	 * @see #getDate()
 	 * @generated
 	 */
-	EReference getDate_Person();
+	EReference getDate_Persons();
 
 	/**
 	 * Returns the meta object for the attribute '{@link de.tu_bs.vacation_manager.Calender.Date#getDayType <em>Day Type</em>}'.
@@ -617,15 +635,15 @@ public interface CalenderPackage extends EPackage {
 	EClass getPerson();
 
 	/**
-	 * Returns the meta object for the reference list '{@link de.tu_bs.vacation_manager.Calender.Person#getDate <em>Date</em>}'.
+	 * Returns the meta object for the reference list '{@link de.tu_bs.vacation_manager.Calender.Person#getDates <em>Dates</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Date</em>'.
-	 * @see de.tu_bs.vacation_manager.Calender.Person#getDate()
+	 * @return the meta object for the reference list '<em>Dates</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Person#getDates()
 	 * @see #getPerson()
 	 * @generated
 	 */
-	EReference getPerson_Date();
+	EReference getPerson_Dates();
 
 	/**
 	 * Returns the meta object for the attribute '{@link de.tu_bs.vacation_manager.Calender.Person#getName <em>Name</em>}'.
@@ -692,6 +710,17 @@ public interface CalenderPackage extends EPackage {
 	EClass getResponsiblePerson();
 
 	/**
+	 * Returns the meta object for the reference list '{@link de.tu_bs.vacation_manager.Calender.ResponsiblePerson#getEmployees <em>Employees</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Employees</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.ResponsiblePerson#getEmployees()
+	 * @see #getResponsiblePerson()
+	 * @generated
+	 */
+	EReference getResponsiblePerson_Employees();
+
+	/**
 	 * Returns the meta object for the '{@link de.tu_bs.vacation_manager.Calender.ResponsiblePerson#acceptApplication() <em>Accept Application</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -722,26 +751,37 @@ public interface CalenderPackage extends EPackage {
 	EClass getEmployee();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.tu_bs.vacation_manager.Calender.Employee#getEmployee <em>Employee</em>}'.
+	 * Returns the meta object for the reference '{@link de.tu_bs.vacation_manager.Calender.Employee#getStandIn <em>Stand In</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Employee</em>'.
-	 * @see de.tu_bs.vacation_manager.Calender.Employee#getEmployee()
+	 * @return the meta object for the reference '<em>Stand In</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Employee#getStandIn()
 	 * @see #getEmployee()
 	 * @generated
 	 */
-	EReference getEmployee_Employee();
+	EReference getEmployee_StandIn();
 
 	/**
-	 * Returns the meta object for the reference '{@link de.tu_bs.vacation_manager.Calender.Employee#getHolydayapplication <em>Holydayapplication</em>}'.
+	 * Returns the meta object for the reference '{@link de.tu_bs.vacation_manager.Calender.Employee#getHolydayapplications <em>Holydayapplications</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Holydayapplication</em>'.
-	 * @see de.tu_bs.vacation_manager.Calender.Employee#getHolydayapplication()
+	 * @return the meta object for the reference '<em>Holydayapplications</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Employee#getHolydayapplications()
 	 * @see #getEmployee()
 	 * @generated
 	 */
-	EReference getEmployee_Holydayapplication();
+	EReference getEmployee_Holydayapplications();
+
+	/**
+	 * Returns the meta object for the reference '{@link de.tu_bs.vacation_manager.Calender.Employee#getResponsible <em>Responsible</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Responsible</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Employee#getResponsible()
+	 * @see #getEmployee()
+	 * @generated
+	 */
+	EReference getEmployee_Responsible();
 
 	/**
 	 * Returns the meta object for the '{@link de.tu_bs.vacation_manager.Calender.Employee#createApplication() <em>Create Application</em>}' operation.
@@ -815,20 +855,20 @@ public interface CalenderPackage extends EPackage {
 		EAttribute CALENDER__NAME = eINSTANCE.getCalender_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Date</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Dates</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CALENDER__DATE = eINSTANCE.getCalender_Date();
+		EReference CALENDER__DATES = eINSTANCE.getCalender_Dates();
 
 		/**
-		 * The meta object literal for the '<em><b>Person</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Persons</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference CALENDER__PERSON = eINSTANCE.getCalender_Person();
+		EReference CALENDER__PERSONS = eINSTANCE.getCalender_Persons();
 
 		/**
 		 * The meta object literal for the '<em><b>Show Gui</b></em>' operation.
@@ -865,12 +905,12 @@ public interface CalenderPackage extends EPackage {
 		EAttribute DATE__NAME = eINSTANCE.getDate_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Person</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Persons</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference DATE__PERSON = eINSTANCE.getDate_Person();
+		EReference DATE__PERSONS = eINSTANCE.getDate_Persons();
 
 		/**
 		 * The meta object literal for the '<em><b>Day Type</b></em>' attribute feature.
@@ -891,12 +931,12 @@ public interface CalenderPackage extends EPackage {
 		EClass PERSON = eINSTANCE.getPerson();
 
 		/**
-		 * The meta object literal for the '<em><b>Date</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Dates</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference PERSON__DATE = eINSTANCE.getPerson_Date();
+		EReference PERSON__DATES = eINSTANCE.getPerson_Dates();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -951,6 +991,14 @@ public interface CalenderPackage extends EPackage {
 		EClass RESPONSIBLE_PERSON = eINSTANCE.getResponsiblePerson();
 
 		/**
+		 * The meta object literal for the '<em><b>Employees</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference RESPONSIBLE_PERSON__EMPLOYEES = eINSTANCE.getResponsiblePerson_Employees();
+
+		/**
 		 * The meta object literal for the '<em><b>Accept Application</b></em>' operation.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -977,20 +1025,28 @@ public interface CalenderPackage extends EPackage {
 		EClass EMPLOYEE = eINSTANCE.getEmployee();
 
 		/**
-		 * The meta object literal for the '<em><b>Employee</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Stand In</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EMPLOYEE__EMPLOYEE = eINSTANCE.getEmployee_Employee();
+		EReference EMPLOYEE__STAND_IN = eINSTANCE.getEmployee_StandIn();
 
 		/**
-		 * The meta object literal for the '<em><b>Holydayapplication</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Holydayapplications</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference EMPLOYEE__HOLYDAYAPPLICATION = eINSTANCE.getEmployee_Holydayapplication();
+		EReference EMPLOYEE__HOLYDAYAPPLICATIONS = eINSTANCE.getEmployee_Holydayapplications();
+
+		/**
+		 * The meta object literal for the '<em><b>Responsible</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EMPLOYEE__RESPONSIBLE = eINSTANCE.getEmployee_Responsible();
 
 		/**
 		 * The meta object literal for the '<em><b>Create Application</b></em>' operation.

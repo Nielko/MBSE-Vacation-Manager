@@ -12,8 +12,9 @@ package de.tu_bs.vacation_manager.Calender;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.Employee#getEmployee <em>Employee</em>}</li>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.Employee#getHolydayapplication <em>Holydayapplication</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Employee#getStandIn <em>Stand In</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Employee#getHolydayapplications <em>Holydayapplications</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Employee#getResponsible <em>Responsible</em>}</li>
  * </ul>
  *
  * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getEmployee()
@@ -22,56 +23,82 @@ package de.tu_bs.vacation_manager.Calender;
  */
 public interface Employee extends Person {
 	/**
-	 * Returns the value of the '<em><b>Employee</b></em>' reference.
+	 * Returns the value of the '<em><b>Stand In</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Employee</em>' reference isn't clear,
+	 * If the meaning of the '<em>Stand In</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Employee</em>' reference.
-	 * @see #setEmployee(Employee)
-	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getEmployee_Employee()
+	 * @return the value of the '<em>Stand In</em>' reference.
+	 * @see #setStandIn(Employee)
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getEmployee_StandIn()
 	 * @model
 	 * @generated
 	 */
-	Employee getEmployee();
+	Employee getStandIn();
 
 	/**
-	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Employee#getEmployee <em>Employee</em>}' reference.
+	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Employee#getStandIn <em>Stand In</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Employee</em>' reference.
-	 * @see #getEmployee()
+	 * @param value the new value of the '<em>Stand In</em>' reference.
+	 * @see #getStandIn()
 	 * @generated
 	 */
-	void setEmployee(Employee value);
+	void setStandIn(Employee value);
 
 	/**
-	 * Returns the value of the '<em><b>Holydayapplication</b></em>' reference.
+	 * Returns the value of the '<em><b>Holydayapplications</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Holydayapplication</em>' reference isn't clear,
+	 * If the meaning of the '<em>Holydayapplications</em>' reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Holydayapplication</em>' reference.
-	 * @see #setHolydayapplication(HolydayApplication)
-	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getEmployee_Holydayapplication()
+	 * @return the value of the '<em>Holydayapplications</em>' reference.
+	 * @see #setHolydayapplications(HolydayApplication)
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getEmployee_Holydayapplications()
 	 * @model
 	 * @generated
 	 */
-	HolydayApplication getHolydayapplication();
+	HolydayApplication getHolydayapplications();
 
 	/**
-	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Employee#getHolydayapplication <em>Holydayapplication</em>}' reference.
+	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Employee#getHolydayapplications <em>Holydayapplications</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Holydayapplication</em>' reference.
-	 * @see #getHolydayapplication()
+	 * @param value the new value of the '<em>Holydayapplications</em>' reference.
+	 * @see #getHolydayapplications()
 	 * @generated
 	 */
-	void setHolydayapplication(HolydayApplication value);
+	void setHolydayapplications(HolydayApplication value);
+
+	/**
+	 * Returns the value of the '<em><b>Responsible</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Responsible</em>' reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Responsible</em>' reference.
+	 * @see #setResponsible(ResponsiblePerson)
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getEmployee_Responsible()
+	 * @model
+	 * @generated
+	 */
+	ResponsiblePerson getResponsible();
+
+	/**
+	 * Sets the value of the '{@link de.tu_bs.vacation_manager.Calender.Employee#getResponsible <em>Responsible</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Responsible</em>' reference.
+	 * @see #getResponsible()
+	 * @generated
+	 */
+	void setResponsible(ResponsiblePerson value);
 
 	/**
 	 * <!-- begin-user-doc -->
