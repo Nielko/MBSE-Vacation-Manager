@@ -19,6 +19,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Calender/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/dates"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/persons"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/months"/>
       <genOperations ecoreOperation="Calender.ecore#//Calender/showGui"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Date">
@@ -47,6 +48,14 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Employee/responsible"/>
       <genOperations ecoreOperation="Calender.ecore#//Employee/createApplication"/>
       <genOperations ecoreOperation="Calender.ecore#//Employee/sendApplication"/>
+    </genClasses>
+    <genClasses ecoreClass="Calender.ecore#//Month">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Month/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Month/weeks"/>
+    </genClasses>
+    <genClasses ecoreClass="Calender.ecore#//Week">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Week/dates"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Week/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

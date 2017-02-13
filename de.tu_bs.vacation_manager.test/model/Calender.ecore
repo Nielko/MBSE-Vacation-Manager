@@ -8,6 +8,8 @@
         eType="#//Date" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="persons" upperBound="-1"
         eType="#//Person" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="months" upperBound="-1"
+        eType="#//Month" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Date">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="day" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
@@ -45,5 +47,15 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="standIn" eType="#//Employee"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="holydayapplications" eType="#//HolydayApplication"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="responsible" eType="#//ResponsiblePerson"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Month">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="weeks" upperBound="-1"
+        eType="#//Week" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Week">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dates" upperBound="-1"
+        eType="#//Date"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>
