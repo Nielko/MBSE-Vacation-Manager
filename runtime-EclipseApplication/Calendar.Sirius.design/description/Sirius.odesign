@@ -66,11 +66,11 @@
       </defaultLayer>
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="CalenderView" domainClass="Calender">
-      <ownedRepresentationNavigationDescriptions xsi:type="description_2:TableNavigationDescription" name="ChangeWeekForward" tableDescription="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']">
+      <ownedRepresentationCreationDescriptions xsi:type="description_2:TableCreationDescription">
+        <initialOperation/>
         <containerViewVariable name="containerView"/>
-        <containerVariable name="container"/>
         <representationNameVariable name="tableName"/>
-      </ownedRepresentationNavigationDescriptions>
+      </ownedRepresentationCreationDescriptions>
       <ownedLineMappings name="PersonLine" domainClass="Calender.Person" semanticCandidatesExpression="feature:persons"/>
       <ownedColumnMappings name="Monday" headerLabelExpression="Monday" featureName="dates" labelExpression="aql:self.dates.name"/>
       <ownedColumnMappings name="Tuesday" headerLabelExpression="Tuesday" featureName="dates" labelExpression="aql:self.dates.name"/>
