@@ -12,3 +12,5 @@ Thumbs.db
 .settings
 .settings*
 de.tu_bs.vacation_manager.test/src-gen
+de.tu_bs.vacation_manager.test.edit
+de.tu_bs.vacation_manager.test.editor
