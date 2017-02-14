@@ -256,6 +256,29 @@ public class CalenderItemProviderAdapterFactory extends CalenderAdapterFactory i
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link de.tu_bs.vacation_manager.Calender.Day} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected DayItemProvider dayItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.tu_bs.vacation_manager.Calender.Day}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createDayAdapter() {
+		if (dayItemProvider == null) {
+			dayItemProvider = new DayItemProvider(this);
+		}
+
+		return dayItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -362,6 +385,7 @@ public class CalenderItemProviderAdapterFactory extends CalenderAdapterFactory i
 		if (employeeItemProvider != null) employeeItemProvider.dispose();
 		if (monthItemProvider != null) monthItemProvider.dispose();
 		if (weekItemProvider != null) weekItemProvider.dispose();
+		if (dayItemProvider != null) dayItemProvider.dispose();
 	}
 
 }

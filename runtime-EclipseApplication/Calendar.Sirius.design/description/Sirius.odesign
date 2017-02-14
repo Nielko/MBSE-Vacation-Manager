@@ -72,12 +72,79 @@
         <representationNameVariable name="tableName"/>
       </ownedRepresentationNavigationDescriptions>
       <ownedLineMappings name="PersonLine" domainClass="Calender.Person" semanticCandidatesExpression="feature:persons"/>
-      <ownedColumnMappings name="Day" headerLabelExpression="Monday" featureName="dates" labelExpression="aql:self.dates.name"/>
+      <ownedColumnMappings name="Monday" headerLabelExpression="Monday" featureName="dates" labelExpression="aql:self.dates.name"/>
+      <ownedColumnMappings name="Tuesday" headerLabelExpression="Tuesday" featureName="dates" labelExpression="aql:self.dates.name"/>
+      <ownedColumnMappings name="Wednesday" headerLabelExpression="Wednesday" featureName="dates" labelExpression="aql:self.dates.name"/>
+      <ownedColumnMappings name="Thursday" headerLabelExpression="Thursday" featureName="dates" labelExpression="aql:self.dates.name"/>
+      <ownedColumnMappings name="Friday" headerLabelExpression="Friday" featureName="dates" labelExpression="aql:self.dates.name"/>
+      <ownedColumnMappings name="Saturday" headerLabelExpression="Saturday" featureName="dates" labelExpression="aql:self.dates.name"/>
+      <ownedColumnMappings name="Sunday" headerLabelExpression="Sunday" featureName="dates" labelExpression="aql:self.dates.name"/>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CalenderView2" domainClass="Calender.Month" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <containerMappings name="ContainerMonth" semanticCandidatesExpression="var:self" domainClass="Calender.Month" childrenPresentation="HorizontalStack">
+          <subContainerMappings name="ContainerWeek" semanticCandidatesExpression="feature:eAllContents" domainClass="Calender.Week">
+            <subContainerMappings name="ContainerDay" semanticCandidatesExpression="feature:eAllContents" domainClass="Calender.Week.Day" childrenPresentation="VerticalStack">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
     </ownedRepresentations>
   </ownedViewpoints>
   <ownedViewpoints name="EmployeeView" modelFileExtension="calender">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="PersonalCalendar" domainClass="Calender" enablePopupBars="true">
       <defaultLayer name="Default"/>
+    </ownedRepresentations>
+  </ownedViewpoints>
+  <ownedViewpoints name="TestDeveloperView">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="CalenderView2" domainClass="Calender.Month" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <containerMappings name="ContainerMonth" semanticCandidatesExpression="var:self" domainClass="Calender.Month">
+          <subContainerMappings name="ContainerWeek" semanticCandidatesExpression="feature:eAllContents" domainClass="Calender.Week" childrenPresentation="HorizontalStack">
+            <subContainerMappings name="ContainerDay" semanticCandidatesExpression="feature:eAllContents" domainClass="Calender.Week.Day">
+              <subContainerMappings name="ContainerDayDate" semanticCandidatesExpression="aql:self.eContainer().eContainer().eContainer().dates" domainClass="Calender.Date"/>
+            </subContainerMappings>
+            <subContainerMappings name="ContainerWeekDate" semanticCandidatesExpression="aql:self.eContainer().eContainer().dates" domainClass="Calender.Date" childrenPresentation="HorizontalStack">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
     </ownedRepresentations>
   </ownedViewpoints>
 </description:Group>

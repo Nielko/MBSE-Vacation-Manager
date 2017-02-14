@@ -96,6 +96,15 @@ public interface CalenderFactory extends EFactory {
 	Week createWeek();
 
 	/**
+	 * Returns a new object of class '<em>Day</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Day</em>'.
+	 * @generated
+	 */
+	Day createDay();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

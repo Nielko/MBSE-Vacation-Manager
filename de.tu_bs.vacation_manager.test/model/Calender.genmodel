@@ -54,8 +54,11 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Month/weeks"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Week">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Week/dates"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Week/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Week/day"/>
+    </genClasses>
+    <genClasses ecoreClass="Calender.ecore#//Day">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Day/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

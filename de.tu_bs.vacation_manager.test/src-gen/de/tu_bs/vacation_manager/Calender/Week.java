@@ -15,8 +15,8 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.Week#getDates <em>Dates</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Week#getName <em>Name</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Week#getDay <em>Day</em>}</li>
  * </ul>
  *
  * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getWeek()
@@ -24,22 +24,6 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Week extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Dates</b></em>' reference list.
-	 * The list contents are of type {@link de.tu_bs.vacation_manager.Calender.Date}.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dates</em>' reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Dates</em>' reference list.
-	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getWeek_Dates()
-	 * @model
-	 * @generated
-	 */
-	EList<Date> getDates();
-
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -65,5 +49,21 @@ public interface Week extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Day</b></em>' containment reference list.
+	 * The list contents are of type {@link de.tu_bs.vacation_manager.Calender.Day}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Day</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Day</em>' containment reference list.
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getWeek_Day()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Day> getDay();
 
 } // Week

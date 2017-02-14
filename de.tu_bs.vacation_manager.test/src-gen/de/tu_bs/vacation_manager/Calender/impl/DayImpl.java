@@ -4,39 +4,28 @@ package de.tu_bs.vacation_manager.Calender.impl;
 
 import de.tu_bs.vacation_manager.Calender.CalenderPackage;
 import de.tu_bs.vacation_manager.Calender.Day;
-import de.tu_bs.vacation_manager.Calender.Week;
-
-import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.common.notify.NotificationChain;
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 
-import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
-import org.eclipse.emf.ecore.util.InternalEList;
-
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Week</b></em>'.
+ * An implementation of the model object '<em><b>Day</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.WeekImpl#getName <em>Name</em>}</li>
- *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.WeekImpl#getDay <em>Day</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.impl.DayImpl#getName <em>Name</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
+public class DayImpl extends MinimalEObjectImpl.Container implements Day {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -58,21 +47,11 @@ public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
 	protected String name = NAME_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getDay() <em>Day</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getDay()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Day> day;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected WeekImpl() {
+	protected DayImpl() {
 		super();
 	}
 
@@ -83,7 +62,7 @@ public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return CalenderPackage.Literals.WEEK;
+		return CalenderPackage.Literals.DAY;
 	}
 
 	/**
@@ -104,33 +83,7 @@ public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.WEEK__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Day> getDay() {
-		if (day == null) {
-			day = new EObjectContainmentEList<Day>(Day.class, this, CalenderPackage.WEEK__DAY);
-		}
-		return day;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case CalenderPackage.WEEK__DAY:
-				return ((InternalEList<?>)getDay()).basicRemove(otherEnd, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
+			eNotify(new ENotificationImpl(this, Notification.SET, CalenderPackage.DAY__NAME, oldName, name));
 	}
 
 	/**
@@ -141,10 +94,8 @@ public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case CalenderPackage.WEEK__NAME:
+			case CalenderPackage.DAY__NAME:
 				return getName();
-			case CalenderPackage.WEEK__DAY:
-				return getDay();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -154,16 +105,11 @@ public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case CalenderPackage.WEEK__NAME:
+			case CalenderPackage.DAY__NAME:
 				setName((String)newValue);
-				return;
-			case CalenderPackage.WEEK__DAY:
-				getDay().clear();
-				getDay().addAll((Collection<? extends Day>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -177,11 +123,8 @@ public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case CalenderPackage.WEEK__NAME:
+			case CalenderPackage.DAY__NAME:
 				setName(NAME_EDEFAULT);
-				return;
-			case CalenderPackage.WEEK__DAY:
-				getDay().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -195,10 +138,8 @@ public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case CalenderPackage.WEEK__NAME:
+			case CalenderPackage.DAY__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case CalenderPackage.WEEK__DAY:
-				return day != null && !day.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -219,4 +160,4 @@ public class WeekImpl extends MinimalEObjectImpl.Container implements Week {
 		return result.toString();
 	}
 
-} //WeekImpl
+} //DayImpl

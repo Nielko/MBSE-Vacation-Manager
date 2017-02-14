@@ -30,6 +30,10 @@
         <description xmi:type="description_2:EditionTableDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']"/>
         <target xmi:type="calender:Calender" href="MySirius.calender#/"/>
       </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_2Q5LEPKvEeaGfPvoaXOqGg" name="new CalenderView2" representation="_2Q5LEfKvEeaGfPvoaXOqGg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']"/>
+        <target xmi:type="calender:Month" href="MySirius.calender#//@months.0"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
   <diagram:DSemanticDiagram xmi:id="_u-NWIe1VEeaR2vIniNXRiw" name="Calender">
@@ -650,13 +654,37 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer"/>
     <target xmi:type="calender:Calender" href="MySirius.calender#/"/>
   </diagram:DSemanticDiagram>
-  <table:DTable xmi:id="_dwomgfKdEeaH0s0VVeVS7A" name="new CalenderView" headerColumnWidth="199">
+  <table:DTable xmi:id="_dwomgfKdEeaH0s0VVeVS7A" name="new CalenderView" headerColumnWidth="196">
     <target xmi:type="calender:Calender" href="MySirius.calender#/"/>
     <lines xmi:type="table:DLine" xmi:id="_rsIRAPKdEeaH0s0VVeVS7A" label="Employee Hans">
       <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
       <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
       <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
-      <cells xmi:type="table:DCell" xmi:id="__712IfKeEeaH0s0VVeVS7A" label="[]" column="__712IPKeEeaH0s0VVeVS7A">
+      <cells xmi:type="table:DCell" xmi:id="_BhWsUPKoEeaH0s0VVeVS7A" label="[]" column="_BhWFQPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_CAuI4PKoEeaH0s0VVeVS7A" label="[]" column="_CAth0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_GE5I8fKoEeaH0s0VVeVS7A" label="[]" column="_GE5I8PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_MzThsfKoEeaH0s0VVeVS7A" label="[]" column="_MzThsPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_QJ3N0fKoEeaH0s0VVeVS7A" label="[]" column="_QJ3N0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_bDfp0PKoEeaH0s0VVeVS7A" label="[]" column="_bDfCwPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_gfTyQfKoEeaH0s0VVeVS7A" label="[]" column="_gfTyQPKoEeaH0s0VVeVS7A">
         <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
         <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
       </cells>
@@ -665,7 +693,31 @@
       <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
       <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
       <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
-      <cells xmi:type="table:DCell" xmi:id="__778wPKeEeaH0s0VVeVS7A" label="[]" column="__712IPKeEeaH0s0VVeVS7A">
+      <cells xmi:type="table:DCell" xmi:id="_BhWsUfKoEeaH0s0VVeVS7A" label="[]" column="_BhWFQPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_CAuI4fKoEeaH0s0VVeVS7A" label="[]" column="_CAth0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_GE6XEPKoEeaH0s0VVeVS7A" label="[]" column="_GE5I8PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_MzVW4PKoEeaH0s0VVeVS7A" label="[]" column="_MzThsPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_QJ304PKoEeaH0s0VVeVS7A" label="[]" column="_QJ3N0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_bDgQ4PKoEeaH0s0VVeVS7A" label="[]" column="_bDfCwPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_gfUZUPKoEeaH0s0VVeVS7A" label="[]" column="_gfTyQPKoEeaH0s0VVeVS7A">
         <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
         <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
       </cells>
@@ -674,7 +726,31 @@
       <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
       <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
       <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
-      <cells xmi:type="table:DCell" xmi:id="__778wfKeEeaH0s0VVeVS7A" label="[DayOff Peter]" column="__712IPKeEeaH0s0VVeVS7A">
+      <cells xmi:type="table:DCell" xmi:id="_BhWsUvKoEeaH0s0VVeVS7A" label="[DayOff Peter]" column="_BhWFQPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_CAuv8PKoEeaH0s0VVeVS7A" label="[DayOff Peter]" column="_CAth0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_GE8MQPKoEeaH0s0VVeVS7A" label="[DayOff Peter]" column="_GE5I8PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_MzV98PKoEeaH0s0VVeVS7A" label="[DayOff Peter]" column="_MzThsPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_QJ6RIPKoEeaH0s0VVeVS7A" label="[DayOff Peter]" column="_QJ3N0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_bDgQ4fKoEeaH0s0VVeVS7A" label="[DayOff Peter]" column="_bDfCwPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_gfVAYPKoEeaH0s0VVeVS7A" label="[DayOff Peter]" column="_gfTyQPKoEeaH0s0VVeVS7A">
         <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
         <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
       </cells>
@@ -683,7 +759,31 @@
       <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
       <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
       <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
-      <cells xmi:type="table:DCell" xmi:id="__78j0PKeEeaH0s0VVeVS7A" label="[DayOff Werner]" column="__712IPKeEeaH0s0VVeVS7A">
+      <cells xmi:type="table:DCell" xmi:id="_BhXTYPKoEeaH0s0VVeVS7A" label="[DayOff Werner]" column="_BhWFQPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_CAuv8fKoEeaH0s0VVeVS7A" label="[DayOff Werner]" column="_CAth0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_GE_PkPKoEeaH0s0VVeVS7A" label="[DayOff Werner]" column="_GE5I8PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_MzV98fKoEeaH0s0VVeVS7A" label="[DayOff Werner]" column="_MzThsPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_QJ64MPKoEeaH0s0VVeVS7A" label="[DayOff Werner]" column="_QJ3N0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_bDg38PKoEeaH0s0VVeVS7A" label="[DayOff Werner]" column="_bDfCwPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_gfVAYfKoEeaH0s0VVeVS7A" label="[DayOff Werner]" column="_gfTyQPKoEeaH0s0VVeVS7A">
         <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
         <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
       </cells>
@@ -692,7 +792,31 @@
       <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
       <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
       <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
-      <cells xmi:type="table:DCell" xmi:id="__78j0fKeEeaH0s0VVeVS7A" label="[]" column="__712IPKeEeaH0s0VVeVS7A">
+      <cells xmi:type="table:DCell" xmi:id="_BhX6cPKoEeaH0s0VVeVS7A" label="[]" column="_BhWFQPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_CAuv8vKoEeaH0s0VVeVS7A" label="[]" column="_CAth0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_GFAdsPKoEeaH0s0VVeVS7A" label="[]" column="_GE5I8PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_MzWlAPKoEeaH0s0VVeVS7A" label="[]" column="_MzThsPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_QJ7fQPKoEeaH0s0VVeVS7A" label="[]" column="_QJ3N0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_bDhfAPKoEeaH0s0VVeVS7A" label="[]" column="_bDfCwPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_gfVncPKoEeaH0s0VVeVS7A" label="[]" column="_gfTyQPKoEeaH0s0VVeVS7A">
         <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
         <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
       </cells>
@@ -701,14 +825,123 @@
       <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
       <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
       <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
-      <cells xmi:type="table:DCell" xmi:id="__78j0vKeEeaH0s0VVeVS7A" label="[]" column="__712IPKeEeaH0s0VVeVS7A">
+      <cells xmi:type="table:DCell" xmi:id="_BhX6cfKoEeaH0s0VVeVS7A" label="[]" column="_BhWFQPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_CAuv8_KoEeaH0s0VVeVS7A" label="[]" column="_CAth0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_GFBr0PKoEeaH0s0VVeVS7A" label="[]" column="_GE5I8PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_MzWlAfKoEeaH0s0VVeVS7A" label="[]" column="_MzThsPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_QJ8GUPKoEeaH0s0VVeVS7A" label="[]" column="_QJ3N0PKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_bDiGEPKoEeaH0s0VVeVS7A" label="[]" column="_bDfCwPKoEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      </cells>
+      <cells xmi:type="table:DCell" xmi:id="_gfWOgPKoEeaH0s0VVeVS7A" label="[]" column="_gfTyQPKoEeaH0s0VVeVS7A">
         <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
         <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
       </cells>
     </lines>
-    <columns xmi:type="table:DFeatureColumn" xmi:id="__712IPKeEeaH0s0VVeVS7A" label="Monday" cells="__712IfKeEeaH0s0VVeVS7A __778wPKeEeaH0s0VVeVS7A __778wfKeEeaH0s0VVeVS7A __78j0PKeEeaH0s0VVeVS7A __78j0fKeEeaH0s0VVeVS7A __78j0vKeEeaH0s0VVeVS7A" width="105" featureName="dates">
-      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Day']"/>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_BhWFQPKoEeaH0s0VVeVS7A" label="Monday" cells="_BhWsUPKoEeaH0s0VVeVS7A _BhWsUfKoEeaH0s0VVeVS7A _BhWsUvKoEeaH0s0VVeVS7A _BhXTYPKoEeaH0s0VVeVS7A _BhX6cPKoEeaH0s0VVeVS7A _BhX6cfKoEeaH0s0VVeVS7A" width="94" featureName="dates">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Monday']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_CAth0PKoEeaH0s0VVeVS7A" label="Tuesday" cells="_CAuI4PKoEeaH0s0VVeVS7A _CAuI4fKoEeaH0s0VVeVS7A _CAuv8PKoEeaH0s0VVeVS7A _CAuv8fKoEeaH0s0VVeVS7A _CAuv8vKoEeaH0s0VVeVS7A _CAuv8_KoEeaH0s0VVeVS7A" width="73" featureName="dates">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Tuesday']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_GE5I8PKoEeaH0s0VVeVS7A" label="Wednesday" cells="_GE5I8fKoEeaH0s0VVeVS7A _GE6XEPKoEeaH0s0VVeVS7A _GE8MQPKoEeaH0s0VVeVS7A _GE_PkPKoEeaH0s0VVeVS7A _GFAdsPKoEeaH0s0VVeVS7A _GFBr0PKoEeaH0s0VVeVS7A" width="82" featureName="dates">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Wednesday']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_MzThsPKoEeaH0s0VVeVS7A" label="Thursday" cells="_MzThsfKoEeaH0s0VVeVS7A _MzVW4PKoEeaH0s0VVeVS7A _MzV98PKoEeaH0s0VVeVS7A _MzV98fKoEeaH0s0VVeVS7A _MzWlAPKoEeaH0s0VVeVS7A _MzWlAfKoEeaH0s0VVeVS7A" width="90" featureName="dates">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Thursday']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_QJ3N0PKoEeaH0s0VVeVS7A" label="Friday" cells="_QJ3N0fKoEeaH0s0VVeVS7A _QJ304PKoEeaH0s0VVeVS7A _QJ6RIPKoEeaH0s0VVeVS7A _QJ64MPKoEeaH0s0VVeVS7A _QJ7fQPKoEeaH0s0VVeVS7A _QJ8GUPKoEeaH0s0VVeVS7A" width="91" featureName="dates">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Friday']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_bDfCwPKoEeaH0s0VVeVS7A" label="Saturday" cells="_bDfp0PKoEeaH0s0VVeVS7A _bDgQ4PKoEeaH0s0VVeVS7A _bDgQ4fKoEeaH0s0VVeVS7A _bDg38PKoEeaH0s0VVeVS7A _bDhfAPKoEeaH0s0VVeVS7A _bDiGEPKoEeaH0s0VVeVS7A" width="98" featureName="dates">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Saturday']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="_gfTyQPKoEeaH0s0VVeVS7A" label="Sunday" cells="_gfTyQfKoEeaH0s0VVeVS7A _gfUZUPKoEeaH0s0VVeVS7A _gfVAYPKoEeaH0s0VVeVS7A _gfVAYfKoEeaH0s0VVeVS7A _gfVncPKoEeaH0s0VVeVS7A _gfWOgPKoEeaH0s0VVeVS7A" width="98" featureName="dates">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Sunday']"/>
     </columns>
     <description xmi:type="description_2:EditionTableDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']"/>
   </table:DTable>
+  <diagram:DSemanticDiagram xmi:id="_2Q5LEfKvEeaGfPvoaXOqGg" name="new CalenderView2">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_2Q5LEvKvEeaGfPvoaXOqGg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_2Q5LE_KvEeaGfPvoaXOqGg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_2Q5LG_KvEeaGfPvoaXOqGg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_2Q5LHPKvEeaGfPvoaXOqGg" type="Sirius" element="_2Q5LEfKvEeaGfPvoaXOqGg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_2Q5yIPKvEeaGfPvoaXOqGg" type="2002" element="_2Q5LFPKvEeaGfPvoaXOqGg">
+          <children xmi:type="notation:Node" xmi:id="_2Q5yI_KvEeaGfPvoaXOqGg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_2Q6ZMPKvEeaGfPvoaXOqGg" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_2Q6ZM_KvEeaGfPvoaXOqGg" type="3008" element="_2Q5LFvKvEeaGfPvoaXOqGg">
+              <children xmi:type="notation:Node" xmi:id="_2Q7AQPKvEeaGfPvoaXOqGg" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_2Q7AQfKvEeaGfPvoaXOqGg" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_2Q7AQvKvEeaGfPvoaXOqGg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_2Q7AQ_KvEeaGfPvoaXOqGg"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_2Q7ARPKvEeaGfPvoaXOqGg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_2Q6ZNPKvEeaGfPvoaXOqGg" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2Q6ZNfKvEeaGfPvoaXOqGg"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_2Q7nUPKvEeaGfPvoaXOqGg" type="3008" element="_2Q5LGPKvEeaGfPvoaXOqGg">
+              <children xmi:type="notation:Node" xmi:id="_2Q8OYPKvEeaGfPvoaXOqGg" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_2Q8OYfKvEeaGfPvoaXOqGg" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_2Q8OYvKvEeaGfPvoaXOqGg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_2Q8OY_KvEeaGfPvoaXOqGg"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_2Q8OZPKvEeaGfPvoaXOqGg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_2Q7nUfKvEeaGfPvoaXOqGg" fontName="Segoe UI" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2Q7nUvKvEeaGfPvoaXOqGg" x="40"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_2Q6ZMfKvEeaGfPvoaXOqGg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_2Q6ZMvKvEeaGfPvoaXOqGg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_2Q5yIfKvEeaGfPvoaXOqGg" fontName="Segoe UI" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2Q5yIvKvEeaGfPvoaXOqGg"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_2Q5LHfKvEeaGfPvoaXOqGg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_2Q5LFPKvEeaGfPvoaXOqGg" name="Januar" childrenPresentation="HorizontalStack">
+      <target xmi:type="calender:Month" href="MySirius.calender#//@months.0"/>
+      <semanticElements xmi:type="calender:Month" href="MySirius.calender#//@months.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_2Q5LFfKvEeaGfPvoaXOqGg" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="217,196,215">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']/@defaultLayer/@containerMappings[name='ContainerMonth']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']/@defaultLayer/@containerMappings[name='ContainerMonth']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_2Q5LFvKvEeaGfPvoaXOqGg" name="KW1">
+        <target xmi:type="calender:Week" href="MySirius.calender#//@months.0/@weeks.0"/>
+        <semanticElements xmi:type="calender:Week" href="MySirius.calender#//@months.0/@weeks.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_2Q5LF_KvEeaGfPvoaXOqGg" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']/@defaultLayer/@containerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerWeek']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']/@defaultLayer/@containerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerWeek']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_2Q5LGPKvEeaGfPvoaXOqGg" name="KW2">
+        <target xmi:type="calender:Week" href="MySirius.calender#//@months.0/@weeks.1"/>
+        <semanticElements xmi:type="calender:Week" href="MySirius.calender#//@months.0/@weeks.1"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_2Q5LGfKvEeaGfPvoaXOqGg" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']/@defaultLayer/@containerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerWeek']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']/@defaultLayer/@containerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerWeek']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_2Q5LGvKvEeaGfPvoaXOqGg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView2']/@defaultLayer"/>
+    <target xmi:type="calender:Month" href="MySirius.calender#//@months.0"/>
+  </diagram:DSemanticDiagram>
 </xmi:XMI>

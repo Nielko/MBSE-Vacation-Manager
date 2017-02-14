@@ -8,4 +8,12 @@
   <persons xsi:type="calender:Employee" dates="//@dates.1" name="Werner" responsible="//@persons.1"/>
   <persons xsi:type="calender:ResponsiblePerson" name="Karsten" employees="//@persons.5"/>
   <persons xsi:type="calender:Employee" name="Charlotte" responsible="//@persons.4"/>
+  <months name="Januar">
+    <weeks name="KW1">
+      <day name="Monday"/>
+    </weeks>
+    <weeks name="KW2">
+      <day name="Monday"/>
+    </weeks>
+  </months>
 </calender:Calender>
