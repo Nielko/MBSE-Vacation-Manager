@@ -92,6 +92,14 @@ public class CalenderAdapterFactory extends AdapterFactoryImpl {
 				return createEmployeeAdapter();
 			}
 			@Override
+			public Adapter caseMonth(Month object) {
+				return createMonthAdapter();
+			}
+			@Override
+			public Adapter caseWeek(Week object) {
+				return createWeekAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -192,6 +200,34 @@ public class CalenderAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createEmployeeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.tu_bs.vacation_manager.Calender.Month <em>Month</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.tu_bs.vacation_manager.Calender.Month
+	 * @generated
+	 */
+	public Adapter createMonthAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link de.tu_bs.vacation_manager.Calender.Week <em>Week</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see de.tu_bs.vacation_manager.Calender.Week
+	 * @generated
+	 */
+	public Adapter createWeekAdapter() {
 		return null;
 	}
 

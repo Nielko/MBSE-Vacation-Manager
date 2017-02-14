@@ -8,9 +8,11 @@ import de.tu_bs.vacation_manager.Calender.CalenderPackage;
 import de.tu_bs.vacation_manager.Calender.Date;
 import de.tu_bs.vacation_manager.Calender.Employee;
 import de.tu_bs.vacation_manager.Calender.HolydayApplication;
+import de.tu_bs.vacation_manager.Calender.Month;
 import de.tu_bs.vacation_manager.Calender.Person;
 
 import de.tu_bs.vacation_manager.Calender.ResponsiblePerson;
+import de.tu_bs.vacation_manager.Calender.Week;
 import de.tu_bs.vacation_manager.Calender.WorkingDayType;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -69,6 +71,20 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * @generated
 	 */
 	private EClass employeeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass monthEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass weekEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,6 +188,15 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 */
 	public EReference getCalender_Persons() {
 		return (EReference)calenderEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCalender_Months() {
+		return (EReference)calenderEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -386,6 +411,60 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getMonth() {
+		return monthEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getMonth_Name() {
+		return (EAttribute)monthEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getMonth_Weeks() {
+		return (EReference)monthEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getWeek() {
+		return weekEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getWeek_Dates() {
+		return (EReference)weekEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getWeek_Name() {
+		return (EAttribute)weekEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EEnum getWorkingDayType() {
 		return workingDayTypeEEnum;
 	}
@@ -422,6 +501,7 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		createEAttribute(calenderEClass, CALENDER__NAME);
 		createEReference(calenderEClass, CALENDER__DATES);
 		createEReference(calenderEClass, CALENDER__PERSONS);
+		createEReference(calenderEClass, CALENDER__MONTHS);
 		createEOperation(calenderEClass, CALENDER___SHOW_GUI);
 
 		dateEClass = createEClass(DATE);
@@ -450,6 +530,14 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		createEReference(employeeEClass, EMPLOYEE__RESPONSIBLE);
 		createEOperation(employeeEClass, EMPLOYEE___CREATE_APPLICATION);
 		createEOperation(employeeEClass, EMPLOYEE___SEND_APPLICATION);
+
+		monthEClass = createEClass(MONTH);
+		createEAttribute(monthEClass, MONTH__NAME);
+		createEReference(monthEClass, MONTH__WEEKS);
+
+		weekEClass = createEClass(WEEK);
+		createEReference(weekEClass, WEEK__DATES);
+		createEAttribute(weekEClass, WEEK__NAME);
 
 		// Create enums
 		workingDayTypeEEnum = createEEnum(WORKING_DAY_TYPE);
@@ -492,6 +580,7 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		initEAttribute(getCalender_Name(), ecorePackage.getEString(), "name", null, 0, 1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCalender_Dates(), this.getDate(), null, "dates", null, 0, -1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCalender_Persons(), this.getPerson(), null, "persons", null, 0, -1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalender_Months(), this.getMonth(), null, "months", null, 0, -1, Calender.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEOperation(getCalender__ShowGui(), null, "showGui", 0, 1, IS_UNIQUE, IS_ORDERED);
 
@@ -525,6 +614,14 @@ public class CalenderPackageImpl extends EPackageImpl implements CalenderPackage
 		initEOperation(getEmployee__CreateApplication(), null, "createApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEOperation(getEmployee__SendApplication(), null, "sendApplication", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(monthEClass, Month.class, "Month", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getMonth_Name(), ecorePackage.getEString(), "name", null, 0, 1, Month.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getMonth_Weeks(), this.getWeek(), null, "weeks", null, 0, -1, Month.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(weekEClass, Week.class, "Week", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getWeek_Dates(), this.getDate(), null, "dates", null, 0, -1, Week.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getWeek_Name(), ecorePackage.getEString(), "name", null, 0, 1, Week.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(workingDayTypeEEnum, WorkingDayType.class, "WorkingDayType");

@@ -63,6 +63,8 @@ public class CalenderFactoryImpl extends EFactoryImpl implements CalenderFactory
 			case CalenderPackage.HOLYDAY_APPLICATION: return createHolydayApplication();
 			case CalenderPackage.RESPONSIBLE_PERSON: return createResponsiblePerson();
 			case CalenderPackage.EMPLOYEE: return createEmployee();
+			case CalenderPackage.MONTH: return createMonth();
+			case CalenderPackage.WEEK: return createWeek();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -156,6 +158,26 @@ public class CalenderFactoryImpl extends EFactoryImpl implements CalenderFactory
 	public Employee createEmployee() {
 		EmployeeImpl employee = new EmployeeImpl();
 		return employee;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Month createMonth() {
+		MonthImpl month = new MonthImpl();
+		return month;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Week createWeek() {
+		WeekImpl week = new WeekImpl();
+		return week;
 	}
 
 	/**

@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calender="https://tu-bs.de/isf/vacation_test" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_9LgCoO1SEeaaxcvS2FJSNA" selectedViews="_wlCNMO1ZEealIuhfHomOmg" version="11.1.0.201608251200">
+    <semanticResources>MySirius.calender</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_eHGPEO1VEeaR2vIniNXRiw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_YEW0EO1WEeaR2vIniNXRiw" name="new PersonsDiagram" representation="_YEW0Ee1WEeaR2vIniNXRiw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']"/>
+        <target xmi:type="calender:Calender" href="test1.calender#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_J6fPAO1ZEealIuhfHomOmg" name="new PersonsDiagram" representation="_J6f2EO1ZEealIuhfHomOmg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']"/>
+        <target xmi:type="calender:Calender" href="test1.calender#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_u9-FkO1VEeaR2vIniNXRiw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_u-NWIO1VEeaR2vIniNXRiw" name="Calender" representation="_u-NWIe1VEeaR2vIniNXRiw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']"/>
+        <target xmi:type="calender:Calender" href="test1.calender#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_wlCNMO1ZEealIuhfHomOmg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_W1VIoPKaEeaH0s0VVeVS7A" name="new PersonsManager" representation="_W1VvsPKaEeaH0s0VVeVS7A">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']"/>
+        <target xmi:type="calender:Calender" href="MySirius.calender#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_dwomgPKdEeaH0s0VVeVS7A" name="new CalenderView" representation="_dwomgfKdEeaH0s0VVeVS7A">
+        <description xmi:type="description_2:EditionTableDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']"/>
+        <target xmi:type="calender:Calender" href="MySirius.calender#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_u-NWIe1VEeaR2vIniNXRiw" name="Calender">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_u-NWIu1VEeaR2vIniNXRiw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_u-NWI-1VEeaR2vIniNXRiw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_u-eb4O1VEeaR2vIniNXRiw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_u-eb4e1VEeaR2vIniNXRiw" type="Sirius" element="_u-NWIe1VEeaR2vIniNXRiw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_u-g4IO1VEeaR2vIniNXRiw" type="2001" element="_u-NWJO1VEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="_u-m-wO1VEeaR2vIniNXRiw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_u-m-we1VEeaR2vIniNXRiw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u-qpIO1VEeaR2vIniNXRiw" type="3016" element="_u-NWJe1VEeaR2vIniNXRiw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_u-qpIe1VEeaR2vIniNXRiw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u-qpIu1VEeaR2vIniNXRiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_u-g4Ie1VEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u-g4Iu1VEeaR2vIniNXRiw" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_u-oM4O1VEeaR2vIniNXRiw" type="2001" element="_u-NWJu1VEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="_u-oz8O1VEeaR2vIniNXRiw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_u-oz8e1VEeaR2vIniNXRiw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u-rQMO1VEeaR2vIniNXRiw" type="3016" element="_u-NWJ-1VEeaR2vIniNXRiw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_u-rQMe1VEeaR2vIniNXRiw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u-rQMu1VEeaR2vIniNXRiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_u-oM4e1VEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u-oM4u1VEeaR2vIniNXRiw" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_u-oz8u1VEeaR2vIniNXRiw" type="2001" element="_u-NWKO1VEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="_u-pbAO1VEeaR2vIniNXRiw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_u-pbAe1VEeaR2vIniNXRiw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u-r3QO1VEeaR2vIniNXRiw" type="3016" element="_u-NWKe1VEeaR2vIniNXRiw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_u-r3Qe1VEeaR2vIniNXRiw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u-r3Qu1VEeaR2vIniNXRiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_u-oz8-1VEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u-oz9O1VEeaR2vIniNXRiw" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_u-pbAu1VEeaR2vIniNXRiw" type="2001" element="_u-NWKu1VEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="_u-qCEO1VEeaR2vIniNXRiw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_u-qCEe1VEeaR2vIniNXRiw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u-r3Q-1VEeaR2vIniNXRiw" type="3016" element="_u-NWK-1VEeaR2vIniNXRiw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_u-r3RO1VEeaR2vIniNXRiw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u-r3Re1VEeaR2vIniNXRiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_u-pbA-1VEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u-pbBO1VEeaR2vIniNXRiw" width="50" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_u-eb4u1VEeaR2vIniNXRiw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_u-NWJO1VEeaR2vIniNXRiw" name="Bernd" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:ResponsiblePerson" href="test1.calender#//@person.0"/>
+      <semanticElements xmi:type="calender:ResponsiblePerson" href="test1.calender#//@person.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_u-NWJe1VEeaR2vIniNXRiw" labelSize="12" labelPosition="node">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_u-NWJu1VEeaR2vIniNXRiw" name="Peter" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.1"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.1"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_u-NWJ-1VEeaR2vIniNXRiw" labelSize="12" labelPosition="node">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_u-NWKO1VEeaR2vIniNXRiw" name="Hans" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.2"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.2"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_u-NWKe1VEeaR2vIniNXRiw" labelSize="12" labelPosition="node">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_u-NWKu1VEeaR2vIniNXRiw" name="Werner" width="5" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.3"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.3"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_u-NWK-1VEeaR2vIniNXRiw" labelSize="12" labelPosition="node">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer/@nodeMappings[name='CalenderPerson']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_u-NWLO1VEeaR2vIniNXRiw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/testCalender.design/description/testCalender.odesign#//@ownedViewpoints[name='calender']/@ownedRepresentations[name='Calender']/@defaultLayer"/>
+    <target xmi:type="calender:Calender" href="test1.calender#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_YEW0Ee1WEeaR2vIniNXRiw" name="new PersonsDiagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_YEW0Eu1WEeaR2vIniNXRiw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_YEW0E-1WEeaR2vIniNXRiw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_YEW0Fe1WEeaR2vIniNXRiw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_YEW0Fu1WEeaR2vIniNXRiw" type="Sirius" element="_YEW0Ee1WEeaR2vIniNXRiw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_ZIOPYO1XEeaR2vIniNXRiw" type="2001" element="_ZIIv0O1XEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="_ZIO2cO1XEeaR2vIniNXRiw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ZIO2ce1XEeaR2vIniNXRiw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hAnvAO1XEeaR2vIniNXRiw" type="3016" element="_hAhoYO1XEeaR2vIniNXRiw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hAnvAe1XEeaR2vIniNXRiw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hAnvAu1XEeaR2vIniNXRiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ZIOPYe1XEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZIOPYu1XEeaR2vIniNXRiw" x="-70" y="-15" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ZIPdgO1XEeaR2vIniNXRiw" type="2001" element="_ZIKlAO1XEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="_ZIQEkO1XEeaR2vIniNXRiw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ZIQEke1XEeaR2vIniNXRiw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hApkMO1XEeaR2vIniNXRiw" type="3016" element="_hAkrsO1XEeaR2vIniNXRiw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hApkMe1XEeaR2vIniNXRiw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hApkMu1XEeaR2vIniNXRiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ZIPdge1XEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZIPdgu1XEeaR2vIniNXRiw" x="439" y="230" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ZIQEku1XEeaR2vIniNXRiw" type="2001" element="_ZILMEO1XEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="_ZIQroO1XEeaR2vIniNXRiw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ZIQroe1XEeaR2vIniNXRiw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_hArZYO1XEeaR2vIniNXRiw" type="3016" element="_hAlSwO1XEeaR2vIniNXRiw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_hArZYe1XEeaR2vIniNXRiw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hArZYu1XEeaR2vIniNXRiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ZIQEk-1XEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZIQElO1XEeaR2vIniNXRiw" x="510" y="150" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fARn4O1XEeaR2vIniNXRiw" type="2001" element="_fANWcO1XEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="_fASO8O1XEeaR2vIniNXRiw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_fASO8e1XEeaR2vIniNXRiw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fAS2AO1XEeaR2vIniNXRiw" type="3016" element="_fAN9gO1XEeaR2vIniNXRiw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_fAS2Ae1XEeaR2vIniNXRiw" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fAS2Au1XEeaR2vIniNXRiw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fARn4e1XEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fARn4u1XEeaR2vIniNXRiw" x="150" y="85" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_YEW0F-1WEeaR2vIniNXRiw"/>
+        <edges xmi:type="notation:Edge" xmi:id="__5m1YO1XEeaR2vIniNXRiw" type="4001" element="__5hV0O1XEeaR2vIniNXRiw" source="_ZIPdgO1XEeaR2vIniNXRiw" target="_fARn4O1XEeaR2vIniNXRiw">
+          <children xmi:type="notation:Node" xmi:id="__5oDgO1XEeaR2vIniNXRiw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__5oDge1XEeaR2vIniNXRiw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__5oqkO1XEeaR2vIniNXRiw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__5oqke1XEeaR2vIniNXRiw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="__5oqku1XEeaR2vIniNXRiw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="__5oqk-1XEeaR2vIniNXRiw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="__5m1Ye1XEeaR2vIniNXRiw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="__5m1Yu1XEeaR2vIniNXRiw" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__5m1Y-1XEeaR2vIniNXRiw" points="[439, 230, 439, 230]$[150, 85, 150, 85]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="__5oqlO1XEeaR2vIniNXRiw" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="__5oqle1XEeaR2vIniNXRiw" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ZIIv0O1XEeaR2vIniNXRiw" name="Peter" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.1"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.1"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_hAhoYO1XEeaR2vIniNXRiw" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ZIKlAO1XEeaR2vIniNXRiw" name="Hans" outgoingEdges="__5hV0O1XEeaR2vIniNXRiw" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.2"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_hAkrsO1XEeaR2vIniNXRiw" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ZILMEO1XEeaR2vIniNXRiw" name="Werner" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.3"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_hAlSwO1XEeaR2vIniNXRiw" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_fANWcO1XEeaR2vIniNXRiw" name="Bernd" incomingEdges="__5hV0O1XEeaR2vIniNXRiw" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:ResponsiblePerson" href="test1.calender#//@person.0"/>
+      <semanticElements xmi:type="calender:ResponsiblePerson" href="test1.calender#//@person.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_fAN9gO1XEeaR2vIniNXRiw" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="__5hV0O1XEeaR2vIniNXRiw" sourceNode="_ZIKlAO1XEeaR2vIniNXRiw" targetNode="_fANWcO1XEeaR2vIniNXRiw">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="__5hV0e1XEeaR2vIniNXRiw" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@edgeMappings[name='ResonseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="__5hV0u1XEeaR2vIniNXRiw"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@edgeMappings[name='ResonseEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_YEW0FO1WEeaR2vIniNXRiw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer"/>
+    <target xmi:type="calender:Calender" href="test1.calender#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_J6f2EO1ZEealIuhfHomOmg" name="new PersonsDiagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_J6f2Ee1ZEealIuhfHomOmg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_J6gdIO1ZEealIuhfHomOmg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_J6hEMO1ZEealIuhfHomOmg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_J6hEMe1ZEealIuhfHomOmg" type="Sirius" element="_J6f2EO1ZEealIuhfHomOmg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_J6hEM-1ZEealIuhfHomOmg" type="2001" element="_J6gdIe1ZEealIuhfHomOmg">
+          <children xmi:type="notation:Node" xmi:id="_J6hrQO1ZEealIuhfHomOmg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_J6hrQe1ZEealIuhfHomOmg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6kukO1ZEealIuhfHomOmg" type="3016" element="_J6gdIu1ZEealIuhfHomOmg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_J6kuke1ZEealIuhfHomOmg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6kuku1ZEealIuhfHomOmg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_J6hENO1ZEealIuhfHomOmg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6hENe1ZEealIuhfHomOmg" x="160" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_J6iSUO1ZEealIuhfHomOmg" type="2001" element="_J6gdI-1ZEealIuhfHomOmg">
+          <children xmi:type="notation:Node" xmi:id="_J6iSU-1ZEealIuhfHomOmg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_J6iSVO1ZEealIuhfHomOmg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6kuk-1ZEealIuhfHomOmg" type="3016" element="_J6gdJO1ZEealIuhfHomOmg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_J6kulO1ZEealIuhfHomOmg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6kule1ZEealIuhfHomOmg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_J6iSUe1ZEealIuhfHomOmg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6iSUu1ZEealIuhfHomOmg" x="320" y="110" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_J6i5YO1ZEealIuhfHomOmg" type="2001" element="_J6gdJe1ZEealIuhfHomOmg">
+          <children xmi:type="notation:Node" xmi:id="_J6i5Y-1ZEealIuhfHomOmg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_J6i5ZO1ZEealIuhfHomOmg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6lVoO1ZEealIuhfHomOmg" type="3016" element="_J6gdJu1ZEealIuhfHomOmg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_J6lVoe1ZEealIuhfHomOmg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6lVou1ZEealIuhfHomOmg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_J6i5Ye1ZEealIuhfHomOmg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6i5Yu1ZEealIuhfHomOmg" y="110" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_J6jgcO1ZEealIuhfHomOmg" type="2001" element="_J6gdJ-1ZEealIuhfHomOmg">
+          <children xmi:type="notation:Node" xmi:id="_J6kHgO1ZEealIuhfHomOmg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_J6kHge1ZEealIuhfHomOmg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6l8sO1ZEealIuhfHomOmg" type="3016" element="_J6gdKO1ZEealIuhfHomOmg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_J6mjwO1ZEealIuhfHomOmg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6mjwe1ZEealIuhfHomOmg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_J6jgce1ZEealIuhfHomOmg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6jgcu1ZEealIuhfHomOmg" x="160" y="110" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_J6hEMu1ZEealIuhfHomOmg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_J6nK0O1ZEealIuhfHomOmg" type="4001" element="_J6gdKe1ZEealIuhfHomOmg" source="_J6iSUO1ZEealIuhfHomOmg" target="_J6hEM-1ZEealIuhfHomOmg">
+          <children xmi:type="notation:Node" xmi:id="_J6nK1O1ZEealIuhfHomOmg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6nK1e1ZEealIuhfHomOmg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6nx4O1ZEealIuhfHomOmg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6nx4e1ZEealIuhfHomOmg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6oY8O1ZEealIuhfHomOmg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6oY8e1ZEealIuhfHomOmg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_J6nK0e1ZEealIuhfHomOmg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_J6nK0u1ZEealIuhfHomOmg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J6nK0-1ZEealIuhfHomOmg" points="[0, 0, 160, 60]$[-160, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J6rcQO1ZEealIuhfHomOmg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J6sDUO1ZEealIuhfHomOmg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_J6sDUe1ZEealIuhfHomOmg" type="4001" element="_J6gdLO1ZEealIuhfHomOmg" source="_J6i5YO1ZEealIuhfHomOmg" target="_J6hEM-1ZEealIuhfHomOmg">
+          <children xmi:type="notation:Node" xmi:id="_J6sDVe1ZEealIuhfHomOmg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6sDVu1ZEealIuhfHomOmg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6sqYO1ZEealIuhfHomOmg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6sqYe1ZEealIuhfHomOmg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6sqYu1ZEealIuhfHomOmg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6sqY-1ZEealIuhfHomOmg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_J6sDUu1ZEealIuhfHomOmg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_J6sDU-1ZEealIuhfHomOmg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J6sDVO1ZEealIuhfHomOmg" points="[0, 0, -160, 60]$[160, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J6tRcO1ZEealIuhfHomOmg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J6tRce1ZEealIuhfHomOmg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_J6t4gO1ZEealIuhfHomOmg" type="4001" element="_J6gdL-1ZEealIuhfHomOmg" source="_J6jgcO1ZEealIuhfHomOmg" target="_J6hEM-1ZEealIuhfHomOmg">
+          <children xmi:type="notation:Node" xmi:id="_J6t4hO1ZEealIuhfHomOmg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6t4he1ZEealIuhfHomOmg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6ufkO1ZEealIuhfHomOmg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6ufke1ZEealIuhfHomOmg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J6vGoO1ZEealIuhfHomOmg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J6vGoe1ZEealIuhfHomOmg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_J6t4ge1ZEealIuhfHomOmg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_J6t4gu1ZEealIuhfHomOmg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J6t4g-1ZEealIuhfHomOmg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J6vGou1ZEealIuhfHomOmg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J6vGo-1ZEealIuhfHomOmg" id="(0.5,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_J6gdIe1ZEealIuhfHomOmg" name="Bernd" incomingEdges="_J6gdKe1ZEealIuhfHomOmg _J6gdLO1ZEealIuhfHomOmg _J6gdL-1ZEealIuhfHomOmg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:ResponsiblePerson" href="test1.calender#//@person.0"/>
+      <semanticElements xmi:type="calender:ResponsiblePerson" href="test1.calender#//@person.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_J6gdIu1ZEealIuhfHomOmg" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_J6gdI-1ZEealIuhfHomOmg" name="Peter" outgoingEdges="_J6gdKe1ZEealIuhfHomOmg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.1"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.1"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_J6gdJO1ZEealIuhfHomOmg" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_J6gdJe1ZEealIuhfHomOmg" name="Hans" outgoingEdges="_J6gdLO1ZEealIuhfHomOmg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.2"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.2"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_J6gdJu1ZEealIuhfHomOmg" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_J6gdJ-1ZEealIuhfHomOmg" name="Werner" outgoingEdges="_J6gdL-1ZEealIuhfHomOmg" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.3"/>
+      <semanticElements xmi:type="calender:Employee" href="test1.calender#//@person.3"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_J6gdKO1ZEealIuhfHomOmg" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_J6gdKe1ZEealIuhfHomOmg" sourceNode="_J6gdI-1ZEealIuhfHomOmg" targetNode="_J6gdIe1ZEealIuhfHomOmg">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_J6gdKu1ZEealIuhfHomOmg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@edgeMappings[name='ResonseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_J6gdK-1ZEealIuhfHomOmg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@edgeMappings[name='ResonseEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_J6gdLO1ZEealIuhfHomOmg" sourceNode="_J6gdJe1ZEealIuhfHomOmg" targetNode="_J6gdIe1ZEealIuhfHomOmg">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_J6gdLe1ZEealIuhfHomOmg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@edgeMappings[name='ResonseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_J6gdLu1ZEealIuhfHomOmg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@edgeMappings[name='ResonseEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_J6gdL-1ZEealIuhfHomOmg" sourceNode="_J6gdJ-1ZEealIuhfHomOmg" targetNode="_J6gdIe1ZEealIuhfHomOmg">
+      <target xmi:type="calender:Employee" href="test1.calender#//@person.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_J6gdMO1ZEealIuhfHomOmg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@edgeMappings[name='ResonseEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_J6gdMe1ZEealIuhfHomOmg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer/@edgeMappings[name='ResonseEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_J6gdMu1ZEealIuhfHomOmg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='PersonsView']/@ownedRepresentations[name='PersonsDiagram']/@defaultLayer"/>
+    <target xmi:type="calender:Calender" href="test1.calender#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_W1VvsPKaEeaH0s0VVeVS7A" name="new PersonsManager">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_W1VvsfKaEeaH0s0VVeVS7A" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_W1VvsvKaEeaH0s0VVeVS7A"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_W1VvuvKaEeaH0s0VVeVS7A" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_W1Vvu_KaEeaH0s0VVeVS7A" type="Sirius" element="_W1VvsPKaEeaH0s0VVeVS7A" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_W1WWwPKaEeaH0s0VVeVS7A" type="2001" element="_W1Vvs_KaEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_W1W90PKaEeaH0s0VVeVS7A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_W1W90fKaEeaH0s0VVeVS7A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_W1ZaEvKaEeaH0s0VVeVS7A" type="3016" element="_W1VvtPKaEeaH0s0VVeVS7A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_W1ZaE_KaEeaH0s0VVeVS7A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W1ZaFPKaEeaH0s0VVeVS7A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_W1WWwfKaEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W1WWwvKaEeaH0s0VVeVS7A" x="230" y="5" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_W1Xk4PKaEeaH0s0VVeVS7A" type="2001" element="_W1VvtfKaEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_W1YL8PKaEeaH0s0VVeVS7A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_W1YL8fKaEeaH0s0VVeVS7A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_W1aBIPKaEeaH0s0VVeVS7A" type="3016" element="_W1VvtvKaEeaH0s0VVeVS7A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_W1aBIfKaEeaH0s0VVeVS7A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W1aBIvKaEeaH0s0VVeVS7A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_W1Xk4fKaEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W1Xk4vKaEeaH0s0VVeVS7A" x="90" y="95" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_W1YzAPKaEeaH0s0VVeVS7A" type="2001" element="_W1Vvt_KaEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_W1ZaEPKaEeaH0s0VVeVS7A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_W1ZaEfKaEeaH0s0VVeVS7A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_W1aBI_KaEeaH0s0VVeVS7A" type="3016" element="_W1VvuPKaEeaH0s0VVeVS7A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_W1aBJPKaEeaH0s0VVeVS7A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W1aBJfKaEeaH0s0VVeVS7A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_W1YzAfKaEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_W1YzAvKaEeaH0s0VVeVS7A" x="340" y="100" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ydYCsPKaEeaH0s0VVeVS7A" type="2001" element="_ydTxQPKaEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_ydYpwPKaEeaH0s0VVeVS7A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_ydYpwfKaEeaH0s0VVeVS7A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ydae8PKaEeaH0s0VVeVS7A" type="3016" element="_ydUYUPKaEeaH0s0VVeVS7A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_ydae8fKaEeaH0s0VVeVS7A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ydae8vKaEeaH0s0VVeVS7A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ydYCsfKaEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ydYCsvKaEeaH0s0VVeVS7A" x="210" y="90" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_u08uAPKbEeaH0s0VVeVS7A" type="2001" element="_u05DoPKbEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_u09VEPKbEeaH0s0VVeVS7A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_u09VEfKbEeaH0s0VVeVS7A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_u0-jMPKbEeaH0s0VVeVS7A" type="3016" element="_u05DofKbEeaH0s0VVeVS7A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_u0-jMfKbEeaH0s0VVeVS7A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u0-jMvKbEeaH0s0VVeVS7A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_u08uAfKbEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u08uAvKbEeaH0s0VVeVS7A" x="439" y="5" width="100" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_I16VgPKcEeaH0s0VVeVS7A" type="2001" element="_I12rIPKcEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_I168kPKcEeaH0s0VVeVS7A" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_I168kfKcEeaH0s0VVeVS7A" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I168kvKcEeaH0s0VVeVS7A" type="3016" element="_I12rIfKcEeaH0s0VVeVS7A">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_I168k_KcEeaH0s0VVeVS7A" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I168lPKcEeaH0s0VVeVS7A"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_I16VgfKcEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I16VgvKcEeaH0s0VVeVS7A" x="545" y="115" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_W1VvvPKaEeaH0s0VVeVS7A"/>
+        <edges xmi:type="notation:Edge" xmi:id="_lhxu8PKaEeaH0s0VVeVS7A" type="4001" element="_lhmv0PKaEeaH0s0VVeVS7A" source="_W1Xk4PKaEeaH0s0VVeVS7A" target="_W1WWwPKaEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_lhzkIPKaEeaH0s0VVeVS7A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lhzkIfKaEeaH0s0VVeVS7A" x="-3" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lh0LMPKaEeaH0s0VVeVS7A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lh0LMfKaEeaH0s0VVeVS7A" x="5" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lh2ncPKaEeaH0s0VVeVS7A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lh2ncfKaEeaH0s0VVeVS7A" x="1" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lhxu8fKaEeaH0s0VVeVS7A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lhxu8vKaEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lhxu8_KaEeaH0s0VVeVS7A" points="[42, -25, -98, 65]$[111, -65, -29, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lh644PKaEeaH0s0VVeVS7A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lh644fKaEeaH0s0VVeVS7A" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_mZFKYPKaEeaH0s0VVeVS7A" type="4001" element="_mZDVMPKaEeaH0s0VVeVS7A" source="_W1YzAPKaEeaH0s0VVeVS7A" target="_W1WWwPKaEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_mZFxcPKaEeaH0s0VVeVS7A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mZFxcfKaEeaH0s0VVeVS7A" x="-2" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mZFxcvKaEeaH0s0VVeVS7A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mZFxc_KaEeaH0s0VVeVS7A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_mZFxdPKaEeaH0s0VVeVS7A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_mZFxdfKaEeaH0s0VVeVS7A" x="6" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_mZFKYfKaEeaH0s0VVeVS7A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_mZFKYvKaEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mZFKY_KaEeaH0s0VVeVS7A" points="[-28, -25, 82, 70]$[-76, -70, 34, 25]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mZGYgPKaEeaH0s0VVeVS7A" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mZGYgfKaEeaH0s0VVeVS7A" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_5W3DAPKaEeaH0s0VVeVS7A" type="4001" element="_5WyxkPKaEeaH0s0VVeVS7A" source="_ydYCsPKaEeaH0s0VVeVS7A" target="_W1WWwPKaEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_5W3qEPKaEeaH0s0VVeVS7A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5W3qEfKaEeaH0s0VVeVS7A" x="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_5W3qEvKaEeaH0s0VVeVS7A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5W3qE_KaEeaH0s0VVeVS7A" x="7" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_5W3qFPKaEeaH0s0VVeVS7A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5W3qFfKaEeaH0s0VVeVS7A" x="9" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_5W3DAfKaEeaH0s0VVeVS7A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_5W3DAvKaEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5W3DA_KaEeaH0s0VVeVS7A" points="[0, -2, -18, 35]$[18, -37, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5W3qFvKaEeaH0s0VVeVS7A" id="(0.57,0.04)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5W4RIPKaEeaH0s0VVeVS7A" id="(0.55,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_JRAWEPKcEeaH0s0VVeVS7A" type="4001" element="_JQ6PcPKcEeaH0s0VVeVS7A" source="_I16VgPKcEeaH0s0VVeVS7A" target="_u08uAPKbEeaH0s0VVeVS7A">
+          <children xmi:type="notation:Node" xmi:id="_JRA9IPKcEeaH0s0VVeVS7A" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JRA9IfKcEeaH0s0VVeVS7A" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JRA9IvKcEeaH0s0VVeVS7A" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JRA9I_KcEeaH0s0VVeVS7A" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_JRA9JPKcEeaH0s0VVeVS7A" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JRA9JfKcEeaH0s0VVeVS7A" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_JRAWEfKcEeaH0s0VVeVS7A"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JRAWEvKcEeaH0s0VVeVS7A" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JRAWE_KcEeaH0s0VVeVS7A" points="[0, 0, 85, 60]$[-85, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JRA9JvKcEeaH0s0VVeVS7A" id="(0.35,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JRA9J_KcEeaH0s0VVeVS7A" id="(0.56,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_W1Vvs_KaEeaH0s0VVeVS7A" name="Bernd" incomingEdges="_lhmv0PKaEeaH0s0VVeVS7A _mZDVMPKaEeaH0s0VVeVS7A _5WyxkPKaEeaH0s0VVeVS7A" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_W1VvtPKaEeaH0s0VVeVS7A" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_u05DoPKbEeaH0s0VVeVS7A" name="Karsten" incomingEdges="_JQ6PcPKcEeaH0s0VVeVS7A" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_u05DofKbEeaH0s0VVeVS7A" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="194,239,255">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_W1VvtfKaEeaH0s0VVeVS7A" name="Hans" outgoingEdges="_lhmv0PKaEeaH0s0VVeVS7A" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_W1VvtvKaEeaH0s0VVeVS7A" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_W1Vvt_KaEeaH0s0VVeVS7A" name="Peter" outgoingEdges="_mZDVMPKaEeaH0s0VVeVS7A" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_W1VvuPKaEeaH0s0VVeVS7A" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_ydTxQPKaEeaH0s0VVeVS7A" name="Werner" outgoingEdges="_5WyxkPKaEeaH0s0VVeVS7A" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_ydUYUPKaEeaH0s0VVeVS7A" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_I12rIPKcEeaH0s0VVeVS7A" name="Charlotte" outgoingEdges="_JQ6PcPKcEeaH0s0VVeVS7A" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_I12rIfKcEeaH0s0VVeVS7A" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_lhmv0PKaEeaH0s0VVeVS7A" sourceNode="_W1VvtfKaEeaH0s0VVeVS7A" targetNode="_W1Vvs_KaEeaH0s0VVeVS7A">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_lhnW4PKaEeaH0s0VVeVS7A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_lhnW4fKaEeaH0s0VVeVS7A"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_mZDVMPKaEeaH0s0VVeVS7A" sourceNode="_W1Vvt_KaEeaH0s0VVeVS7A" targetNode="_W1Vvs_KaEeaH0s0VVeVS7A">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_mZDVMfKaEeaH0s0VVeVS7A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_mZDVMvKaEeaH0s0VVeVS7A"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_5WyxkPKaEeaH0s0VVeVS7A" sourceNode="_ydTxQPKaEeaH0s0VVeVS7A" targetNode="_W1Vvs_KaEeaH0s0VVeVS7A">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_5WyxkfKaEeaH0s0VVeVS7A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_5WyxkvKaEeaH0s0VVeVS7A"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_JQ6PcPKcEeaH0s0VVeVS7A" sourceNode="_I12rIPKcEeaH0s0VVeVS7A" targetNode="_u05DoPKbEeaH0s0VVeVS7A">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_JQ6PcfKcEeaH0s0VVeVS7A" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_JQ6PcvKcEeaH0s0VVeVS7A"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_W1VvufKaEeaH0s0VVeVS7A"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer"/>
+    <target xmi:type="calender:Calender" href="MySirius.calender#/"/>
+  </diagram:DSemanticDiagram>
+  <table:DTable xmi:id="_dwomgfKdEeaH0s0VVeVS7A" name="new CalenderView" headerColumnWidth="199">
+    <target xmi:type="calender:Calender" href="MySirius.calender#/"/>
+    <lines xmi:type="table:DLine" xmi:id="_rsIRAPKdEeaH0s0VVeVS7A" label="Employee Hans">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="__712IfKeEeaH0s0VVeVS7A" label="[]" column="__712IPKeEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.0"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_rsJfIPKdEeaH0s0VVeVS7A" label="Responsible Person Bernd">
+      <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="__778wPKeEeaH0s0VVeVS7A" label="[]" column="__712IPKeEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.1"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_rsJfIfKdEeaH0s0VVeVS7A" label="Employee Peter">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="__778wfKeEeaH0s0VVeVS7A" label="[DayOff Peter]" column="__712IPKeEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.2"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_rsJfIvKdEeaH0s0VVeVS7A" label="Employee Werner">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="__78j0PKeEeaH0s0VVeVS7A" label="[DayOff Werner]" column="__712IPKeEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.3"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_rsJfI_KdEeaH0s0VVeVS7A" label="Responsible Person Karsten">
+      <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="__78j0fKeEeaH0s0VVeVS7A" label="[]" column="__712IPKeEeaH0s0VVeVS7A">
+        <target xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+        <semanticElements xmi:type="calender:ResponsiblePerson" href="MySirius.calender#//@persons.4"/>
+      </cells>
+    </lines>
+    <lines xmi:type="table:DLine" xmi:id="_rsJfJPKdEeaH0s0VVeVS7A" label="Employee Charlotte">
+      <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedLineMappings[name='PersonLine']"/>
+      <cells xmi:type="table:DCell" xmi:id="__78j0vKeEeaH0s0VVeVS7A" label="[]" column="__712IPKeEeaH0s0VVeVS7A">
+        <target xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+        <semanticElements xmi:type="calender:Employee" href="MySirius.calender#//@persons.5"/>
+      </cells>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" xmi:id="__712IPKeEeaH0s0VVeVS7A" label="Monday" cells="__712IfKeEeaH0s0VVeVS7A __778wPKeEeaH0s0VVeVS7A __778wfKeEeaH0s0VVeVS7A __78j0PKeEeaH0s0VVeVS7A __78j0fKeEeaH0s0VVeVS7A __78j0vKeEeaH0s0VVeVS7A" width="105" featureName="dates">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']/@ownedColumnMappings[name='Day']"/>
+    </columns>
+    <description xmi:type="description_2:EditionTableDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']"/>
+  </table:DTable>
+</xmi:XMI>

@@ -18,6 +18,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getName <em>Name</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getDates <em>Dates</em>}</li>
  *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getPersons <em>Persons</em>}</li>
+ *   <li>{@link de.tu_bs.vacation_manager.Calender.Calender#getMonths <em>Months</em>}</li>
  * </ul>
  *
  * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getCalender()
@@ -82,6 +83,22 @@ public interface Calender extends EObject {
 	 * @generated
 	 */
 	EList<Person> getPersons();
+
+	/**
+	 * Returns the value of the '<em><b>Months</b></em>' containment reference list.
+	 * The list contents are of type {@link de.tu_bs.vacation_manager.Calender.Month}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Months</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Months</em>' containment reference list.
+	 * @see de.tu_bs.vacation_manager.Calender.CalenderPackage#getCalender_Months()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Month> getMonths();
 
 	/**
 	 * <!-- begin-user-doc -->

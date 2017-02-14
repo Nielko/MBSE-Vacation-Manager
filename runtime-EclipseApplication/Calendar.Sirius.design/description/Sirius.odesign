@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Sirius" version="11.1.1.201610211630">
+  <ownedViewpoints name="ChefView" modelFileExtension="calender">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="PersonsManager" domainClass="Calender" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="ResponsiblePersonNode" domainClass="Calender.ResponsiblePerson">
+          <style xsi:type="style:EllipseNodeDescription" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="10" verticalDiameterComputationExpression="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="EmployeeNode" domainClass="Calender.Employee">
+          <style xsi:type="style:EllipseNodeDescription" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="10" verticalDiameterComputationExpression="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="ResonsibilityEdge" sourceMapping="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']" targetMapping="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']" targetFinderExpression="feature:responsible">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createEmployee" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.Employee" referenceName="persons">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="&quot;name to fill in&quot;"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setResponsiblePerson" edgeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="responsible" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="employees" valueExpression="var:source"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createResponsiblePerson" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.ResponsiblePerson" referenceName="persons">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="&quot;fill in name&quot;"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:EditionTableDescription" name="CalenderView" domainClass="Calender">
+      <ownedRepresentationNavigationDescriptions xsi:type="description_2:TableNavigationDescription" name="ChangeWeekForward" tableDescription="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='CalenderView']">
+        <containerViewVariable name="containerView"/>
+        <containerVariable name="container"/>
+        <representationNameVariable name="tableName"/>
+      </ownedRepresentationNavigationDescriptions>
+      <ownedLineMappings name="PersonLine" domainClass="Calender.Person" semanticCandidatesExpression="feature:persons"/>
+      <ownedColumnMappings name="Day" headerLabelExpression="Monday" featureName="dates" labelExpression="aql:self.dates.name"/>
+    </ownedRepresentations>
+  </ownedViewpoints>
+  <ownedViewpoints name="EmployeeView" modelFileExtension="calender">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="PersonalCalendar" domainClass="Calender" enablePopupBars="true">
+      <defaultLayer name="Default"/>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

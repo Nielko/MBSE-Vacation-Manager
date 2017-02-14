@@ -96,13 +96,22 @@ public interface CalenderPackage extends EPackage {
 	int CALENDER__PERSONS = 2;
 
 	/**
+	 * The feature id for the '<em><b>Months</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALENDER__MONTHS = 3;
+
+	/**
 	 * The number of structural features of the '<em>Calender</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALENDER_FEATURE_COUNT = 3;
+	int CALENDER_FEATURE_COUNT = 4;
 
 	/**
 	 * The operation id for the '<em>Show Gui</em>' operation.
@@ -507,6 +516,98 @@ public interface CalenderPackage extends EPackage {
 	int EMPLOYEE_OPERATION_COUNT = PERSON_OPERATION_COUNT + 2;
 
 	/**
+	 * The meta object id for the '{@link de.tu_bs.vacation_manager.Calender.impl.MonthImpl <em>Month</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.tu_bs.vacation_manager.Calender.impl.MonthImpl
+	 * @see de.tu_bs.vacation_manager.Calender.impl.CalenderPackageImpl#getMonth()
+	 * @generated
+	 */
+	int MONTH = 6;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MONTH__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Weeks</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MONTH__WEEKS = 1;
+
+	/**
+	 * The number of structural features of the '<em>Month</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MONTH_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Month</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MONTH_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link de.tu_bs.vacation_manager.Calender.impl.WeekImpl <em>Week</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see de.tu_bs.vacation_manager.Calender.impl.WeekImpl
+	 * @see de.tu_bs.vacation_manager.Calender.impl.CalenderPackageImpl#getWeek()
+	 * @generated
+	 */
+	int WEEK = 7;
+
+	/**
+	 * The feature id for the '<em><b>Dates</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEEK__DATES = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEEK__NAME = 1;
+
+	/**
+	 * The number of structural features of the '<em>Week</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEEK_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Week</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEEK_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link de.tu_bs.vacation_manager.Calender.WorkingDayType <em>Working Day Type</em>}' enum.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -514,7 +615,7 @@ public interface CalenderPackage extends EPackage {
 	 * @see de.tu_bs.vacation_manager.Calender.impl.CalenderPackageImpl#getWorkingDayType()
 	 * @generated
 	 */
-	int WORKING_DAY_TYPE = 6;
+	int WORKING_DAY_TYPE = 8;
 
 
 	/**
@@ -559,6 +660,17 @@ public interface CalenderPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCalender_Persons();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link de.tu_bs.vacation_manager.Calender.Calender#getMonths <em>Months</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Months</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Calender#getMonths()
+	 * @see #getCalender()
+	 * @generated
+	 */
+	EReference getCalender_Months();
 
 	/**
 	 * Returns the meta object for the '{@link de.tu_bs.vacation_manager.Calender.Calender#showGui() <em>Show Gui</em>}' operation.
@@ -804,6 +916,70 @@ public interface CalenderPackage extends EPackage {
 	EOperation getEmployee__SendApplication();
 
 	/**
+	 * Returns the meta object for class '{@link de.tu_bs.vacation_manager.Calender.Month <em>Month</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Month</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Month
+	 * @generated
+	 */
+	EClass getMonth();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.tu_bs.vacation_manager.Calender.Month#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Month#getName()
+	 * @see #getMonth()
+	 * @generated
+	 */
+	EAttribute getMonth_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link de.tu_bs.vacation_manager.Calender.Month#getWeeks <em>Weeks</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Weeks</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Month#getWeeks()
+	 * @see #getMonth()
+	 * @generated
+	 */
+	EReference getMonth_Weeks();
+
+	/**
+	 * Returns the meta object for class '{@link de.tu_bs.vacation_manager.Calender.Week <em>Week</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Week</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Week
+	 * @generated
+	 */
+	EClass getWeek();
+
+	/**
+	 * Returns the meta object for the reference list '{@link de.tu_bs.vacation_manager.Calender.Week#getDates <em>Dates</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Dates</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Week#getDates()
+	 * @see #getWeek()
+	 * @generated
+	 */
+	EReference getWeek_Dates();
+
+	/**
+	 * Returns the meta object for the attribute '{@link de.tu_bs.vacation_manager.Calender.Week#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see de.tu_bs.vacation_manager.Calender.Week#getName()
+	 * @see #getWeek()
+	 * @generated
+	 */
+	EAttribute getWeek_Name();
+
+	/**
 	 * Returns the meta object for enum '{@link de.tu_bs.vacation_manager.Calender.WorkingDayType <em>Working Day Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -869,6 +1045,14 @@ public interface CalenderPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CALENDER__PERSONS = eINSTANCE.getCalender_Persons();
+
+		/**
+		 * The meta object literal for the '<em><b>Months</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CALENDER__MONTHS = eINSTANCE.getCalender_Months();
 
 		/**
 		 * The meta object literal for the '<em><b>Show Gui</b></em>' operation.
@@ -1063,6 +1247,58 @@ public interface CalenderPackage extends EPackage {
 		 * @generated
 		 */
 		EOperation EMPLOYEE___SEND_APPLICATION = eINSTANCE.getEmployee__SendApplication();
+
+		/**
+		 * The meta object literal for the '{@link de.tu_bs.vacation_manager.Calender.impl.MonthImpl <em>Month</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.tu_bs.vacation_manager.Calender.impl.MonthImpl
+		 * @see de.tu_bs.vacation_manager.Calender.impl.CalenderPackageImpl#getMonth()
+		 * @generated
+		 */
+		EClass MONTH = eINSTANCE.getMonth();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MONTH__NAME = eINSTANCE.getMonth_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Weeks</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MONTH__WEEKS = eINSTANCE.getMonth_Weeks();
+
+		/**
+		 * The meta object literal for the '{@link de.tu_bs.vacation_manager.Calender.impl.WeekImpl <em>Week</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see de.tu_bs.vacation_manager.Calender.impl.WeekImpl
+		 * @see de.tu_bs.vacation_manager.Calender.impl.CalenderPackageImpl#getWeek()
+		 * @generated
+		 */
+		EClass WEEK = eINSTANCE.getWeek();
+
+		/**
+		 * The meta object literal for the '<em><b>Dates</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WEEK__DATES = eINSTANCE.getWeek_Dates();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WEEK__NAME = eINSTANCE.getWeek_Name();
 
 		/**
 		 * The meta object literal for the '{@link de.tu_bs.vacation_manager.Calender.WorkingDayType <em>Working Day Type</em>}' enum.

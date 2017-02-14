@@ -210,6 +210,52 @@ public class CalenderItemProviderAdapterFactory extends CalenderAdapterFactory i
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link de.tu_bs.vacation_manager.Calender.Month} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MonthItemProvider monthItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.tu_bs.vacation_manager.Calender.Month}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMonthAdapter() {
+		if (monthItemProvider == null) {
+			monthItemProvider = new MonthItemProvider(this);
+		}
+
+		return monthItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link de.tu_bs.vacation_manager.Calender.Week} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected WeekItemProvider weekItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link de.tu_bs.vacation_manager.Calender.Week}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createWeekAdapter() {
+		if (weekItemProvider == null) {
+			weekItemProvider = new WeekItemProvider(this);
+		}
+
+		return weekItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -314,6 +360,8 @@ public class CalenderItemProviderAdapterFactory extends CalenderAdapterFactory i
 		if (holydayApplicationItemProvider != null) holydayApplicationItemProvider.dispose();
 		if (responsiblePersonItemProvider != null) responsiblePersonItemProvider.dispose();
 		if (employeeItemProvider != null) employeeItemProvider.dispose();
+		if (monthItemProvider != null) monthItemProvider.dispose();
+		if (weekItemProvider != null) weekItemProvider.dispose();
 	}
 
 }

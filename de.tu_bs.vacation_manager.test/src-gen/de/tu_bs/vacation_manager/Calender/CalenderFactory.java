@@ -78,6 +78,24 @@ public interface CalenderFactory extends EFactory {
 	Employee createEmployee();
 
 	/**
+	 * Returns a new object of class '<em>Month</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Month</em>'.
+	 * @generated
+	 */
+	Month createMonth();
+
+	/**
+	 * Returns a new object of class '<em>Week</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Week</em>'.
+	 * @generated
+	 */
+	Week createWeek();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

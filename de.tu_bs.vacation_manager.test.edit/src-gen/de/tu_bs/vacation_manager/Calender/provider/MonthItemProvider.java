@@ -3,9 +3,9 @@
 package de.tu_bs.vacation_manager.Calender.provider;
 
 
-import de.tu_bs.vacation_manager.Calender.Calender;
 import de.tu_bs.vacation_manager.Calender.CalenderFactory;
 import de.tu_bs.vacation_manager.Calender.CalenderPackage;
+import de.tu_bs.vacation_manager.Calender.Month;
 
 import java.util.Collection;
 import java.util.List;
@@ -29,12 +29,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link de.tu_bs.vacation_manager.Calender.Calender} object.
+ * This is the item provider adapter for a {@link de.tu_bs.vacation_manager.Calender.Month} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class CalenderItemProvider 
+public class MonthItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -48,7 +48,7 @@ public class CalenderItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CalenderItemProvider(AdapterFactory adapterFactory) {
+	public MonthItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -79,9 +79,9 @@ public class CalenderItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Calender_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Calender_name_feature", "_UI_Calender_type"),
-				 CalenderPackage.Literals.CALENDER__NAME,
+				 getString("_UI_Month_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Month_name_feature", "_UI_Month_type"),
+				 CalenderPackage.Literals.MONTH__NAME,
 				 true,
 				 false,
 				 false,
@@ -102,9 +102,7 @@ public class CalenderItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(CalenderPackage.Literals.CALENDER__DATES);
-			childrenFeatures.add(CalenderPackage.Literals.CALENDER__PERSONS);
-			childrenFeatures.add(CalenderPackage.Literals.CALENDER__MONTHS);
+			childrenFeatures.add(CalenderPackage.Literals.MONTH__WEEKS);
 		}
 		return childrenFeatures;
 	}
@@ -123,14 +121,14 @@ public class CalenderItemProvider
 	}
 
 	/**
-	 * This returns Calender.gif.
+	 * This returns Month.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Calender"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Month"));
 	}
 
 	/**
@@ -141,10 +139,10 @@ public class CalenderItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((Calender)object).getName();
+		String label = ((Month)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_Calender_type") :
-			getString("_UI_Calender_type") + " " + label;
+			getString("_UI_Month_type") :
+			getString("_UI_Month_type") + " " + label;
 	}
 	
 
@@ -159,13 +157,11 @@ public class CalenderItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Calender.class)) {
-			case CalenderPackage.CALENDER__NAME:
+		switch (notification.getFeatureID(Month.class)) {
+			case CalenderPackage.MONTH__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case CalenderPackage.CALENDER__DATES:
-			case CalenderPackage.CALENDER__PERSONS:
-			case CalenderPackage.CALENDER__MONTHS:
+			case CalenderPackage.MONTH__WEEKS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -185,33 +181,8 @@ public class CalenderItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__DATES,
-				 CalenderFactory.eINSTANCE.createDate()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__DATES,
-				 CalenderFactory.eINSTANCE.createHolydayApplication()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__PERSONS,
-				 CalenderFactory.eINSTANCE.createPerson()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__PERSONS,
-				 CalenderFactory.eINSTANCE.createResponsiblePerson()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__PERSONS,
-				 CalenderFactory.eINSTANCE.createEmployee()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(CalenderPackage.Literals.CALENDER__MONTHS,
-				 CalenderFactory.eINSTANCE.createMonth()));
+				(CalenderPackage.Literals.MONTH__WEEKS,
+				 CalenderFactory.eINSTANCE.createWeek()));
 	}
 
 	/**
