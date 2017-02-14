@@ -16,9 +16,7 @@ public class Calender2TextUtil {
 		java.util.Date date = input.parse(inputDate);
 		String formattedDate = outputFormat.format(date);
 		
-		return formattedDate; 
-	
-		
+		return formattedDate; 	
 	}
 	
 	
@@ -30,9 +28,7 @@ public class Calender2TextUtil {
 		java.util.Date date = input.parse(inputDate);
 		String formattedDate = outputFormat.format(date);
 		
-		return formattedDate; 
-	
-		
+		return formattedDate; 	
 	}
 	
 	
@@ -44,11 +40,19 @@ public class Calender2TextUtil {
 		java.util.Date date = input.parse(inputDate);
 		String formattedDate = outputFormat.format(date);
 		
-		return formattedDate; 
-	
-		
+		return formattedDate; 	
 	}
 	
+	public String dateFormatWeekdays (Date day) throws ParseException{
+		
+		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
+		DateFormat outputFormat = new SimpleDateFormat("EEE", Locale.ENGLISH);
+		String inputDate = day.getDay().toString();
+		java.util.Date date = input.parse(inputDate);
+		String formattedDate = outputFormat.format(date);
+		
+		return formattedDate; 	
+	}
 	
 	public String dateMonth (Date day) throws ParseException{
 		
@@ -59,9 +63,32 @@ public class Calender2TextUtil {
 		String formattedDate = outputFormat.format(date);
 		
 		return formattedDate; 
-	
 		
 	}
+	
+	public int[] getMonthDays(String month)
+	{
+		int[] ret = new int[]{};
+		GregorianCalender calender;
+		if(month.equals("Januar"))
+		{
+			ret = new int[]{};
+		}
+			
+	}
+	
+	
+/*	public String dateCurrentDate (Date day) throws ParseException{
+		
+		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
+		DateFormat outputFormat = new SimpleDateFormat("MMM", Locale.ENGLISH);
+		String inputDate = day.
+		java.util.Date date = input.parse(inputDate);
+		String formattedDate = outputFormat.format(date);
+		
+		return formattedDate; 
+		
+	}*/
 	
 	
 	public String getDayType (Date day) {
@@ -79,9 +106,10 @@ public class Calender2TextUtil {
 			dayType="Feiertag";
 		
 		return dayType; 
-	
 		
 	}
+	
+	
 	
 
 }
