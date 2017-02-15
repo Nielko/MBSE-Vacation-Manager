@@ -1,0 +1,8 @@
+// Definition von Regeln zur Erzeugung mehrerere Dokumente
+rule Calender2Page
+  transform calender : Calender {
+
+  template : "Calender2HTML.egl"
+
+  target : "calenderGenerated.html"
+}
