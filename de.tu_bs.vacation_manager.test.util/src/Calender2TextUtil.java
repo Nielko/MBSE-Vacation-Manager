@@ -3,15 +3,26 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
-
 import de.tu_bs.vacation_manager.Calender.Date;
 
 public class Calender2TextUtil {
 	
-	public String dateFormat (Date day) throws ParseException{
+	public String getFormattedDate (Date day) throws ParseException{
 		
 		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
 		DateFormat outputFormat = new SimpleDateFormat("dd.MM.yyyy", Locale.ENGLISH);
+		String inputDate = day.getDay().toString();
+		java.util.Date date = input.parse(inputDate);
+		String formattedDate = outputFormat.format(date);
+		
+		return formattedDate; 
+		
+	}
+	
+	public String getFormattedWeekday (Date day) throws ParseException{
+		
+		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
+		DateFormat outputFormat = new SimpleDateFormat("EEE", Locale.ENGLISH);
 		String inputDate = day.getDay().toString();
 		java.util.Date date = input.parse(inputDate);
 		String formattedDate = outputFormat.format(date);
@@ -20,7 +31,7 @@ public class Calender2TextUtil {
 	}
 	
 	
-	public String dateFormatSingleDay (Date day) throws ParseException{
+	public String getFormattedSingleDay (Date day) throws ParseException{
 		
 		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
 		DateFormat outputFormat = new SimpleDateFormat("dd", Locale.ENGLISH);
@@ -32,7 +43,7 @@ public class Calender2TextUtil {
 	}
 	
 	
-	public String dateFormatYear (Date day) throws ParseException{
+	public String getFormattedYear (Date day) throws ParseException{
 		
 		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
 		DateFormat outputFormat = new SimpleDateFormat("yyyy", Locale.ENGLISH);
@@ -43,10 +54,11 @@ public class Calender2TextUtil {
 		return formattedDate; 	
 	}
 	
-	public String dateFormatWeekdays (Date day) throws ParseException{
+	
+	public String getFormattedMonth (Date day) throws ParseException{
 		
 		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
-		DateFormat outputFormat = new SimpleDateFormat("EEE", Locale.ENGLISH);
+		DateFormat outputFormat = new SimpleDateFormat("MMM", Locale.ENGLISH);
 		String inputDate = day.getDay().toString();
 		java.util.Date date = input.parse(inputDate);
 		String formattedDate = outputFormat.format(date);
@@ -54,62 +66,58 @@ public class Calender2TextUtil {
 		return formattedDate; 	
 	}
 	
-	public String dateMonth (Date day) throws ParseException{
-		
-		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
-		DateFormat outputFormat = new SimpleDateFormat("MMM", Locale.ENGLISH);
-		String inputDate = day.getDay().toString();
-		java.util.Date date = input.parse(inputDate);
-		String formattedDate = outputFormat.format(date);
-		
-		return formattedDate; 
-		
-	}
-	
-	public int[] getMonthDays(String month)
-	{
-		int[] ret = new int[]{};
-		GregorianCalender calender;
-		if(month.equals("Januar"))
-		{
-			ret = new int[]{};
-		}
-			
-	}
-	
-	
-/*	public String dateCurrentDate (Date day) throws ParseException{
-		
-		DateFormat input = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
-		DateFormat outputFormat = new SimpleDateFormat("MMM", Locale.ENGLISH);
-		String inputDate = day.
-		java.util.Date date = input.parse(inputDate);
-		String formattedDate = outputFormat.format(date);
-		
-		return formattedDate; 
-		
-	}*/
-	
 	
 	public String getDayType (Date day) {
 		
 		String dayType="";
 		
 		String inputDayType = day.getDayType().toString();	
-		if (inputDayType == "WorkingDay") 
+		if (inputDayType.equals("WorkingDay")) 
 			dayType="Werktag"; 
-		else if (inputDayType == "Holiday")
+		if (inputDayType.equals("Holiday"))
 			dayType="Urlaub";
-		else if (inputDayType == "Vacation") 
+		if (inputDayType.equals("Vacation"))
 			dayType="Urlaub";
-		else if (inputDayType == "PublicHoliday") 
+		//Ändern! zu Holiday
+		else if (inputDayType.equals("PublicHolyday"))
 			dayType="Feiertag";
 		
-		return dayType; 
+		return dayType; 	
+	}
+	
+	
+	public String getStartWeekDay (Date day) throws ParseException {
 		
+		String i = getFormattedWeekday(day);
+		
+		System.out.println(i);
+		System.out.println(day);
+		
+		if (i.equals("Sun")){
+				return "<li></li><li></li><li></li><li></li><li></li><li></li>";
+				}
+		if (i.equals("Mon")){
+			return "";
+			}
+		if (i.equals("Tue")){
+			return "<li></li>";
+			}
+		if (i.equals("Wed")){
+			return "<li></li><li></li>";
+			}
+		if (i.equals("Thu")){
+			return "<li></li><li></li><li></li>";
+			}
+		if (i.equals("Fri")){
+			return "<li></li><li></li><li></li></li><li>";
+			}
+		else
+		 return "<li></li><li></li><li></li></li><li></li><li></li>";
+		
+	
 	}
 	
 	
 	
-
+	
 }
