@@ -76,6 +76,7 @@
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//KW">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//KW/kw"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//KW/weekdates"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Month">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Month/kws"/>

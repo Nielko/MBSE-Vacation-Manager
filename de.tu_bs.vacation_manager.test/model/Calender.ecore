@@ -54,6 +54,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="KW">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kw" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="weekdates" eType="#//Date"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Month">
     <eStructuralFeatures xsi:type="ecore:EReference" name="kws" upperBound="-1" eType="#//KW"/>
