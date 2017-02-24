@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="ASCII"?>
+<calender:Calender xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calender="https://tu-bs.de/isf/vacation_test" name="Vacation Manager">
+  <dates day="2017-01-01T00:00:00.000+0100" name="Sun Jan 01 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-02T00:00:00.000+0100" name="Mon Jan 02 00:00:00 CET 2017"/>
+  <dates day="2017-01-03T00:00:00.000+0100" name="Tue Jan 03 00:00:00 CET 2017"/>
+  <dates day="2017-01-04T00:00:00.000+0100" name="Wed Jan 04 00:00:00 CET 2017"/>
+  <dates day="2017-01-05T00:00:00.000+0100" name="Thu Jan 05 00:00:00 CET 2017"/>
+  <dates day="2017-01-06T00:00:00.000+0100" name="Fri Jan 06 00:00:00 CET 2017"/>
+  <dates day="2017-01-07T00:00:00.000+0100" name="Sat Jan 07 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-08T00:00:00.000+0100" name="Sun Jan 08 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-09T00:00:00.000+0100" name="Mon Jan 09 00:00:00 CET 2017"/>
+  <dates day="2017-01-10T00:00:00.000+0100" name="Tue Jan 10 00:00:00 CET 2017"/>
+  <dates day="2017-01-11T00:00:00.000+0100" name="Wed Jan 11 00:00:00 CET 2017"/>
+  <dates day="2017-01-12T00:00:00.000+0100" name="Thu Jan 12 00:00:00 CET 2017"/>
+  <dates day="2017-01-13T00:00:00.000+0100" name="Fri Jan 13 00:00:00 CET 2017"/>
+  <dates day="2017-01-14T00:00:00.000+0100" name="Sat Jan 14 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-15T00:00:00.000+0100" name="Sun Jan 15 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-16T00:00:00.000+0100" name="Mon Jan 16 00:00:00 CET 2017"/>
+  <dates day="2017-01-17T00:00:00.000+0100" name="Tue Jan 17 00:00:00 CET 2017"/>
+  <dates day="2017-01-18T00:00:00.000+0100" name="Wed Jan 18 00:00:00 CET 2017"/>
+  <dates day="2017-01-19T00:00:00.000+0100" name="Thu Jan 19 00:00:00 CET 2017"/>
+  <dates day="2017-01-20T00:00:00.000+0100" name="Fri Jan 20 00:00:00 CET 2017"/>
+  <dates day="2017-01-21T00:00:00.000+0100" name="Sat Jan 21 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-22T00:00:00.000+0100" name="Sun Jan 22 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-23T00:00:00.000+0100" name="Mon Jan 23 00:00:00 CET 2017"/>
+  <dates day="2017-01-24T00:00:00.000+0100" name="Tue Jan 24 00:00:00 CET 2017"/>
+  <dates day="2017-01-25T00:00:00.000+0100" name="Wed Jan 25 00:00:00 CET 2017"/>
+  <dates day="2017-01-26T00:00:00.000+0100" name="Thu Jan 26 00:00:00 CET 2017"/>
+  <dates day="2017-01-27T00:00:00.000+0100" name="Fri Jan 27 00:00:00 CET 2017"/>
+  <dates day="2017-01-28T00:00:00.000+0100" name="Sat Jan 28 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-29T00:00:00.000+0100" name="Sun Jan 29 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-01-30T00:00:00.000+0100" name="Mon Jan 30 00:00:00 CET 2017"/>
+  <dates day="2017-01-31T00:00:00.000+0100" name="Tue Jan 31 00:00:00 CET 2017"/>
+  <dates day="2017-02-01T00:00:00.000+0100" name="Wed Feb 01 00:00:00 CET 2017"/>
+  <dates day="2017-02-02T00:00:00.000+0100" name="Thu Feb 02 00:00:00 CET 2017"/>
+  <dates day="2017-02-03T00:00:00.000+0100" name="Fri Feb 03 00:00:00 CET 2017"/>
+  <dates day="2017-02-04T00:00:00.000+0100" name="Sat Feb 04 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-02-05T00:00:00.000+0100" name="Sun Feb 05 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-02-06T00:00:00.000+0100" name="Mon Feb 06 00:00:00 CET 2017"/>
+  <dates day="2017-02-07T00:00:00.000+0100" name="Tue Feb 07 00:00:00 CET 2017"/>
+  <dates day="2017-02-08T00:00:00.000+0100" name="Wed Feb 08 00:00:00 CET 2017"/>
+  <dates day="2017-02-09T00:00:00.000+0100" name="Thu Feb 09 00:00:00 CET 2017"/>
+  <dates day="2017-02-10T00:00:00.000+0100" name="Fri Feb 10 00:00:00 CET 2017"/>
+  <dates day="2017-02-11T00:00:00.000+0100" name="Sat Feb 11 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-02-12T00:00:00.000+0100" name="Sun Feb 12 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-02-13T00:00:00.000+0100" name="Mon Feb 13 00:00:00 CET 2017"/>
+  <dates day="2017-02-14T00:00:00.000+0100" name="Tue Feb 14 00:00:00 CET 2017"/>
+  <dates day="2017-02-15T00:00:00.000+0100" name="Wed Feb 15 00:00:00 CET 2017"/>
+  <dates day="2017-02-16T00:00:00.000+0100" name="Thu Feb 16 00:00:00 CET 2017"/>
+  <dates day="2017-02-17T00:00:00.000+0100" name="Fri Feb 17 00:00:00 CET 2017"/>
+  <dates day="2017-02-18T00:00:00.000+0100" name="Sat Feb 18 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-02-19T00:00:00.000+0100" name="Sun Feb 19 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-02-20T00:00:00.000+0100" name="Mon Feb 20 00:00:00 CET 2017"/>
+  <dates day="2017-02-21T00:00:00.000+0100" name="Tue Feb 21 00:00:00 CET 2017"/>
+  <dates day="2017-02-22T00:00:00.000+0100" name="Wed Feb 22 00:00:00 CET 2017"/>
+  <dates day="2017-02-23T00:00:00.000+0100" name="Thu Feb 23 00:00:00 CET 2017"/>
+  <dates day="2017-02-24T00:00:00.000+0100" name="Fri Feb 24 00:00:00 CET 2017"/>
+  <dates day="2017-02-25T00:00:00.000+0100" name="Sat Feb 25 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-02-26T00:00:00.000+0100" name="Sun Feb 26 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-02-27T00:00:00.000+0100" name="Mon Feb 27 00:00:00 CET 2017"/>
+  <dates day="2017-02-28T00:00:00.000+0100" name="Tue Feb 28 00:00:00 CET 2017"/>
+  <dates day="2017-03-01T00:00:00.000+0100" name="Wed Mar 01 00:00:00 CET 2017"/>
+  <dates day="2017-03-02T00:00:00.000+0100" name="Thu Mar 02 00:00:00 CET 2017"/>
+  <dates day="2017-03-03T00:00:00.000+0100" name="Fri Mar 03 00:00:00 CET 2017"/>
+  <dates day="2017-03-04T00:00:00.000+0100" name="Sat Mar 04 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-03-05T00:00:00.000+0100" name="Sun Mar 05 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-03-06T00:00:00.000+0100" name="Mon Mar 06 00:00:00 CET 2017"/>
+  <dates day="2017-03-07T00:00:00.000+0100" name="Tue Mar 07 00:00:00 CET 2017"/>
+  <dates day="2017-03-08T00:00:00.000+0100" name="Wed Mar 08 00:00:00 CET 2017"/>
+  <dates day="2017-03-09T00:00:00.000+0100" name="Thu Mar 09 00:00:00 CET 2017"/>
+  <dates day="2017-03-10T00:00:00.000+0100" name="Fri Mar 10 00:00:00 CET 2017"/>
+  <dates day="2017-03-11T00:00:00.000+0100" name="Sat Mar 11 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-03-12T00:00:00.000+0100" name="Sun Mar 12 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-03-13T00:00:00.000+0100" name="Mon Mar 13 00:00:00 CET 2017"/>
+  <dates day="2017-03-14T00:00:00.000+0100" name="Tue Mar 14 00:00:00 CET 2017"/>
+  <dates day="2017-03-15T00:00:00.000+0100" name="Wed Mar 15 00:00:00 CET 2017"/>
+  <dates day="2017-03-16T00:00:00.000+0100" name="Thu Mar 16 00:00:00 CET 2017"/>
+  <dates day="2017-03-17T00:00:00.000+0100" name="Fri Mar 17 00:00:00 CET 2017"/>
+  <dates day="2017-03-18T00:00:00.000+0100" name="Sat Mar 18 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-03-19T00:00:00.000+0100" name="Sun Mar 19 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-03-20T00:00:00.000+0100" name="Mon Mar 20 00:00:00 CET 2017"/>
+  <dates day="2017-03-21T00:00:00.000+0100" name="Tue Mar 21 00:00:00 CET 2017"/>
+  <dates day="2017-03-22T00:00:00.000+0100" name="Wed Mar 22 00:00:00 CET 2017"/>
+  <dates day="2017-03-23T00:00:00.000+0100" name="Thu Mar 23 00:00:00 CET 2017"/>
+  <dates day="2017-03-24T00:00:00.000+0100" name="Fri Mar 24 00:00:00 CET 2017"/>
+  <dates day="2017-03-25T00:00:00.000+0100" name="Sat Mar 25 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-03-26T00:00:00.000+0100" name="Sun Mar 26 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-03-27T00:00:00.000+0200" name="Mon Mar 27 00:00:00 CEST 2017"/>
+  <dates day="2017-03-28T00:00:00.000+0200" name="Tue Mar 28 00:00:00 CEST 2017"/>
+  <dates day="2017-03-29T00:00:00.000+0200" name="Wed Mar 29 00:00:00 CEST 2017"/>
+  <dates day="2017-03-30T00:00:00.000+0200" name="Thu Mar 30 00:00:00 CEST 2017"/>
+  <dates day="2017-03-31T00:00:00.000+0200" name="Fri Mar 31 00:00:00 CEST 2017"/>
+  <dates day="2017-04-01T00:00:00.000+0200" name="Sat Apr 01 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-02T00:00:00.000+0200" name="Sun Apr 02 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-03T00:00:00.000+0200" name="Mon Apr 03 00:00:00 CEST 2017"/>
+  <dates day="2017-04-04T00:00:00.000+0200" name="Tue Apr 04 00:00:00 CEST 2017"/>
+  <dates day="2017-04-05T00:00:00.000+0200" name="Wed Apr 05 00:00:00 CEST 2017"/>
+  <dates day="2017-04-06T00:00:00.000+0200" name="Thu Apr 06 00:00:00 CEST 2017"/>
+  <dates day="2017-04-07T00:00:00.000+0200" name="Fri Apr 07 00:00:00 CEST 2017"/>
+  <dates day="2017-04-08T00:00:00.000+0200" name="Sat Apr 08 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-09T00:00:00.000+0200" name="Sun Apr 09 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-10T00:00:00.000+0200" name="Mon Apr 10 00:00:00 CEST 2017"/>
+  <dates day="2017-04-11T00:00:00.000+0200" name="Tue Apr 11 00:00:00 CEST 2017"/>
+  <dates day="2017-04-12T00:00:00.000+0200" name="Wed Apr 12 00:00:00 CEST 2017"/>
+  <dates day="2017-04-13T00:00:00.000+0200" name="Thu Apr 13 00:00:00 CEST 2017"/>
+  <dates day="2017-04-14T00:00:00.000+0200" name="Fri Apr 14 00:00:00 CEST 2017"/>
+  <dates day="2017-04-15T00:00:00.000+0200" name="Sat Apr 15 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-16T00:00:00.000+0200" name="Sun Apr 16 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-17T00:00:00.000+0200" name="Mon Apr 17 00:00:00 CEST 2017"/>
+  <dates day="2017-04-18T00:00:00.000+0200" name="Tue Apr 18 00:00:00 CEST 2017"/>
+  <dates day="2017-04-19T00:00:00.000+0200" name="Wed Apr 19 00:00:00 CEST 2017"/>
+  <dates day="2017-04-20T00:00:00.000+0200" name="Thu Apr 20 00:00:00 CEST 2017"/>
+  <dates day="2017-04-21T00:00:00.000+0200" name="Fri Apr 21 00:00:00 CEST 2017"/>
+  <dates day="2017-04-22T00:00:00.000+0200" name="Sat Apr 22 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-23T00:00:00.000+0200" name="Sun Apr 23 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-24T00:00:00.000+0200" name="Mon Apr 24 00:00:00 CEST 2017"/>
+  <dates day="2017-04-25T00:00:00.000+0200" name="Tue Apr 25 00:00:00 CEST 2017"/>
+  <dates day="2017-04-26T00:00:00.000+0200" name="Wed Apr 26 00:00:00 CEST 2017"/>
+  <dates day="2017-04-27T00:00:00.000+0200" name="Thu Apr 27 00:00:00 CEST 2017"/>
+  <dates day="2017-04-28T00:00:00.000+0200" name="Fri Apr 28 00:00:00 CEST 2017"/>
+  <dates day="2017-04-29T00:00:00.000+0200" name="Sat Apr 29 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-04-30T00:00:00.000+0200" name="Sun Apr 30 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-01T00:00:00.000+0200" name="Mon May 01 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-02T00:00:00.000+0200" name="Tue May 02 00:00:00 CEST 2017"/>
+  <dates day="2017-05-03T00:00:00.000+0200" name="Wed May 03 00:00:00 CEST 2017"/>
+  <dates day="2017-05-04T00:00:00.000+0200" name="Thu May 04 00:00:00 CEST 2017"/>
+  <dates day="2017-05-05T00:00:00.000+0200" name="Fri May 05 00:00:00 CEST 2017"/>
+  <dates day="2017-05-06T00:00:00.000+0200" name="Sat May 06 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-07T00:00:00.000+0200" name="Sun May 07 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-08T00:00:00.000+0200" name="Mon May 08 00:00:00 CEST 2017"/>
+  <dates day="2017-05-09T00:00:00.000+0200" name="Tue May 09 00:00:00 CEST 2017"/>
+  <dates day="2017-05-10T00:00:00.000+0200" name="Wed May 10 00:00:00 CEST 2017"/>
+  <dates day="2017-05-11T00:00:00.000+0200" name="Thu May 11 00:00:00 CEST 2017"/>
+  <dates day="2017-05-12T00:00:00.000+0200" name="Fri May 12 00:00:00 CEST 2017"/>
+  <dates day="2017-05-13T00:00:00.000+0200" name="Sat May 13 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-14T00:00:00.000+0200" name="Sun May 14 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-15T00:00:00.000+0200" name="Mon May 15 00:00:00 CEST 2017"/>
+  <dates day="2017-05-16T00:00:00.000+0200" name="Tue May 16 00:00:00 CEST 2017"/>
+  <dates day="2017-05-17T00:00:00.000+0200" name="Wed May 17 00:00:00 CEST 2017"/>
+  <dates day="2017-05-18T00:00:00.000+0200" name="Thu May 18 00:00:00 CEST 2017"/>
+  <dates day="2017-05-19T00:00:00.000+0200" name="Fri May 19 00:00:00 CEST 2017"/>
+  <dates day="2017-05-20T00:00:00.000+0200" name="Sat May 20 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-21T00:00:00.000+0200" name="Sun May 21 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-22T00:00:00.000+0200" name="Mon May 22 00:00:00 CEST 2017"/>
+  <dates day="2017-05-23T00:00:00.000+0200" name="Tue May 23 00:00:00 CEST 2017"/>
+  <dates day="2017-05-24T00:00:00.000+0200" name="Wed May 24 00:00:00 CEST 2017"/>
+  <dates day="2017-05-25T00:00:00.000+0200" name="Thu May 25 00:00:00 CEST 2017"/>
+  <dates day="2017-05-26T00:00:00.000+0200" name="Fri May 26 00:00:00 CEST 2017"/>
+  <dates day="2017-05-27T00:00:00.000+0200" name="Sat May 27 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-28T00:00:00.000+0200" name="Sun May 28 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-05-29T00:00:00.000+0200" name="Mon May 29 00:00:00 CEST 2017"/>
+  <dates day="2017-05-30T00:00:00.000+0200" name="Tue May 30 00:00:00 CEST 2017"/>
+  <dates day="2017-05-31T00:00:00.000+0200" name="Wed May 31 00:00:00 CEST 2017"/>
+  <dates day="2017-06-01T00:00:00.000+0200" name="Thu Jun 01 00:00:00 CEST 2017"/>
+  <dates day="2017-06-02T00:00:00.000+0200" name="Fri Jun 02 00:00:00 CEST 2017"/>
+  <dates day="2017-06-03T00:00:00.000+0200" name="Sat Jun 03 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-06-04T00:00:00.000+0200" name="Sun Jun 04 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-06-05T00:00:00.000+0200" name="Mon Jun 05 00:00:00 CEST 2017"/>
+  <dates day="2017-06-06T00:00:00.000+0200" name="Tue Jun 06 00:00:00 CEST 2017"/>
+  <dates day="2017-06-07T00:00:00.000+0200" name="Wed Jun 07 00:00:00 CEST 2017"/>
+  <dates day="2017-06-08T00:00:00.000+0200" name="Thu Jun 08 00:00:00 CEST 2017"/>
+  <dates day="2017-06-09T00:00:00.000+0200" name="Fri Jun 09 00:00:00 CEST 2017"/>
+  <dates day="2017-06-10T00:00:00.000+0200" name="Sat Jun 10 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-06-11T00:00:00.000+0200" name="Sun Jun 11 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-06-12T00:00:00.000+0200" name="Mon Jun 12 00:00:00 CEST 2017"/>
+  <dates day="2017-06-13T00:00:00.000+0200" name="Tue Jun 13 00:00:00 CEST 2017"/>
+  <dates day="2017-06-14T00:00:00.000+0200" name="Wed Jun 14 00:00:00 CEST 2017"/>
+  <dates day="2017-06-15T00:00:00.000+0200" name="Thu Jun 15 00:00:00 CEST 2017"/>
+  <dates day="2017-06-16T00:00:00.000+0200" name="Fri Jun 16 00:00:00 CEST 2017"/>
+  <dates day="2017-06-17T00:00:00.000+0200" name="Sat Jun 17 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-06-18T00:00:00.000+0200" name="Sun Jun 18 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-06-19T00:00:00.000+0200" name="Mon Jun 19 00:00:00 CEST 2017"/>
+  <dates day="2017-06-20T00:00:00.000+0200" name="Tue Jun 20 00:00:00 CEST 2017"/>
+  <dates day="2017-06-21T00:00:00.000+0200" name="Wed Jun 21 00:00:00 CEST 2017"/>
+  <dates day="2017-06-22T00:00:00.000+0200" name="Thu Jun 22 00:00:00 CEST 2017"/>
+  <dates day="2017-06-23T00:00:00.000+0200" name="Fri Jun 23 00:00:00 CEST 2017"/>
+  <dates day="2017-06-24T00:00:00.000+0200" name="Sat Jun 24 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-06-25T00:00:00.000+0200" name="Sun Jun 25 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-06-26T00:00:00.000+0200" name="Mon Jun 26 00:00:00 CEST 2017"/>
+  <dates day="2017-06-27T00:00:00.000+0200" name="Tue Jun 27 00:00:00 CEST 2017"/>
+  <dates day="2017-06-28T00:00:00.000+0200" name="Wed Jun 28 00:00:00 CEST 2017"/>
+  <dates day="2017-06-29T00:00:00.000+0200" name="Thu Jun 29 00:00:00 CEST 2017"/>
+  <dates day="2017-06-30T00:00:00.000+0200" name="Fri Jun 30 00:00:00 CEST 2017"/>
+  <dates day="2017-07-01T00:00:00.000+0200" name="Sat Jul 01 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-02T00:00:00.000+0200" name="Sun Jul 02 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-03T00:00:00.000+0200" name="Mon Jul 03 00:00:00 CEST 2017"/>
+  <dates day="2017-07-04T00:00:00.000+0200" name="Tue Jul 04 00:00:00 CEST 2017"/>
+  <dates day="2017-07-05T00:00:00.000+0200" name="Wed Jul 05 00:00:00 CEST 2017"/>
+  <dates day="2017-07-06T00:00:00.000+0200" name="Thu Jul 06 00:00:00 CEST 2017"/>
+  <dates day="2017-07-07T00:00:00.000+0200" name="Fri Jul 07 00:00:00 CEST 2017"/>
+  <dates day="2017-07-08T00:00:00.000+0200" name="Sat Jul 08 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-09T00:00:00.000+0200" name="Sun Jul 09 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-10T00:00:00.000+0200" name="Mon Jul 10 00:00:00 CEST 2017"/>
+  <dates day="2017-07-11T00:00:00.000+0200" name="Tue Jul 11 00:00:00 CEST 2017"/>
+  <dates day="2017-07-12T00:00:00.000+0200" name="Wed Jul 12 00:00:00 CEST 2017"/>
+  <dates day="2017-07-13T00:00:00.000+0200" name="Thu Jul 13 00:00:00 CEST 2017"/>
+  <dates day="2017-07-14T00:00:00.000+0200" name="Fri Jul 14 00:00:00 CEST 2017"/>
+  <dates day="2017-07-15T00:00:00.000+0200" name="Sat Jul 15 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-16T00:00:00.000+0200" name="Sun Jul 16 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-17T00:00:00.000+0200" name="Mon Jul 17 00:00:00 CEST 2017"/>
+  <dates day="2017-07-18T00:00:00.000+0200" name="Tue Jul 18 00:00:00 CEST 2017"/>
+  <dates day="2017-07-19T00:00:00.000+0200" name="Wed Jul 19 00:00:00 CEST 2017"/>
+  <dates day="2017-07-20T00:00:00.000+0200" name="Thu Jul 20 00:00:00 CEST 2017"/>
+  <dates day="2017-07-21T00:00:00.000+0200" name="Fri Jul 21 00:00:00 CEST 2017"/>
+  <dates day="2017-07-22T00:00:00.000+0200" name="Sat Jul 22 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-23T00:00:00.000+0200" name="Sun Jul 23 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-24T00:00:00.000+0200" name="Mon Jul 24 00:00:00 CEST 2017"/>
+  <dates day="2017-07-25T00:00:00.000+0200" name="Tue Jul 25 00:00:00 CEST 2017"/>
+  <dates day="2017-07-26T00:00:00.000+0200" name="Wed Jul 26 00:00:00 CEST 2017"/>
+  <dates day="2017-07-27T00:00:00.000+0200" name="Thu Jul 27 00:00:00 CEST 2017"/>
+  <dates day="2017-07-28T00:00:00.000+0200" name="Fri Jul 28 00:00:00 CEST 2017"/>
+  <dates day="2017-07-29T00:00:00.000+0200" name="Sat Jul 29 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-30T00:00:00.000+0200" name="Sun Jul 30 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-07-31T00:00:00.000+0200" name="Mon Jul 31 00:00:00 CEST 2017"/>
+  <dates day="2017-08-01T00:00:00.000+0200" name="Tue Aug 01 00:00:00 CEST 2017"/>
+  <dates day="2017-08-02T00:00:00.000+0200" name="Wed Aug 02 00:00:00 CEST 2017"/>
+  <dates day="2017-08-03T00:00:00.000+0200" name="Thu Aug 03 00:00:00 CEST 2017"/>
+  <dates day="2017-08-04T00:00:00.000+0200" name="Fri Aug 04 00:00:00 CEST 2017"/>
+  <dates day="2017-08-05T00:00:00.000+0200" name="Sat Aug 05 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-08-06T00:00:00.000+0200" name="Sun Aug 06 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-08-07T00:00:00.000+0200" name="Mon Aug 07 00:00:00 CEST 2017"/>
+  <dates day="2017-08-08T00:00:00.000+0200" name="Tue Aug 08 00:00:00 CEST 2017"/>
+  <dates day="2017-08-09T00:00:00.000+0200" name="Wed Aug 09 00:00:00 CEST 2017"/>
+  <dates day="2017-08-10T00:00:00.000+0200" name="Thu Aug 10 00:00:00 CEST 2017"/>
+  <dates day="2017-08-11T00:00:00.000+0200" name="Fri Aug 11 00:00:00 CEST 2017"/>
+  <dates day="2017-08-12T00:00:00.000+0200" name="Sat Aug 12 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-08-13T00:00:00.000+0200" name="Sun Aug 13 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-08-14T00:00:00.000+0200" name="Mon Aug 14 00:00:00 CEST 2017"/>
+  <dates day="2017-08-15T00:00:00.000+0200" name="Tue Aug 15 00:00:00 CEST 2017"/>
+  <dates day="2017-08-16T00:00:00.000+0200" name="Wed Aug 16 00:00:00 CEST 2017"/>
+  <dates day="2017-08-17T00:00:00.000+0200" name="Thu Aug 17 00:00:00 CEST 2017"/>
+  <dates day="2017-08-18T00:00:00.000+0200" name="Fri Aug 18 00:00:00 CEST 2017"/>
+  <dates day="2017-08-19T00:00:00.000+0200" name="Sat Aug 19 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-08-20T00:00:00.000+0200" name="Sun Aug 20 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-08-21T00:00:00.000+0200" name="Mon Aug 21 00:00:00 CEST 2017"/>
+  <dates day="2017-08-22T00:00:00.000+0200" name="Tue Aug 22 00:00:00 CEST 2017"/>
+  <dates day="2017-08-23T00:00:00.000+0200" name="Wed Aug 23 00:00:00 CEST 2017"/>
+  <dates day="2017-08-24T00:00:00.000+0200" name="Thu Aug 24 00:00:00 CEST 2017"/>
+  <dates day="2017-08-25T00:00:00.000+0200" name="Fri Aug 25 00:00:00 CEST 2017"/>
+  <dates day="2017-08-26T00:00:00.000+0200" name="Sat Aug 26 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-08-27T00:00:00.000+0200" name="Sun Aug 27 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-08-28T00:00:00.000+0200" name="Mon Aug 28 00:00:00 CEST 2017"/>
+  <dates day="2017-08-29T00:00:00.000+0200" name="Tue Aug 29 00:00:00 CEST 2017"/>
+  <dates day="2017-08-30T00:00:00.000+0200" name="Wed Aug 30 00:00:00 CEST 2017"/>
+  <dates day="2017-08-31T00:00:00.000+0200" name="Thu Aug 31 00:00:00 CEST 2017"/>
+  <dates day="2017-09-01T00:00:00.000+0200" name="Fri Sep 01 00:00:00 CEST 2017"/>
+  <dates day="2017-09-02T00:00:00.000+0200" name="Sat Sep 02 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-09-03T00:00:00.000+0200" name="Sun Sep 03 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-09-04T00:00:00.000+0200" name="Mon Sep 04 00:00:00 CEST 2017"/>
+  <dates day="2017-09-05T00:00:00.000+0200" name="Tue Sep 05 00:00:00 CEST 2017"/>
+  <dates day="2017-09-06T00:00:00.000+0200" name="Wed Sep 06 00:00:00 CEST 2017"/>
+  <dates day="2017-09-07T00:00:00.000+0200" name="Thu Sep 07 00:00:00 CEST 2017"/>
+  <dates day="2017-09-08T00:00:00.000+0200" name="Fri Sep 08 00:00:00 CEST 2017"/>
+  <dates day="2017-09-09T00:00:00.000+0200" name="Sat Sep 09 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-09-10T00:00:00.000+0200" name="Sun Sep 10 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-09-11T00:00:00.000+0200" name="Mon Sep 11 00:00:00 CEST 2017"/>
+  <dates day="2017-09-12T00:00:00.000+0200" name="Tue Sep 12 00:00:00 CEST 2017"/>
+  <dates day="2017-09-13T00:00:00.000+0200" name="Wed Sep 13 00:00:00 CEST 2017"/>
+  <dates day="2017-09-14T00:00:00.000+0200" name="Thu Sep 14 00:00:00 CEST 2017"/>
+  <dates day="2017-09-15T00:00:00.000+0200" name="Fri Sep 15 00:00:00 CEST 2017"/>
+  <dates day="2017-09-16T00:00:00.000+0200" name="Sat Sep 16 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-09-17T00:00:00.000+0200" name="Sun Sep 17 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-09-18T00:00:00.000+0200" name="Mon Sep 18 00:00:00 CEST 2017"/>
+  <dates day="2017-09-19T00:00:00.000+0200" name="Tue Sep 19 00:00:00 CEST 2017"/>
+  <dates day="2017-09-20T00:00:00.000+0200" name="Wed Sep 20 00:00:00 CEST 2017"/>
+  <dates day="2017-09-21T00:00:00.000+0200" name="Thu Sep 21 00:00:00 CEST 2017"/>
+  <dates day="2017-09-22T00:00:00.000+0200" name="Fri Sep 22 00:00:00 CEST 2017"/>
+  <dates day="2017-09-23T00:00:00.000+0200" name="Sat Sep 23 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-09-24T00:00:00.000+0200" name="Sun Sep 24 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-09-25T00:00:00.000+0200" name="Mon Sep 25 00:00:00 CEST 2017"/>
+  <dates day="2017-09-26T00:00:00.000+0200" name="Tue Sep 26 00:00:00 CEST 2017"/>
+  <dates day="2017-09-27T00:00:00.000+0200" name="Wed Sep 27 00:00:00 CEST 2017"/>
+  <dates day="2017-09-28T00:00:00.000+0200" name="Thu Sep 28 00:00:00 CEST 2017"/>
+  <dates day="2017-09-29T00:00:00.000+0200" name="Fri Sep 29 00:00:00 CEST 2017"/>
+  <dates day="2017-09-30T00:00:00.000+0200" name="Sat Sep 30 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-01T00:00:00.000+0200" name="Sun Oct 01 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-02T00:00:00.000+0200" name="Mon Oct 02 00:00:00 CEST 2017"/>
+  <dates day="2017-10-03T00:00:00.000+0200" name="Tue Oct 03 00:00:00 CEST 2017"/>
+  <dates day="2017-10-04T00:00:00.000+0200" name="Wed Oct 04 00:00:00 CEST 2017"/>
+  <dates day="2017-10-05T00:00:00.000+0200" name="Thu Oct 05 00:00:00 CEST 2017"/>
+  <dates day="2017-10-06T00:00:00.000+0200" name="Fri Oct 06 00:00:00 CEST 2017"/>
+  <dates day="2017-10-07T00:00:00.000+0200" name="Sat Oct 07 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-08T00:00:00.000+0200" name="Sun Oct 08 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-09T00:00:00.000+0200" name="Mon Oct 09 00:00:00 CEST 2017"/>
+  <dates day="2017-10-10T00:00:00.000+0200" name="Tue Oct 10 00:00:00 CEST 2017"/>
+  <dates day="2017-10-11T00:00:00.000+0200" name="Wed Oct 11 00:00:00 CEST 2017"/>
+  <dates day="2017-10-12T00:00:00.000+0200" name="Thu Oct 12 00:00:00 CEST 2017"/>
+  <dates day="2017-10-13T00:00:00.000+0200" name="Fri Oct 13 00:00:00 CEST 2017"/>
+  <dates day="2017-10-14T00:00:00.000+0200" name="Sat Oct 14 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-15T00:00:00.000+0200" name="Sun Oct 15 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-16T00:00:00.000+0200" name="Mon Oct 16 00:00:00 CEST 2017"/>
+  <dates day="2017-10-17T00:00:00.000+0200" name="Tue Oct 17 00:00:00 CEST 2017"/>
+  <dates day="2017-10-18T00:00:00.000+0200" name="Wed Oct 18 00:00:00 CEST 2017"/>
+  <dates day="2017-10-19T00:00:00.000+0200" name="Thu Oct 19 00:00:00 CEST 2017"/>
+  <dates day="2017-10-20T00:00:00.000+0200" name="Fri Oct 20 00:00:00 CEST 2017"/>
+  <dates day="2017-10-21T00:00:00.000+0200" name="Sat Oct 21 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-22T00:00:00.000+0200" name="Sun Oct 22 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-23T00:00:00.000+0200" name="Mon Oct 23 00:00:00 CEST 2017"/>
+  <dates day="2017-10-24T00:00:00.000+0200" name="Tue Oct 24 00:00:00 CEST 2017"/>
+  <dates day="2017-10-25T00:00:00.000+0200" name="Wed Oct 25 00:00:00 CEST 2017"/>
+  <dates day="2017-10-26T00:00:00.000+0200" name="Thu Oct 26 00:00:00 CEST 2017"/>
+  <dates day="2017-10-27T00:00:00.000+0200" name="Fri Oct 27 00:00:00 CEST 2017"/>
+  <dates day="2017-10-28T00:00:00.000+0200" name="Sat Oct 28 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-29T00:00:00.000+0200" name="Sun Oct 29 00:00:00 CEST 2017" dayType="PublicHolyday"/>
+  <dates day="2017-10-30T00:00:00.000+0100" name="Mon Oct 30 00:00:00 CET 2017"/>
+  <dates day="2017-10-31T00:00:00.000+0100" name="Tue Oct 31 00:00:00 CET 2017"/>
+  <dates day="2017-11-01T00:00:00.000+0100" name="Wed Nov 01 00:00:00 CET 2017"/>
+  <dates day="2017-11-02T00:00:00.000+0100" name="Thu Nov 02 00:00:00 CET 2017"/>
+  <dates day="2017-11-03T00:00:00.000+0100" name="Fri Nov 03 00:00:00 CET 2017"/>
+  <dates day="2017-11-04T00:00:00.000+0100" name="Sat Nov 04 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-11-05T00:00:00.000+0100" name="Sun Nov 05 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-11-06T00:00:00.000+0100" name="Mon Nov 06 00:00:00 CET 2017"/>
+  <dates day="2017-11-07T00:00:00.000+0100" name="Tue Nov 07 00:00:00 CET 2017"/>
+  <dates day="2017-11-08T00:00:00.000+0100" name="Wed Nov 08 00:00:00 CET 2017"/>
+  <dates day="2017-11-09T00:00:00.000+0100" name="Thu Nov 09 00:00:00 CET 2017"/>
+  <dates day="2017-11-10T00:00:00.000+0100" name="Fri Nov 10 00:00:00 CET 2017"/>
+  <dates day="2017-11-11T00:00:00.000+0100" name="Sat Nov 11 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-11-12T00:00:00.000+0100" name="Sun Nov 12 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-11-13T00:00:00.000+0100" name="Mon Nov 13 00:00:00 CET 2017"/>
+  <dates day="2017-11-14T00:00:00.000+0100" name="Tue Nov 14 00:00:00 CET 2017"/>
+  <dates day="2017-11-15T00:00:00.000+0100" name="Wed Nov 15 00:00:00 CET 2017"/>
+  <dates day="2017-11-16T00:00:00.000+0100" name="Thu Nov 16 00:00:00 CET 2017"/>
+  <dates day="2017-11-17T00:00:00.000+0100" name="Fri Nov 17 00:00:00 CET 2017"/>
+  <dates day="2017-11-18T00:00:00.000+0100" name="Sat Nov 18 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-11-19T00:00:00.000+0100" name="Sun Nov 19 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-11-20T00:00:00.000+0100" name="Mon Nov 20 00:00:00 CET 2017"/>
+  <dates day="2017-11-21T00:00:00.000+0100" name="Tue Nov 21 00:00:00 CET 2017"/>
+  <dates day="2017-11-22T00:00:00.000+0100" name="Wed Nov 22 00:00:00 CET 2017"/>
+  <dates day="2017-11-23T00:00:00.000+0100" name="Thu Nov 23 00:00:00 CET 2017"/>
+  <dates day="2017-11-24T00:00:00.000+0100" name="Fri Nov 24 00:00:00 CET 2017"/>
+  <dates day="2017-11-25T00:00:00.000+0100" name="Sat Nov 25 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-11-26T00:00:00.000+0100" name="Sun Nov 26 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-11-27T00:00:00.000+0100" name="Mon Nov 27 00:00:00 CET 2017"/>
+  <dates day="2017-11-28T00:00:00.000+0100" name="Tue Nov 28 00:00:00 CET 2017"/>
+  <dates day="2017-11-29T00:00:00.000+0100" name="Wed Nov 29 00:00:00 CET 2017"/>
+  <dates day="2017-11-30T00:00:00.000+0100" name="Thu Nov 30 00:00:00 CET 2017"/>
+  <dates day="2017-12-01T00:00:00.000+0100" name="Fri Dec 01 00:00:00 CET 2017"/>
+  <dates day="2017-12-02T00:00:00.000+0100" name="Sat Dec 02 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-03T00:00:00.000+0100" name="Sun Dec 03 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-04T00:00:00.000+0100" name="Mon Dec 04 00:00:00 CET 2017"/>
+  <dates day="2017-12-05T00:00:00.000+0100" name="Tue Dec 05 00:00:00 CET 2017"/>
+  <dates day="2017-12-06T00:00:00.000+0100" name="Wed Dec 06 00:00:00 CET 2017"/>
+  <dates day="2017-12-07T00:00:00.000+0100" name="Thu Dec 07 00:00:00 CET 2017"/>
+  <dates day="2017-12-08T00:00:00.000+0100" name="Fri Dec 08 00:00:00 CET 2017"/>
+  <dates day="2017-12-09T00:00:00.000+0100" name="Sat Dec 09 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-10T00:00:00.000+0100" name="Sun Dec 10 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-11T00:00:00.000+0100" name="Mon Dec 11 00:00:00 CET 2017"/>
+  <dates day="2017-12-12T00:00:00.000+0100" name="Tue Dec 12 00:00:00 CET 2017"/>
+  <dates day="2017-12-13T00:00:00.000+0100" name="Wed Dec 13 00:00:00 CET 2017"/>
+  <dates day="2017-12-14T00:00:00.000+0100" name="Thu Dec 14 00:00:00 CET 2017"/>
+  <dates day="2017-12-15T00:00:00.000+0100" name="Fri Dec 15 00:00:00 CET 2017"/>
+  <dates day="2017-12-16T00:00:00.000+0100" name="Sat Dec 16 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-17T00:00:00.000+0100" name="Sun Dec 17 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-18T00:00:00.000+0100" name="Mon Dec 18 00:00:00 CET 2017"/>
+  <dates day="2017-12-19T00:00:00.000+0100" name="Tue Dec 19 00:00:00 CET 2017"/>
+  <dates day="2017-12-20T00:00:00.000+0100" name="Wed Dec 20 00:00:00 CET 2017"/>
+  <dates day="2017-12-21T00:00:00.000+0100" name="Thu Dec 21 00:00:00 CET 2017"/>
+  <dates day="2017-12-22T00:00:00.000+0100" name="Fri Dec 22 00:00:00 CET 2017"/>
+  <dates day="2017-12-23T00:00:00.000+0100" name="Sat Dec 23 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-24T00:00:00.000+0100" name="Sun Dec 24 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-25T00:00:00.000+0100" name="Mon Dec 25 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-26T00:00:00.000+0100" name="Tue Dec 26 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-27T00:00:00.000+0100" name="Wed Dec 27 00:00:00 CET 2017"/>
+  <dates day="2017-12-28T00:00:00.000+0100" name="Thu Dec 28 00:00:00 CET 2017"/>
+  <dates day="2017-12-29T00:00:00.000+0100" name="Fri Dec 29 00:00:00 CET 2017"/>
+  <dates day="2017-12-30T00:00:00.000+0100" name="Sat Dec 30 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <dates day="2017-12-31T00:00:00.000+0100" name="Sun Dec 31 00:00:00 CET 2017" dayType="PublicHolyday"/>
+  <persons xsi:type="calender:Employee" name="Peter Meyer" leaveDays="10"/>
+  <persons xsi:type="calender:Employee" name="Max Mustermann" leaveDays="7"/>
+  <persons xsi:type="calender:Employee" name="Patrick M&#xfc;ller" leaveDays="5"/>
+  <persons xsi:type="calender:Employee" name="Anna Meyer" leaveDays="30"/>
+</calender:Calender>

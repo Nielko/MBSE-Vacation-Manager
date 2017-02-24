@@ -8,22 +8,21 @@
         eType="#//Date" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="persons" upperBound="-1"
         eType="#//Person" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="months" upperBound="-1"
-        eType="#//Month" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="years" upperBound="-1"
+        eType="#//Year" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kws" upperBound="-1" eType="#//KW"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Date">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="day" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="persons" upperBound="-1"
-        eType="#//Person" eOpposite="#//Person/dates"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayType" lowerBound="1"
         eType="#//WorkingDayType" defaultValueLiteral="WorkingDay"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="holidayapplications" eType="#//HolidayApplication"
         eOpposite="#//HolidayApplication/dates"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="weekday" eType="#//WeekDay"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Person" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="dates" upperBound="-1"
-        eType="#//Date" eOpposite="#//Date/persons"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="leaveDays" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
@@ -38,32 +37,52 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="dates" eType="#//Date"
         eOpposite="#//Date/holidayapplications"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="employee" eType="#//Employee"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ResponsiblePerson" eSuperTypes="#//Person">
-    <eOperations name="acceptApplication"/>
-    <eOperations name="declineApplication"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="employees" upperBound="-1"
         eType="#//Employee"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Employee" eSuperTypes="#//Person">
-    <eOperations name="createApplication"/>
-    <eOperations name="sendApplication"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="standin" eType="#//Employee"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="responsible" eType="#//ResponsiblePerson"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="holidayapplications" upperBound="-1"
         eType="#//HolidayApplication" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Year">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="year" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="KW">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="kw" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="weekdates" eType="#//Date"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Month">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="weeks" upperBound="-1"
-        eType="#//Week" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kws" upperBound="-1" eType="#//KW"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="months" upperBound="-1"
+        eType="#//Year" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="monthname" eType="#//MonthName"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Week">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="day" upperBound="-1" eType="#//Day"
-        containment="true"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="WeekDay">
+    <eLiterals name="Monday"/>
+    <eLiterals name="Tuesday" value="1"/>
+    <eLiterals name="Wednesday" value="2"/>
+    <eLiterals name="Thursday" value="3"/>
+    <eLiterals name="Friday" value="4"/>
+    <eLiterals name="Saturday" value="5"/>
+    <eLiterals name="Sunday" value="6"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Day">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="MonthName">
+    <eLiterals name="January"/>
+    <eLiterals name="February" value="1"/>
+    <eLiterals name="March" value="2"/>
+    <eLiterals name="April" value="3"/>
+    <eLiterals name="May" value="4"/>
+    <eLiterals name="June" value="5"/>
+    <eLiterals name="July" value="6"/>
+    <eLiterals name="August" value="7"/>
+    <eLiterals name="September" value="8"/>
+    <eLiterals name="October" value="9"/>
+    <eLiterals name="November" value="10"/>
+    <eLiterals name="December" value="11"/>
   </eClassifiers>
 </ecore:EPackage>

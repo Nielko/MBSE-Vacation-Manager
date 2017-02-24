@@ -14,22 +14,45 @@
       <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WorkingDayType/RestrictedDay"/>
       <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WorkingDayType/PublicHolyday"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Calender.ecore#//WeekDay">
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WeekDay/Monday"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WeekDay/Tuesday"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WeekDay/Wednesday"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WeekDay/Thursday"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WeekDay/Friday"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WeekDay/Saturday"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//WeekDay/Sunday"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="Calender.ecore#//MonthName">
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/January"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/February"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/March"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/April"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/May"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/June"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/July"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/August"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/September"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/October"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/November"/>
+      <genEnumLiterals ecoreEnumLiteral="Calender.ecore#//MonthName/December"/>
+    </genEnums>
     <genClasses ecoreClass="Calender.ecore#//Calender">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Calender/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/dates"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/persons"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/months"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/years"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/kws"/>
       <genOperations ecoreOperation="Calender.ecore#//Calender/showGui"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Date">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/day"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Date/persons"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/dayType"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Date/holidayapplications"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/weekday"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Person">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Person/dates"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Person/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Person/leaveDays"/>
     </genClasses>
@@ -38,29 +61,27 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//HolidayApplication/isAccepted"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//HolidayApplication/dates"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//HolidayApplication/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//HolidayApplication/employee"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//ResponsiblePerson">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//ResponsiblePerson/employees"/>
-      <genOperations ecoreOperation="Calender.ecore#//ResponsiblePerson/acceptApplication"/>
-      <genOperations ecoreOperation="Calender.ecore#//ResponsiblePerson/declineApplication"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Employee">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Employee/standin"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Employee/responsible"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Employee/holidayapplications"/>
-      <genOperations ecoreOperation="Calender.ecore#//Employee/createApplication"/>
-      <genOperations ecoreOperation="Calender.ecore#//Employee/sendApplication"/>
+    </genClasses>
+    <genClasses ecoreClass="Calender.ecore#//Year">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Year/year"/>
+    </genClasses>
+    <genClasses ecoreClass="Calender.ecore#//KW">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//KW/kw"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//KW/weekdates"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Month">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Month/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Month/weeks"/>
-    </genClasses>
-    <genClasses ecoreClass="Calender.ecore#//Week">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Week/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Week/day"/>
-    </genClasses>
-    <genClasses ecoreClass="Calender.ecore#//Day">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Day/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Month/kws"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Month/months"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Month/monthname"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
