@@ -86,6 +86,8 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Year">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="year" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="months" upperBound="-1"
+        eType="#//Month" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="KW">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="kw" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -93,8 +95,6 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Month">
     <eStructuralFeatures xsi:type="ecore:EReference" name="kws" upperBound="-1" eType="#//KW"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="months" upperBound="-1"
-        eType="#//Year" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="monthname" eType="#//MonthName"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="WeekDay">
