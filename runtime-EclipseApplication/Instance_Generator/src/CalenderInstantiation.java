@@ -19,6 +19,7 @@ import de.tu_bs.vacation_manager.Calender.CalenderFactory;
 import de.tu_bs.vacation_manager.Calender.Date;
 import de.tu_bs.vacation_manager.Calender.Employee;
 import de.tu_bs.vacation_manager.Calender.Month;
+import de.tu_bs.vacation_manager.Calender.MonthName;
 import de.tu_bs.vacation_manager.Calender.WorkingDayType;
 import de.tu_bs.vacation_manager.Calender.KW;
 
@@ -76,16 +77,21 @@ public class CalenderInstantiation {
 		}
 		
 		//Erstellung Monate
-		/*String [] monthName = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};	
-		for (int monate=1; monate<=monthName.length; monate++){
+		String [] monthName = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};	
+		for (int monate=0; monate<=monthName.length; monate++){
 			Month month = CalenderFactory.eINSTANCE.createMonth();
-			month.setMonthname();
+			month.setMonthname(MonthName.values()[monate]);
 			cal.getMonth().add(month);
 			cal.get
-		}*/
+		}
 		
+		
+		//Kalenderwochen
+		for (int i=0; i<=52; i++){
 		KW kw = CalenderFactory.eINSTANCE.createKW();
-		
+		kw.setKw(i);
+		cal.getKws().add(kw);
+		}
 		
 		String [][] employees = { 
 				{"Peter Meyer" ,"10"}, 
