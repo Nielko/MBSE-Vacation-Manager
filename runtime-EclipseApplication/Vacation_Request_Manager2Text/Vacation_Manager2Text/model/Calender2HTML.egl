@@ -1,0 +1,696 @@
+[% var calender : Calender = Calender.allInstances().at(0); %]
+[%var util := new Native ('de.tu_bs.vacation_manager.test.util.Calender2TextUtil');%]
+
+<html>
+<head>
+<title>Vacation Manager</title>
+<br>
+
+Heutiges Datum:
+<script type="text/javascript">
+document.write(new Date().getDate()+"."+(new Date().getMonth()+1)+"."+new Date().getFullYear())
+</script>
+<h1>Kalender</h1>
+<!-- Css-Elemente fÃ¼r das Design-->
+    
+<style>
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 13px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size:15px;
+    color: #777;
+}
+
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 3px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+.box1 {
+ float: left;
+ width: 20%;
+ margin-right: 2%;
+ padding: 18px;
+ background: lawngreen;
+ box-sizing: border-box;
+ text-align:center;
+}
+
+.box2 {
+ float: left;
+ width: 20%;
+ margin-right: 2%;
+ padding: 18px;
+ background: red;
+ box-sizing: border-box;
+ text-align:center;
+}
+
+.box3 {
+ float: left;
+ width: 20%;
+ margin-right: 2%;
+ padding: 18px;
+ background: orange;
+ box-sizing: border-box;
+ text-align:center;
+}
+
+.box:last-child {
+     margin-right: 0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="box1">Werktag</div>
+<div class="box2">Wochenende</div>
+<div class="box3">Feiertag</div>
+
+
+<br><br><br>
+
+<!-- Nach tutorial: http://www.w3schools.com/howto/howto_css_calendar.asp -->
+
+<!-----------Januar---->
+
+<div class="month">      
+  <ul>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[0])%]
+      <span style="font-size:30px:center">[%=util.getFormattedYear(calender.dates[0])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+
+[%=util.getStartWeekDay(calender.dates[0])%]	
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Jan")%{%] 
+ 		<li>	
+ 		[%if (util.getDayType(date)=="WorkingDay"){%]
+			<div style="background-color:lawngreen;">		
+			[%}%]			
+		[%if (util.getDayType(date)=="RestrictedDay"){%]
+			<div style="background-color:red;color:#ffffff;">
+			[%}%]
+		[%if (util.getDayType(date)=="PublicHolyday"){%]
+			<div style="background-color:orange;color:#ffffff;">
+			[%}%]
+		[%=util.getFormattedSingleDay(date)%] 
+		<br>
+		[%=util.getDayType(date)%] 
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>	
+		[%}%]
+		<br>	
+		</li>
+	[%} %]
+[%}%]
+
+
+<!-------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[31])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+
+<!-----------Februar---->
+[%=util.getStartWeekDay(calender.dates[31])%]	
+
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Feb")%{%] 
+ 		<li>	
+ 		[%if (util.getDayType(date)=="WorkingDay"){%]
+			<div style="background-color:lawngreen;">		
+			[%}%]			
+		[%if (util.getDayType(date)=="RestrictedDay"){%]
+			<div style="background-color:red;color:#ffffff;">
+			[%}%]
+		[%if (util.getDayType(date)=="PublicHolyday"){%]
+			<div style="background-color:orange;color:#ffffff;">
+			[%}%]
+		[%=util.getFormattedSingleDay(date)%] 
+		<br>
+		[%=util.getDayType(date)%] 
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>	
+		[%}%]
+		<br>	
+		</li>
+	[%} %]
+[%}%]
+
+<!--------------March------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[59])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[59])%]	
+
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Mar")%{%] 
+ 		<li>	
+ 		[%if (util.getDayType(date)=="WorkingDay"){%]
+			<div style="background-color:lawngreen;">		
+			[%}%]			
+		[%if (util.getDayType(date)=="RestrictedDay"){%]
+			<div style="background-color:red;color:#ffffff;">
+			[%}%]
+		[%if (util.getDayType(date)=="PublicHolyday"){%]
+			<div style="background-color:orange;color:#ffffff;">
+			[%}%]
+		[%=util.getFormattedSingleDay(date)%] 
+		<br>
+		[%=util.getDayType(date)%] 
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>	
+		[%}%]
+		<br>	
+		</li>
+	[%} %]
+[%}%]
+<!--------------April------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[90])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[90])%]	
+
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Apr")%{%] 
+ 		<li>	
+ 		[%if (util.getDayType(date)=="WorkingDay"){%]
+			<div style="background-color:lawngreen;">		
+			[%}%]			
+		[%if (util.getDayType(date)=="RestrictedDay"){%]
+			<div style="background-color:red;color:#ffffff;">
+			[%}%]
+		[%if (util.getDayType(date)=="PublicHolyday"){%]
+			<div style="background-color:orange;color:#ffffff;">
+			[%}%]
+		[%=util.getFormattedSingleDay(date)%] 
+		<br>
+		[%=util.getDayType(date)%] 
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>	
+		[%}%]
+		<br>	
+		</li>
+	[%} %]
+[%}%]
+<!--------------May------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[120])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[120])%]	
+
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="May")%{%] 
+ 		<li>	
+ 		[%if (util.getDayType(date)=="WorkingDay"){%]
+			<div style="background-color:lawngreen;">		
+			[%}%]			
+		[%if (util.getDayType(date)=="RestrictedDay"){%]
+			<div style="background-color:red;color:#ffffff;">
+			[%}%]
+		[%if (util.getDayType(date)=="PublicHolyday"){%]
+			<div style="background-color:orange;color:#ffffff;">
+			[%}%]
+		[%=util.getFormattedSingleDay(date)%] 
+		<br>
+		[%=util.getDayType(date)%] 
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>	
+		[%}%]
+		<br>	
+		</li>
+	[%} %]
+[%}%]
+<!--------------June------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[151])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[151])%]	
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Jun")%{%] 
+ 		<li>	
+ 		[%=util.getFormattedSingleDay(date)%] 
+ 		<br>
+ 		[%if (util.getDayType(date)=="Werktag"){%]
+			<span class="active">
+			[%}%]			
+		[%if (util.getDayType(date)=="PublicHoliday"){%]
+			</span>
+			[%}%]
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>
+		[%}%]
+		[%=util.getDayType(date)%] 
+		</li>
+	[%} %]
+[%}%]
+<!--------------July------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[181])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[181])%]	
+ 
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Jul")%{%] 
+ 		<li>	
+ 		[%=util.getFormattedSingleDay(date)%] 
+ 		<br>
+ 		[%if (util.getDayType(date)=="Werktag"){%]
+			<span class="active">
+			[%}%]			
+		[%if (util.getDayType(date)=="PublicHoliday"){%]
+			</span>
+			[%}%]
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>
+		[%}%]
+		[%=util.getDayType(date)%] 
+		</li>
+	[%} %]
+[%}%]
+<!--------------August------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[212])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+
+[%=util.getStartWeekDay(calender.dates[212])%]		
+
+ 
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Aug")%{%] 
+ 		<li>	
+ 		[%=util.getFormattedSingleDay(date)%] 
+ 		<br>
+ 		[%if (util.getDayType(date)=="Werktag"){%]
+			<span class="active">
+			[%}%]			
+		[%if (util.getDayType(date)=="PublicHoliday"){%]
+			</span>
+			[%}%]
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>
+		[%}%]
+		[%=util.getDayType(date)%] 
+		</li>
+	[%} %]
+[%}%]
+<!--------------September------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[243])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[243])%]	
+
+ 
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Sep")%{%] 
+ 		<li>	
+ 		[%=util.getFormattedSingleDay(date)%] 
+ 		<br>
+ 		[%if (util.getDayType(date)=="Werktag"){%]
+			<span class="active">
+			[%}%]			
+		[%if (util.getDayType(date)=="PublicHoliday"){%]
+			</span>
+			[%}%]
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>
+		[%}%]
+		[%=util.getDayType(date)%] 
+		</li>
+	[%} %]
+[%}%]
+<!--------------October------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[273])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[273])%]	
+ 
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Oct")%{%] 
+ 		<li>	
+ 		[%=util.getFormattedSingleDay(date)%] 
+ 		<br>
+ 		[%if (util.getDayType(date)=="Werktag"){%]
+			<span class="active">
+			[%}%]			
+		[%if (util.getDayType(date)=="PublicHoliday"){%]
+			</span>
+			[%}%]
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>
+		[%}%]
+		[%=util.getDayType(date)%] 
+		</li>
+	[%} %]
+[%}%]
+<!--------------November------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[304])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[304])%]	
+ 
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Nov")%{%] 
+ 		<li>	
+ 		[%=util.getFormattedSingleDay(date)%] 
+ 		<br>
+ 		[%if (util.getDayType(date)=="Werktag"){%]
+			<span class="active">
+			[%}%]			
+		[%if (util.getDayType(date)=="PublicHoliday"){%]
+			</span>
+			[%}%]
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>
+		[%}%]
+		[%=util.getDayType(date)%] 
+		</li>
+	[%} %]
+[%}%]
+<!--------------December------------------------------------------------------------------------------->
+<div class="month">      
+  <ul>
+    <li class="prev">â®</li>
+    <li class="next">â¯</li>
+    <li style="text-align:center">
+      [%=util.getFormattedMonth(calender.dates[334])%] <br>
+      <span style="font-size:18px">[%=util.getFormattedYear(calender.dates[31])%]</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+[%=util.getStartWeekDay(calender.dates[334])%]	
+
+ 
+[%for (date in calender.dates) { %]
+	[%if(util.getFormattedMonth(date)=="Dec")%{%] 
+ 		<li>	
+ 		[%=util.getFormattedSingleDay(date)%] 
+ 		<br>
+ 		[%if (util.getDayType(date)=="Werktag"){%]
+			<span class="active">
+			[%}%]			
+		[%if (util.getDayType(date)=="PublicHoliday"){%]
+			</span>
+			[%}%]
+		<br>
+		[%if(date.persons.size > 0){%]
+		[%=date.persons.name%] 
+		<br>
+		[%}%]
+		[%=util.getDayType(date)%] 
+		</li>
+	[%} %]
+[%}%]
+
+</ul>
+</body>
+</html>
