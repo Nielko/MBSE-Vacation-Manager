@@ -77,13 +77,13 @@ public class CalenderInstantiation {
 		}
 		
 		//Erstellung Monate
-		String [] monthName = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};	
+	/*	String [] monthName = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};	
 		for (int monate=0; monate<=monthName.length; monate++){
 			Month month = CalenderFactory.eINSTANCE.createMonth();
 			month.setMonthname(MonthName.values()[monate]);
 			cal.getMonth().add(month);
 			cal.get
-		}
+		}*/
 		
 		
 		//Kalenderwochen
