@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calender:Calender xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calender="https://tu-bs.de/isf/vacation_test">
+  <dates day="2017-01-03T00:00:00.000+0100" name="3.1."/>
+  <dates day="2017-01-04T00:00:00.000+0100" name="4.1." weekday="Tuesday"/>
+  <dates day="2017-01-05T00:00:00.000+0100" name="5.1." weekday="Wednesday"/>
+  <dates day="2017-01-06T00:00:00.000+0100" name="6.1." weekday="Thursday"/>
+  <dates day="2017-01-07T00:00:00.000+0100" name="7.1" weekday="Friday"/>
+  <dates day="2017-01-08T00:00:00.000+0100" name="8.1." dayType="PublicHolyday" weekday="Saturday">
+    <holidayapplications name="Urlaub Lotti" employee="//@persons.0"/>
+  </dates>
+  <dates day="2017-01-09T00:00:00.000+0100" name="9.1." dayType="PublicHolyday" weekday="Sunday"/>
+  <dates day="2017-01-10T00:00:00.000+0100" name="10.1."/>
+  <dates day="2017-01-11T00:00:00.000+0100" name="11.1." weekday="Tuesday">
+    <holidayapplications name="&quot;newApplication&quot;"/>
+  </dates>
+  <dates day="2017-01-12T00:00:00.000+0100" name="12.1." weekday="Wednesday"/>
+  <persons xsi:type="calender:Employee" name="Lotti" responsible="//@persons.3" holidayapplications="//@dates.5/@holidayapplications.0"/>
+  <persons xsi:type="calender:Employee" name="dummy"/>
+  <persons xsi:type="calender:Employee" name="Karol"/>
+  <persons xsi:type="calender:ResponsiblePerson" name="Carsten" employees="//@persons.0"/>
+  <years year="2017">
+    <months kws="//@kws.0 //@kws.1 //@kws.2"/>
+    <months kws="//@kws.4 //@kws.2" monthname="February"/>
+    <months monthname="March"/>
+    <months monthname="April"/>
+    <months monthname="May"/>
+  </years>
+  <years year="2016">
+    <months monthname="December"/>
+  </years>
+  <kws kw="1" weekdates="//@dates.1 //@dates.0 //@dates.2 //@dates.3 //@dates.4 //@dates.5 //@dates.6"/>
+  <kws kw="2" weekdates="//@dates.7 //@dates.8 //@dates.9"/>
+  <kws kw="3"/>
+  <kws kw="4"/>
+  <kws kw="5"/>
+</calender:Calender>

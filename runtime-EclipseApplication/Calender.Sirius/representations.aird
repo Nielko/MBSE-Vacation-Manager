@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calender="https://tu-bs.de/isf/vacation_test" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_5zMu8PrYEea7bZbk9pMtkQ" selectedViews="_GBTDgPrZEea7bZbk9pMtkQ _GBc0gPrZEea7bZbk9pMtkQ _GBeCoPrZEea7bZbk9pMtkQ" version="11.1.0.201608251200">
+    <semanticResources>My.calender</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_GBTDgPrZEea7bZbk9pMtkQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='TestDeveloperView']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_GBc0gPrZEea7bZbk9pMtkQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_vibPcProEea7bZbk9pMtkQ" name="new PersonsManager" representation="_vibPcfroEea7bZbk9pMtkQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']"/>
+        <target xmi:type="calender:Calender" href="My.calender#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_L0ZKYPwUEea5rMpwnSzY9w" name="new GregorianCalView" representation="_L0ZKYfwUEea5rMpwnSzY9w">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']"/>
+        <target xmi:type="calender:Calender" href="My.calender#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_GBeCoPrZEea7bZbk9pMtkQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='EmployeeView']"/>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_vibPcfroEea7bZbk9pMtkQ" name="new PersonsManager">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_vibPcvroEea7bZbk9pMtkQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_vibPc_roEea7bZbk9pMtkQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_vib2gProEea7bZbk9pMtkQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_vib2gfroEea7bZbk9pMtkQ" type="Sirius" element="_vibPcfroEea7bZbk9pMtkQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_wTVH8ProEea7bZbk9pMtkQ" type="2001" element="_6tK0IPrpEea7jsDj7rQ8jQ">
+          <children xmi:type="notation:Node" xmi:id="_wTXkMProEea7bZbk9pMtkQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_wTXkMfroEea7bZbk9pMtkQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6vAnMPrpEea7jsDj7rQ8jQ" type="3016" element="_6tK0IfrpEea7jsDj7rQ8jQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6vAnMfrpEea7jsDj7rQ8jQ" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6vAnMvrpEea7jsDj7rQ8jQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_wTVH8froEea7bZbk9pMtkQ" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wTVH8vroEea7bZbk9pMtkQ" x="530" y="215" width="100" height="50"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_vib2gvroEea7bZbk9pMtkQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6tK0IPrpEea7jsDj7rQ8jQ" name="&quot;name to fill in&quot;" width="10" height="5" resizeKind="NSEW">
+      <target xmi:type="calender:Employee" href="My.calender#//@persons.0"/>
+      <semanticElements xmi:type="calender:Employee" href="My.calender#//@persons.0"/>
+      <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_6tK0IfrpEea7jsDj7rQ8jQ" labelPosition="node" horizontalDiameter="10" verticalDiameter="5" color="253,206,137">
+        <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_vibPdProEea7bZbk9pMtkQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer"/>
+    <target xmi:type="calender:Calender" href="My.calender#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_L0ZKYfwUEea5rMpwnSzY9w" name="new GregorianCalView">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_L0ZKYvwUEea5rMpwnSzY9w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_L0ZKY_wUEea5rMpwnSzY9w"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_L0a_kPwUEea5rMpwnSzY9w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_L0a_kfwUEea5rMpwnSzY9w" type="Sirius" element="_L0ZKYfwUEea5rMpwnSzY9w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_L0bmoPwUEea5rMpwnSzY9w" type="2002" element="_L0ZKZPwUEea5rMpwnSzY9w">
+          <children xmi:type="notation:Node" xmi:id="_L0cNsPwUEea5rMpwnSzY9w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_L0cNsfwUEea5rMpwnSzY9w" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_L0c0wPwUEea5rMpwnSzY9w" type="3008" element="_L0ZKZvwUEea5rMpwnSzY9w">
+              <children xmi:type="notation:Node" xmi:id="_L0c0w_wUEea5rMpwnSzY9w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_L0db0PwUEea5rMpwnSzY9w" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_L0i7YPwUEea5rMpwnSzY9w" type="3008" element="_L0ZKaPwUEea5rMpwnSzY9w">
+                  <children xmi:type="notation:Node" xmi:id="_L0jicPwUEea5rMpwnSzY9w" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_L0kJgPwUEea5rMpwnSzY9w" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_L0l-sPwUEea5rMpwnSzY9w" type="3009" element="_L0ZKavwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_L0l-s_wUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_L0l-tPwUEea5rMpwnSzY9w" type="7003">
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_L0l-tfwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_L0l-tvwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_L0l-t_wUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_L0l-sfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0l-svwUEea5rMpwnSzY9w" width="61" height="43"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_L0mlwPwUEea5rMpwnSzY9w" type="3009" element="_L0ZKbPwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_L0mlw_wUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_L0mlxPwUEea5rMpwnSzY9w" type="7003">
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_L0mlxfwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_L0mlxvwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_L0mlx_wUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_L0mlwfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0mlwvwUEea5rMpwnSzY9w" x="61" width="61" height="43"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_L0mlyPwUEea5rMpwnSzY9w" type="3009" element="_L0ZKbvwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_L0nM0PwUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_L0nM0fwUEea5rMpwnSzY9w" type="7003">
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_L0nM0vwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_L0nM0_wUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_L0nM1PwUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_L0mlyfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0mlyvwUEea5rMpwnSzY9w" x="122" width="80" height="43"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_L0nM1fwUEea5rMpwnSzY9w" type="3009" element="_L0ZKcPwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_L0nM2PwUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_L0nz4PwUEea5rMpwnSzY9w" type="7003">
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_L0nz4fwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_L0nz4vwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_L0nz4_wUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_L0nM1vwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0nM1_wUEea5rMpwnSzY9w" x="202" width="66" height="43"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_L0nz5PwUEea5rMpwnSzY9w" type="3009" element="_L0ZKcvwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_L0oa8PwUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_L0oa8fwUEea5rMpwnSzY9w" type="7003">
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_L0oa8vwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_L0oa8_wUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_L0oa9PwUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_L0nz5fwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0nz5vwUEea5rMpwnSzY9w" x="268" width="51" height="43"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_L0oa9fwUEea5rMpwnSzY9w" type="3009" element="_L0ZKdPwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_L0pCAPwUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_L0pCAfwUEea5rMpwnSzY9w" type="7003">
+                        <children xmi:type="notation:Node" xmi:id="_L0pCBfwUEea5rMpwnSzY9w" type="3010" element="_L0ZKdvwUEea5rMpwnSzY9w">
+                          <styles xmi:type="notation:FontStyle" xmi:id="_L0pCBvwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_L0pCB_wUEea5rMpwnSzY9w"/>
+                        </children>
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_L0pCAvwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_L0pCA_wUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_L0pCBPwUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_L0oa9vwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0oa9_wUEea5rMpwnSzY9w" x="319" width="89" height="43"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_O4oXcPwUEea5rMpwnSzY9w" type="3009" element="_O4iQ0PwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_O4o-gPwUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_O4o-gfwUEea5rMpwnSzY9w" type="7003">
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_O4o-gvwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_O4o-g_wUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_O4o-hPwUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_O4oXcfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O4oXcvwUEea5rMpwnSzY9w" x="408" width="58" height="43"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_L0kJgfwUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_L0kJgvwUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:DrawerStyle" xmi:id="_L0kJg_wUEea5rMpwnSzY9w"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_L0i7YfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0i7YvwUEea5rMpwnSzY9w" width="466" height="70"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_L0kwkPwUEea5rMpwnSzY9w" type="3008" element="_L0ZKePwUEea5rMpwnSzY9w">
+                  <children xmi:type="notation:Node" xmi:id="_L0kwk_wUEea5rMpwnSzY9w" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_L0kwlPwUEea5rMpwnSzY9w" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_32jtgPwUEea5rMpwnSzY9w" type="3009" element="_32bKoPwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_32kUkPwUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_32kUkfwUEea5rMpwnSzY9w" type="7003">
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_32kUkvwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_32kUk_wUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_32kUlPwUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_32jtgfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_32jtgvwUEea5rMpwnSzY9w" width="154" height="11"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_32k7oPwUEea5rMpwnSzY9w" type="3009" element="_32cYwPwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_32k7o_wUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_32k7pPwUEea5rMpwnSzY9w" type="7003">
+                        <children xmi:type="notation:Node" xmi:id="_7JJfoPwUEea5rMpwnSzY9w" type="3010" element="_7I_uoPwUEea5rMpwnSzY9w">
+                          <styles xmi:type="notation:FontStyle" xmi:id="_7JJfofwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                          <layoutConstraint xmi:type="notation:Location" xmi:id="_7JJfovwUEea5rMpwnSzY9w"/>
+                        </children>
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_32k7pfwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_32k7pvwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_32lisPwUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_32k7ofwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_32k7ovwUEea5rMpwnSzY9w" x="154" width="154" height="11"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_32lisfwUEea5rMpwnSzY9w" type="3009" element="_32c_0PwUEea5rMpwnSzY9w">
+                      <children xmi:type="notation:Node" xmi:id="_32litPwUEea5rMpwnSzY9w" type="5004"/>
+                      <children xmi:type="notation:Node" xmi:id="_32litfwUEea5rMpwnSzY9w" type="7003">
+                        <styles xmi:type="notation:SortingStyle" xmi:id="_32litvwUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:FilteringStyle" xmi:id="_32lit_wUEea5rMpwnSzY9w"/>
+                        <styles xmi:type="notation:DrawerStyle" xmi:id="_32liuPwUEea5rMpwnSzY9w"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_32lisvwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_32lis_wUEea5rMpwnSzY9w" x="308" width="156" height="11"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_L0kwlfwUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_L0kwlvwUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:DrawerStyle" xmi:id="_L0lXoPwUEea5rMpwnSzY9w"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_L0kwkfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0kwkvwUEea5rMpwnSzY9w" y="70"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_L0lXofwUEea5rMpwnSzY9w" type="3008" element="_L0ZKevwUEea5rMpwnSzY9w">
+                  <children xmi:type="notation:Node" xmi:id="_L0lXpPwUEea5rMpwnSzY9w" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_L0lXpfwUEea5rMpwnSzY9w" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_L0lXpvwUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_L0lXp_wUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:DrawerStyle" xmi:id="_L0lXqPwUEea5rMpwnSzY9w"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_L0lXovwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0lXo_wUEea5rMpwnSzY9w" y="110" width="466" height="40"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_L0db0fwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_L0db0vwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_L0db0_wUEea5rMpwnSzY9w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_L0c0wfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0c0wvwUEea5rMpwnSzY9w" width="466" height="186"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_L0db1PwUEea5rMpwnSzY9w" type="3008" element="_L0ZKfPwUEea5rMpwnSzY9w">
+              <children xmi:type="notation:Node" xmi:id="_L0db1_wUEea5rMpwnSzY9w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_L0db2PwUEea5rMpwnSzY9w" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_L0ppEPwUEea5rMpwnSzY9w" type="3008" element="_L0ZKfvwUEea5rMpwnSzY9w">
+                  <children xmi:type="notation:Node" xmi:id="_L0ppE_wUEea5rMpwnSzY9w" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_L0ppFPwUEea5rMpwnSzY9w" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_L0ppFfwUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_L0ppFvwUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:DrawerStyle" xmi:id="_L0ppF_wUEea5rMpwnSzY9w"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_L0ppEfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0ppEvwUEea5rMpwnSzY9w" width="93" height="40"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_L0ppGPwUEea5rMpwnSzY9w" type="3008" element="_L0ZKgPwUEea5rMpwnSzY9w">
+                  <children xmi:type="notation:Node" xmi:id="_L0qQIfwUEea5rMpwnSzY9w" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_L0qQIvwUEea5rMpwnSzY9w" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_L0qQI_wUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_L0qQJPwUEea5rMpwnSzY9w"/>
+                    <styles xmi:type="notation:DrawerStyle" xmi:id="_L0qQJfwUEea5rMpwnSzY9w"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_L0ppGfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0qQIPwUEea5rMpwnSzY9w" y="40" width="93" height="40"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_L0db2fwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_L0db2vwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_L0fRAPwUEea5rMpwnSzY9w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_L0db1fwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0db1vwUEea5rMpwnSzY9w" y="186" width="466" height="117"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_L0fRAfwUEea5rMpwnSzY9w" type="3008" element="_L0ZKgvwUEea5rMpwnSzY9w">
+              <children xmi:type="notation:Node" xmi:id="_L0f4EPwUEea5rMpwnSzY9w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_L0f4EfwUEea5rMpwnSzY9w" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_L0gfIPwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_L0gfIfwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_L0gfIvwUEea5rMpwnSzY9w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_L0fRAvwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0fRA_wUEea5rMpwnSzY9w" y="303" width="466" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_L0gfI_wUEea5rMpwnSzY9w" type="3008" element="_L0ZKhPwUEea5rMpwnSzY9w">
+              <children xmi:type="notation:Node" xmi:id="_L0htQPwUEea5rMpwnSzY9w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_L0htQfwUEea5rMpwnSzY9w" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_L0htQvwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_L0htQ_wUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_L0htRPwUEea5rMpwnSzY9w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_L0gfJPwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0gfJfwUEea5rMpwnSzY9w" y="343" width="466" height="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_L0htRfwUEea5rMpwnSzY9w" type="3008" element="_L0ZKhvwUEea5rMpwnSzY9w">
+              <children xmi:type="notation:Node" xmi:id="_L0iUUPwUEea5rMpwnSzY9w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_L0iUUfwUEea5rMpwnSzY9w" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_L0iUUvwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_L0iUU_wUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_L0iUVPwUEea5rMpwnSzY9w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_L0htRvwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0htR_wUEea5rMpwnSzY9w" y="383" width="466" height="40"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_L0cNsvwUEea5rMpwnSzY9w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_L0cNs_wUEea5rMpwnSzY9w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_L0bmofwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L0bmovwUEea5rMpwnSzY9w"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Xz0JwPwUEea5rMpwnSzY9w" type="2002" element="_Xzic8PwUEea5rMpwnSzY9w">
+          <children xmi:type="notation:Node" xmi:id="_Xz0w0PwUEea5rMpwnSzY9w" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_Xz0w0fwUEea5rMpwnSzY9w" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_Xz5CQPwUEea5rMpwnSzY9w" type="3008" element="_Xzk5M_wUEea5rMpwnSzY9w">
+              <children xmi:type="notation:Node" xmi:id="_Xz5CQ_wUEea5rMpwnSzY9w" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_Xz5CRPwUEea5rMpwnSzY9w" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_Xz5CRfwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_Xz5CRvwUEea5rMpwnSzY9w"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_Xz5CR_wUEea5rMpwnSzY9w"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Xz5CQfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xz5CQvwUEea5rMpwnSzY9w"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_Xz0w0vwUEea5rMpwnSzY9w"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_Xz0w0_wUEea5rMpwnSzY9w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Xz0JwfwUEea5rMpwnSzY9w" fontName="Segoe UI" fontHeight="14"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xz0JwvwUEea5rMpwnSzY9w" x="500"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_L0a_kvwUEea5rMpwnSzY9w"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKZPwUEea5rMpwnSzY9w" name="2017" childrenPresentation="VerticalStack">
+      <target xmi:type="calender:Year" href="My.calender#//@years.0"/>
+      <semanticElements xmi:type="calender:Year" href="My.calender#//@years.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKZfwUEea5rMpwnSzY9w" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKZvwUEea5rMpwnSzY9w" name="January" childrenPresentation="VerticalStack">
+        <target xmi:type="calender:Month" href="My.calender#//@years.0/@months.0"/>
+        <semanticElements xmi:type="calender:Month" href="My.calender#//@years.0/@months.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKZ_wUEea5rMpwnSzY9w" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKaPwUEea5rMpwnSzY9w" name="1" childrenPresentation="HorizontalStack">
+          <target xmi:type="calender:KW" href="My.calender#//@kws.0"/>
+          <semanticElements xmi:type="calender:KW" href="My.calender#//@kws.0"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKafwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_L0ZKavwUEea5rMpwnSzY9w" name="Monday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.0"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.0"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKa_wUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_L0ZKbPwUEea5rMpwnSzY9w" name="Tuesday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.1"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.1"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKbfwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_L0ZKbvwUEea5rMpwnSzY9w" name="Wednesday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.2"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.2"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKb_wUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_L0ZKcPwUEea5rMpwnSzY9w" name="Thursday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.3"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.3"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKcfwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_L0ZKcvwUEea5rMpwnSzY9w" name="Friday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.4"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.4"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKc_wUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_L0ZKdPwUEea5rMpwnSzY9w" name="Saturday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.5"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.5"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKdfwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+            <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_L0ZKdvwUEea5rMpwnSzY9w" name="Urlaub Lotti">
+              <target xmi:type="calender:HolidayApplication" href="My.calender#//@dates.5/@holidayapplications.0"/>
+              <semanticElements xmi:type="calender:HolidayApplication" href="My.calender#//@dates.5/@holidayapplications.0"/>
+              <ownedStyle xmi:type="diagram:Square" xmi:id="_L0ZKd_wUEea5rMpwnSzY9w" labelPosition="node">
+                <description xmi:type="style:SquareDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@subNodeMappings[name='HolidayApplicationNode']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@subNodeMappings[name='HolidayApplicationNode']"/>
+            </ownedElements>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_O4iQ0PwUEea5rMpwnSzY9w" name="Sunday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.6"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.6"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_O4i34PwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKePwUEea5rMpwnSzY9w" name="2" childrenPresentation="HorizontalStack">
+          <target xmi:type="calender:KW" href="My.calender#//@kws.1"/>
+          <semanticElements xmi:type="calender:KW" href="My.calender#//@kws.1"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKefwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']"/>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_32bKoPwUEea5rMpwnSzY9w" name="Monday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.7"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.7"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_32bxsPwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_32cYwPwUEea5rMpwnSzY9w" name="Tuesday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.8"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.8"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_32cYwfwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+            <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_7I_uoPwUEea5rMpwnSzY9w" name="&quot;newApplication&quot;">
+              <target xmi:type="calender:HolidayApplication" href="My.calender#//@dates.8/@holidayapplications.0"/>
+              <semanticElements xmi:type="calender:HolidayApplication" href="My.calender#//@dates.8/@holidayapplications.0"/>
+              <ownedStyle xmi:type="diagram:Square" xmi:id="_7I_uofwUEea5rMpwnSzY9w" labelPosition="node">
+                <description xmi:type="style:SquareDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@subNodeMappings[name='HolidayApplicationNode']/@style"/>
+              </ownedStyle>
+              <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@subNodeMappings[name='HolidayApplicationNode']"/>
+            </ownedElements>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_32c_0PwUEea5rMpwnSzY9w" name="Wednesday">
+            <target xmi:type="calender:Date" href="My.calender#//@dates.9"/>
+            <semanticElements xmi:type="calender:Date" href="My.calender#//@dates.9"/>
+            <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_32c_0fwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+              <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKevwUEea5rMpwnSzY9w" name="3" childrenPresentation="HorizontalStack">
+          <target xmi:type="calender:KW" href="My.calender#//@kws.2"/>
+          <semanticElements xmi:type="calender:KW" href="My.calender#//@kws.2"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKe_wUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKfPwUEea5rMpwnSzY9w" name="February" childrenPresentation="VerticalStack">
+        <target xmi:type="calender:Month" href="My.calender#//@years.0/@months.1"/>
+        <semanticElements xmi:type="calender:Month" href="My.calender#//@years.0/@months.1"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKffwUEea5rMpwnSzY9w" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKfvwUEea5rMpwnSzY9w" name="3" childrenPresentation="HorizontalStack">
+          <target xmi:type="calender:KW" href="My.calender#//@kws.2"/>
+          <semanticElements xmi:type="calender:KW" href="My.calender#//@kws.2"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKf_wUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKgPwUEea5rMpwnSzY9w" name="5" childrenPresentation="HorizontalStack">
+          <target xmi:type="calender:KW" href="My.calender#//@kws.4"/>
+          <semanticElements xmi:type="calender:KW" href="My.calender#//@kws.4"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKgfwUEea5rMpwnSzY9w" borderSize="1" borderSizeComputationExpression="1">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKgvwUEea5rMpwnSzY9w" name="March" childrenPresentation="VerticalStack">
+        <target xmi:type="calender:Month" href="My.calender#//@years.0/@months.2"/>
+        <semanticElements xmi:type="calender:Month" href="My.calender#//@years.0/@months.2"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKg_wUEea5rMpwnSzY9w" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKhPwUEea5rMpwnSzY9w" name="April" childrenPresentation="VerticalStack">
+        <target xmi:type="calender:Month" href="My.calender#//@years.0/@months.3"/>
+        <semanticElements xmi:type="calender:Month" href="My.calender#//@years.0/@months.3"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKhfwUEea5rMpwnSzY9w" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_L0ZKhvwUEea5rMpwnSzY9w" name="May" childrenPresentation="VerticalStack">
+        <target xmi:type="calender:Month" href="My.calender#//@years.0/@months.4"/>
+        <semanticElements xmi:type="calender:Month" href="My.calender#//@years.0/@months.4"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_L0ZKh_wUEea5rMpwnSzY9w" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_Xzic8PwUEea5rMpwnSzY9w" name="2016" childrenPresentation="VerticalStack">
+      <target xmi:type="calender:Year" href="My.calender#//@years.1"/>
+      <semanticElements xmi:type="calender:Year" href="My.calender#//@years.1"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Xzic8fwUEea5rMpwnSzY9w" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_Xzk5M_wUEea5rMpwnSzY9w" name="December" childrenPresentation="VerticalStack">
+        <target xmi:type="calender:Month" href="My.calender#//@years.1/@months.0"/>
+        <semanticElements xmi:type="calender:Month" href="My.calender#//@years.1/@months.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_Xzk5NPwUEea5rMpwnSzY9w" labelSize="14" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_L0ZKiPwUEea5rMpwnSzY9w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Calendar.Sirius.design/description/Sirius.odesign#//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer"/>
+    <target xmi:type="calender:Calender" href="My.calender#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -229,12 +229,13 @@
     </ownedRepresentations>
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="GregorianCalView" domainClass="Calender" enablePopupBars="true">
       <defaultLayer name="Default">
+        <nodeMappings name="HA_Node" domainClass="Calender.Holidayapplication"/>
         <containerMappings name="ContainerYear" domainClass="Calender.Year" childrenPresentation="VerticalStack">
-          <subContainerMappings name="ContainerMonth" synchronizationLock="true" domainClass="Calender.Month" childrenPresentation="VerticalStack">
+          <subContainerMappings name="ContainerMonth" semanticCandidatesExpression="aql:self.months->sortedBy(x|x.monthname)" synchronizationLock="true" domainClass="Calender.Month" childrenPresentation="VerticalStack">
             <subContainerMappings name="ContainerKW" semanticCandidatesExpression="aql:self.kws->sortedBy(x|x.kw)" domainClass="Calender.KW" childrenPresentation="HorizontalStack">
               <subContainerMappings name="ContainerDate" semanticCandidatesExpression="aql:self.weekdates->sortedBy(x|x.day)" synchronizationLock="true" domainClass="Calender.Date" childrenPresentation="List">
                 <subNodeMappings name="HolidayApplicationNode" semanticCandidatesExpression="aql:self.holidayapplications" domainClass="Calender.HolidayApplication">
-                  <style xsi:type="style:SquareDescription" labelExpression="aql:self.employee.name" labelPosition="node" resizeKind="NSEW">
+                  <style xsi:type="style:SquareDescription" labelExpression="aql:self.name" labelPosition="node" resizeKind="NSEW">
                     <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                     <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
@@ -273,9 +274,10 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.HolidayApplication" referenceName="holidayapplication">
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.eContainer().eContainer().eContainer().eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.HolidayApplication" referenceName="holidayapplications">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="&quot;newApplication&quot;"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="day" valueExpression="aql:self.eCaontainer().day"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
