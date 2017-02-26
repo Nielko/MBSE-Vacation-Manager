@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Sirius" version="11.1.1.201610211630">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="Sirius" version="11.1.1.201610211630">
   <ownedViewpoints name="ChefView" modelFileExtension="calender">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="PersonsManager" domainClass="Calender" enablePopupBars="true">
       <defaultLayer name="Default">
@@ -107,6 +107,181 @@
           </style>
         </containerMappings>
       </defaultLayer>
+      <additionalLayers/>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="MyCalView" domainClass="Calender" enablePopupBars="true">
+      <filters xsi:type="filter:CompositeFilterDescription" name="Februar">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='MyCalView']/@defaultLayer/@containerMappings[name='ContainerMonth']" semanticConditionExpression="aql:self.name='Februar'"/>
+      </filters>
+      <defaultLayer name="Default">
+        <containerMappings name="ContainerMonth" domainClass="Calender.Month" childrenPresentation="VerticalStack">
+          <subContainerMappings name="ContainerWeek" semanticCandidatesExpression="feature:eAllContents" domainClass="Calender.Week" childrenPresentation="HorizontalStack">
+            <subContainerMappings name="ContainerDay" semanticCandidatesExpression="feature:eAllContents" domainClass="Calender.Day" childrenPresentation="List">
+              <subNodeMappings name="DateNode" domainClass="Calender.Date">
+                <style xsi:type="style:EllipseNodeDescription" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="10" verticalDiameterComputationExpression="5">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+                </style>
+              </subNodeMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createDate" nodeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='MyCalView']/@defaultLayer/@containerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerWeek']/@subContainerMappings[name='ContainerDay']/@subNodeMappings[name='DateNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.eContainer().eContainer().eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.Date" referenceName="dates">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="day" valueExpression="2017-01-01"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="new Date"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="MyTest" domainClass="Calender" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="DateNode" semanticCandidatesExpression="aql.self.day->month()=1" domainClass="Calender.Date">
+          <style xsi:type="style:DotDescription" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="EmployeeNode" domainClass="Calender.Employee">
+          <style xsi:type="style:EllipseNodeDescription" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="10" verticalDiameterComputationExpression="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </nodeMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createEmployee" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='EmployeeNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.Employee" referenceName="persons">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="&quot;name to fill in&quot;"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setResponsiblePerson" edgeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@edgeMappings[name='ResonsibilityEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="responsible" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="employees" valueExpression="var:source"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createResponsiblePerson" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='PersonsManager']/@defaultLayer/@nodeMappings[name='ResponsiblePersonNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.ResponsiblePerson" referenceName="persons">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="&quot;fill in name&quot;"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createDate" nodeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='MyTest']/@defaultLayer/@nodeMappings[name='DateNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.Date" referenceName="dates"/>
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="day"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="GregorianCalView" domainClass="Calender" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <containerMappings name="ContainerYear" domainClass="Calender.Year" childrenPresentation="VerticalStack">
+          <subContainerMappings name="ContainerMonth" synchronizationLock="true" domainClass="Calender.Month" childrenPresentation="VerticalStack">
+            <subContainerMappings name="ContainerKW" semanticCandidatesExpression="aql:self.kws->sortedBy(x|x.kw)" domainClass="Calender.KW" childrenPresentation="HorizontalStack">
+              <subContainerMappings name="ContainerDate" semanticCandidatesExpression="aql:self.weekdates->sortedBy(x|x.day)" synchronizationLock="true" domainClass="Calender.Date" childrenPresentation="List">
+                <subNodeMappings name="HolidayApplicationNode" semanticCandidatesExpression="aql:self.holidayapplications" domainClass="Calender.HolidayApplication">
+                  <style xsi:type="style:SquareDescription" labelExpression="aql:self.employee.name" labelPosition="node" resizeKind="NSEW">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                  </style>
+                </subNodeMappings>
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:weekday">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+                </style>
+              </subContainerMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:kw">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" labelExpression="feature:monthname">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="14" labelExpression="feature:year">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createHoldidayApplication" nodeMappings="//@ownedViewpoints[name='ChefView']/@ownedRepresentations[name='GregorianCalView']/@defaultLayer/@containerMappings[name='ContainerYear']/@subContainerMappings[name='ContainerMonth']/@subContainerMappings[name='ContainerKW']/@subContainerMappings[name='ContainerDate']/@subNodeMappings[name='HolidayApplicationNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="Calender.HolidayApplication" referenceName="holidayapplication">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="&quot;newApplication&quot;"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
     </ownedRepresentations>
   </ownedViewpoints>
   <ownedViewpoints name="EmployeeView" modelFileExtension="calender">
@@ -144,6 +319,7 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_purple']"/>
           </style>
         </containerMappings>
+        <containerMappings/>
       </defaultLayer>
     </ownedRepresentations>
   </ownedViewpoints>

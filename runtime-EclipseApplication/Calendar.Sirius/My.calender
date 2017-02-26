@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<calender:Calender xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:calender="https://tu-bs.de/isf/vacation_test">
+  <dates day="2017-01-03T00:00:00.000+0100" name="3.1."/>
+  <dates day="2017-01-04T00:00:00.000+0100" name="4.1." weekday="Tuesday"/>
+  <dates day="2017-01-05T00:00:00.000+0100" name="5.1." weekday="Wednesday"/>
+  <years>
+    <month/>
+    <month monthname="February"/>
+  </years>
+  <kws kw="1" weekdates="//@dates.0 //@dates.1 //@dates.2"/>
+  <kws kw="2"/>
+  <kws kw="3"/>
+</calender:Calender>
