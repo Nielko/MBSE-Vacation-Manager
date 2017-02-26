@@ -14,3 +14,6 @@ Thumbs.db
 de.tu_bs.vacation_manager.test/src-gen
 de.tu_bs.vacation_manager.test.edit
 de.tu_bs.vacation_manager.test.editor
+org.eclipse.sirius.sample.basicfamily/
+org.eclipse.sirius.sample.basicfamily.edit/
+org.eclipse.sirius.sample.basicfamily.editor/
