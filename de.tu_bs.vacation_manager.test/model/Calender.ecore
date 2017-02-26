@@ -12,8 +12,6 @@
         eType="#//Year" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="kws" upperBound="-1" eType="#//KW"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="holidayapplication" upperBound="-1"
-        eType="#//HolidayApplication" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Date">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="day" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
@@ -21,7 +19,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dayType" lowerBound="1"
         eType="#//WorkingDayType" defaultValueLiteral="WorkingDay"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="holidayapplications" upperBound="-1"
-        eType="#//HolidayApplication" eOpposite="#//HolidayApplication/dates"/>
+        eType="#//HolidayApplication" containment="true" eOpposite="#//HolidayApplication/dates"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="weekday" eType="#//WeekDay"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Person" abstract="true">

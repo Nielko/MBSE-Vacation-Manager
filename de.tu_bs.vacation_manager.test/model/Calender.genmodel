@@ -43,14 +43,13 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/persons"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/years"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/kws"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Calender.ecore#//Calender/holidayapplication"/>
       <genOperations ecoreOperation="Calender.ecore#//Calender/showGui"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Date">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/day"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/dayType"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Date/holidayapplications"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference Calender.ecore#//Date/holidayapplications"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Calender.ecore#//Date/weekday"/>
     </genClasses>
     <genClasses ecoreClass="Calender.ecore#//Person">
