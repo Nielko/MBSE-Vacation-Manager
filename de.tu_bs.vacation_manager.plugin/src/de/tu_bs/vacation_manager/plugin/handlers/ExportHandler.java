@@ -34,7 +34,7 @@ public class ExportHandler extends AbstractHandler {
 	        if (firstElement instanceof IAdaptable)
 	        {
 	            IProject project = (IProject)((IAdaptable)firstElement).getAdapter(IProject.class);
-	            IPath path = project.getFullPath();
+	            IPath path = project.getLocation();
 	            System.out.println("Projekt: "+path);
 	            StartEGL.start(""+path);
 	        }

@@ -25,7 +25,7 @@ public class StartEGL {
 	    	EglFileGeneratingTemplateFactory eglTemplateFactory = new EglFileGeneratingTemplateFactory();
 	    IEolExecutableModule module = new EglTemplateFactoryModuleAdapter(eglTemplateFactory);
 	    	System.out.println("Parsing template files...");
-	    	/*module.parse(new File(project+"/model/Calender2HTML.egl").getAbsoluteFile());
+	    	module.parse(new File(project+"/model/Calender2HTML.egl").getAbsoluteFile());
 	
 	    	// Fehler beim Parsen ausgeben
 	    	if (module.getParseProblems().size() > 0) {
@@ -59,7 +59,7 @@ public class StartEGL {
 		fop.write(contentInBytes);
 		fop.flush();
 		fop.close();
-	    	module.getContext().getModelRepository().dispose();*/
+	    	module.getContext().getModelRepository().dispose();
 	    } catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
