@@ -27,7 +27,7 @@
       </handler>
       <handler
             commandId="de.tu_bs.vacation_manager.plugin.commands.validate"
-            class="de.tu_bs.vacation_manager.plugin.handlers.ExportHandler">
+            class="de.tu_bs.vacation_manager.plugin.handlers.ValidateHandler">
       </handler>
    </extension>
    <extension
