@@ -21,10 +21,6 @@ public class ExportHandler extends AbstractHandler {
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
 		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
-		/*MessageDialog.openInformation(
-				window.getShell(),
-				"Plugin",
-				"Hello, Eclipse world");*/
 		
 		// Pfad vom Projekt
 	    if (window != null)
@@ -37,6 +33,10 @@ public class ExportHandler extends AbstractHandler {
 	            IPath path = project.getLocation();
 	            System.out.println("Projekt: "+path);
 	            StartEGL.start(""+path);
+	            MessageDialog.openInformation(
+	    				window.getShell(),
+	    				"Plugin",
+	    				"EGL erfolgreich ausgeführt!");
 	        }
 	    }
 		

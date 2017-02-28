@@ -13,11 +13,20 @@
             categoryId="de.tu_bs.vacation_manager.plugin.commands.category"
             id="de.tu_bs.vacation_manager.plugin.commands.sampleCommand">
       </command>
+      <command
+            name="Validiere Modelle"
+            categoryId="de.tu_bs.vacation_manager.plugin.commands.category"
+            id="de.tu_bs.vacation_manager.plugin.commands.validate">
+      </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
       <handler
             commandId="de.tu_bs.vacation_manager.plugin.commands.sampleCommand"
+            class="de.tu_bs.vacation_manager.plugin.handlers.ExportHandler">
+      </handler>
+      <handler
+            commandId="de.tu_bs.vacation_manager.plugin.commands.validate"
             class="de.tu_bs.vacation_manager.plugin.handlers.ExportHandler">
       </handler>
    </extension>
@@ -43,6 +52,11 @@
                   mnemonic="S"
                   id="de.tu_bs.vacation_manager.plugin.menus.sampleCommand">
             </command>
+            <command
+                  commandId="de.tu_bs.vacation_manager.plugin.commands.validate"
+                  mnemonic="S"
+                  id="de.tu_bs.vacation_manager.plugin.menus.validate">
+            </command>
          </menu>
       </menuContribution>
       <menuContribution
@@ -54,6 +68,12 @@
                   icon="icons/sample.gif"
                   tooltip="Say hello world"
                   id="de.tu_bs.vacation_manager.plugin.toolbars.sampleCommand">
+            </command>
+            <command
+                  commandId="de.tu_bs.vacation_manager.plugin.commands.validate"
+                  icon="icons/sample.gif"
+                  tooltip="Say hello world"
+                  id="de.tu_bs.vacation_manager.plugin.toolbars.validate">
             </command>
          </toolbar>
       </menuContribution>

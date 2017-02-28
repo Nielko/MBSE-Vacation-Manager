@@ -14,6 +14,7 @@ import org.eclipse.epsilon.emc.emf.AbstractEmfModel;
 import org.eclipse.epsilon.emc.emf.EmfModel;
 import org.eclipse.epsilon.emc.plainxml.PlainXmlModel;
 import org.eclipse.epsilon.eol.IEolExecutableModule;
+import org.eclipse.epsilon.eol.dt.ExtensionPointToolNativeTypeDelegate;
 import org.eclipse.epsilon.eol.models.IRelativePathResolver;
 
 public class StartEGL {
@@ -26,6 +27,7 @@ public class StartEGL {
 	    IEolExecutableModule module = new EglTemplateFactoryModuleAdapter(eglTemplateFactory);
 	    	System.out.println("Parsing template files...");
 	    	module.parse(new File(project+"/model/Calender2HTML.egl").getAbsoluteFile());
+	    	
 	
 	    	// Fehler beim Parsen ausgeben
 	    	if (module.getParseProblems().size() > 0) {
@@ -39,14 +41,14 @@ public class StartEGL {
 	    	EmfModel model = new EmfModel();
 	    	StringProperties properties = new StringProperties();
 	    properties.put(EmfModel.PROPERTY_NAME, "Mein Kalender");
-	    properties.put(EmfModel.PROPERTY_FILE_BASED_METAMODEL_URI,project+ "/model/Calender.ecore");//"file:/" + new File(metamodel).getAbsolutePath());
+	    properties.put(EmfModel.PROPERTY_FILE_BASED_METAMODEL_URI, "file:/" + new File(project+ "/model/Calender.ecore").getAbsolutePath());//"file:/" + new File(metamodel).getAbsolutePath());
 	    	properties.put(EmfModel.PROPERTY_MODEL_URI, "file:/" + new File(project+"/model/mynew.calender").getAbsolutePath());
 	    properties.put(EmfModel.PROPERTY_IS_METAMODEL_FILE_BASED, "true");
 	    properties.put(EmfModel.PROPERTY_READONLOAD, true + "");
 	    	properties.put(EmfModel.PROPERTY_STOREONDISPOSAL, true + "");
 	    model.load(properties, (IRelativePathResolver) null);
 	    eglTemplateFactory.getContext().getModelRepository().addModel(model) ;
-	    	
+	    eglTemplateFactory.getContext().getNativeTypeDelegates().add(new ExtensionPointToolNativeTypeDelegate());
 	    
 	    	// Ausführen und in Datei schreiben
 	    System.out.println(	module.execute());
